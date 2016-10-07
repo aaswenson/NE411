@@ -221,7 +221,7 @@ plot(cell2mat(r_sv(i)),cell2mat((Err_T_sv(i))),'color', colorVec(i,:));
 legend_info{i} = num2str(nodes(i));
 end
 legend(legend_info)
-title('Temeperature Profile Error')
+title('Temperature Profile Error')
 xlabel('radius [cm]')
 ylabel('% error')
 hold off;
