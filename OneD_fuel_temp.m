@@ -226,7 +226,7 @@ xlabel('radius [cm]')
 ylabel('% error')
 hold off;
 
-% 
+% Flux Error 
 
 figure(4)
 hold on;
