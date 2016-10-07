@@ -1,0 +1,2451 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.comsol.mph-v15:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.comsol.mph-v15="http://www.comsol.com/mph/v15" tag="savepoint1" entityName="2Dconduction.mph" entityComments="Untitled&#xA;&#xA;" entityAuthor="" entityCreationTime="1475717444020" entityModifyTime="1475717444040" entityModifiedBy="" multiphysicsEventHandlers="//@material //@study/@objects[key='std1']/@value/@feature/@features[key='stat']/@value" savePoint="true" savedInVersion="581" comsolVersion="COMSOL 5.2 (Build: 220)" baseSystem="SI" srl="1027477" accessibleAttributes="0" lastComputationTime="1087">
+  <entityFlags>nodeactivate</entityFlags>
+  <entityFlags>noremove</entityFlags>
+  <param tag="param" entityName="Parameters" entityComments="" entityAuthor="" entityCreationTime="1475716270289">
+    <entityFlags>nodeactivate</entityFlags>
+    <entityFlags>noremove</entityFlags>
+  </param>
+  <study entityName="List" entityComments="" entityAuthor="" entityCreationTime="1475716270238" model="/">
+    <objects key="std1">
+      <value tag="std1" entityName="Study 1" entityComments="" entityAuthor="" entityCreationTime="1475716271437" lastComputationTime="1087">
+        <tags tag="Analysis" values="1,'std1'" readOnly="true"/>
+        <entityFlags>nodeactivate</entityFlags>
+        <feature model="/">
+          <features key="stat">
+            <value xsi:type="com.comsol.mph-v15:StudyFeature" tag="stat" entityName="Stationary" entityComments="" entityAuthor="" entityCreationTime="1475716271467" operationID="Stationary" key="true[]accdualpairsaccerrestaccrespairsaccvarerrpairsactivateht|on|activateCouplingactivateimageadapgeomgeom1adaptionoffconstraintgroupdisabledcouplingdisabledphysicsdisabledvariables[]discretizationht|physics|geometricNonlinearityoffgeometricNonlinearityActiveongeomselectiongeom1gfintopsgfuncgfuncpdgoalerrestoffgoalfuncpredefgfintgoalfunctypegfpredefinitmethodinitinitsolcurrentcurrentinitsolhideoninitsolusecurrentcurrentinitstudyzerozeroinitstudyhideoninitstudystepnullkeepnotsolstaticofflistsolofflistsolnum1|loadcaseloadgrouploadgroupweightmanualsoloffmanualsolnum1meshgeom1|mesh1|multiphysicsSelectionnullnotlistsoloffnotlistsolnum1|notmanualsoloffnotmanualsolnum1|notsolcurrentcurrentnotsolhideonnotsolmethodinitnotsolnum1notsolnumhideonnotsolusecurrentcurrentnotsolvertypenonenotstudyzerozeronotstudyhideonnotstudystepnullnott0.0nottimeinterpoffoldinitsoluse0oldnotsoluse0optimizationoffoutputhideoffpcontinuationpcontinuationmodelastpdistriboffphysselectionhtplistplistarrplotoffplotgrouppg1Defaultpnamepreusesolnoprobefreqpoutprobes[]probeselallpunitshowGeometricNonlinearityoffshowdistributeoffshowpreusesoloffsolnum1solnumhideonsolvertypenonestoresel[]sweeptypesparset0.0timeinterpoffuseadvanceddisableoffuseinitsoloffuseloadcaseoffuseparamoffusesoloffusestoreselall">
+              <tags tag="Analysis" values="1,'std1/stat'" readOnly="true"/>
+              <properties key="showGeometricNonlinearity">
+                <value tag="showGeometricNonlinearity" value="off"/>
+              </properties>
+              <properties key="geometricNonlinearityActive">
+                <value tag="geometricNonlinearityActive" value="on"/>
+              </properties>
+              <properties key="geometricNonlinearity">
+                <value tag="geometricNonlinearity" value="off"/>
+              </properties>
+              <properties key="outputhide">
+                <value tag="outputhide" value="off"/>
+              </properties>
+              <properties key="plot">
+                <value tag="plot" value="off"/>
+              </properties>
+              <properties key="plotgroup">
+                <value tag="plotgroup" value="Default" compositeIndex="0"/>
+              </properties>
+              <properties key="probesel">
+                <value tag="probesel" value="all"/>
+              </properties>
+              <properties key="probes">
+                <value tag="probes" referenceContainerList="//@probe"/>
+              </properties>
+              <properties key="probefreq">
+                <value tag="probefreq" value="pout"/>
+              </properties>
+              <properties key="physselection">
+                <value tag="physselection" reference="//@physics/@physints[key='ht']/@value" referenceContainerList="//@physics"/>
+              </properties>
+              <properties key="activate">
+                <value tag="activate" valueArray="1|2,'ht','on'"/>
+              </properties>
+              <properties key="discretization">
+                <value tag="discretization" valueArray="1|2,'ht','physics'"/>
+              </properties>
+              <properties key="useadvanceddisable">
+                <value tag="useadvanceddisable" value="off"/>
+              </properties>
+              <properties key="activateimage">
+                <value tag="activateimage" valueArray="1|0"/>
+              </properties>
+              <properties key="disabledvariables">
+                <value tag="disabledvariables" referenceContainerList="//@expr"/>
+              </properties>
+              <properties key="disabledphysics">
+                <value tag="disabledphysics" valueArray="1|0"/>
+              </properties>
+              <properties key="multiphysicsSelection">
+                <value tag="multiphysicsSelection" referenceContainerList="//@multiphysics"/>
+              </properties>
+              <properties key="activateCoupling">
+                <value tag="activateCoupling" valueArray="1|0"/>
+              </properties>
+              <properties key="disabledcoupling">
+                <value tag="disabledcoupling" valueArray="1|0"/>
+              </properties>
+              <properties key="useinitsol">
+                <value tag="useinitsol" value="off"/>
+              </properties>
+              <properties key="initmethod">
+                <value tag="initmethod" value="init"/>
+              </properties>
+              <properties key="initstudy">
+                <value tag="initstudy" value="zero" referenceContainerList="//@study" compositeIndex="0"/>
+              </properties>
+              <properties key="initstudyhide">
+                <value tag="initstudyhide" value="on"/>
+              </properties>
+              <properties key="initsol">
+                <value tag="initsol" value="current" compositeIndex="0"/>
+              </properties>
+              <properties key="initsolhide">
+                <value tag="initsolhide" value="on"/>
+              </properties>
+              <properties key="initsoluse">
+                <value tag="initsoluse" value="current" compositeIndex="0"/>
+              </properties>
+              <properties key="oldinitsoluse">
+                <value tag="oldinitsoluse" value="0"/>
+              </properties>
+              <properties key="initstudystep">
+                <value tag="initstudystep"/>
+              </properties>
+              <properties key="solnumhide">
+                <value tag="solnumhide" value="on"/>
+              </properties>
+              <properties key="solnum">
+                <value tag="solnum" value="1" compositeIndex="1"/>
+              </properties>
+              <properties key="solvertype">
+                <value tag="solvertype" value="none"/>
+              </properties>
+              <properties key="timeinterp">
+                <value tag="timeinterp" value="off"/>
+              </properties>
+              <properties key="t">
+                <value tag="t" value="0"/>
+              </properties>
+              <properties key="manualsol">
+                <value tag="manualsol" value="off"/>
+              </properties>
+              <properties key="manualsolnum">
+                <value tag="manualsolnum" value="1"/>
+              </properties>
+              <properties key="listsol">
+                <value tag="listsol" value="off"/>
+              </properties>
+              <properties key="listsolnum">
+                <value tag="listsolnum" valueArray="1|1,'1'"/>
+              </properties>
+              <properties key="usesol">
+                <value tag="usesol" value="off"/>
+              </properties>
+              <properties key="notsolmethod">
+                <value tag="notsolmethod" value="init"/>
+              </properties>
+              <properties key="notstudy">
+                <value tag="notstudy" value="zero" referenceContainerList="//@study" compositeIndex="0"/>
+              </properties>
+              <properties key="notstudyhide">
+                <value tag="notstudyhide" value="on"/>
+              </properties>
+              <properties key="notsol">
+                <value tag="notsol" value="current" compositeIndex="0"/>
+              </properties>
+              <properties key="notsolhide">
+                <value tag="notsolhide" value="on"/>
+              </properties>
+              <properties key="notsoluse">
+                <value tag="notsoluse" value="current" compositeIndex="0"/>
+              </properties>
+              <properties key="oldnotsoluse">
+                <value tag="oldnotsoluse" value="0"/>
+              </properties>
+              <properties key="notstudystep">
+                <value tag="notstudystep"/>
+              </properties>
+              <properties key="notsolnumhide">
+                <value tag="notsolnumhide" value="on"/>
+              </properties>
+              <properties key="notsolnum">
+                <value tag="notsolnum" value="1" compositeIndex="1"/>
+              </properties>
+              <properties key="notsolvertype">
+                <value tag="notsolvertype" value="none"/>
+              </properties>
+              <properties key="nottimeinterp">
+                <value tag="nottimeinterp" value="off"/>
+              </properties>
+              <properties key="nott">
+                <value tag="nott" value="0"/>
+              </properties>
+              <properties key="notmanualsol">
+                <value tag="notmanualsol" value="off"/>
+              </properties>
+              <properties key="notmanualsolnum">
+                <value tag="notmanualsolnum" valueArray="1|1,'1'"/>
+              </properties>
+              <properties key="notmanualsolnum_vector_method">
+                <value tag="notmanualsolnum_vector_method" value="step"/>
+              </properties>
+              <properties key="notmanualsolnum_vector_start">
+                <value tag="notmanualsolnum_vector_start" value=""/>
+              </properties>
+              <properties key="notmanualsolnum_vector_stop">
+                <value tag="notmanualsolnum_vector_stop" value=""/>
+              </properties>
+              <properties key="notmanualsolnum_vector_step">
+                <value tag="notmanualsolnum_vector_step" value=""/>
+              </properties>
+              <properties key="notmanualsolnum_vector_numvalues">
+                <value tag="notmanualsolnum_vector_numvalues" value=""/>
+              </properties>
+              <properties key="notmanualsolnum_vector_function">
+                <value tag="notmanualsolnum_vector_function" value="none"/>
+              </properties>
+              <properties key="notlistsol">
+                <value tag="notlistsol" value="off"/>
+              </properties>
+              <properties key="notlistsolnum">
+                <value tag="notlistsolnum" valueArray="1|1,'1'"/>
+              </properties>
+              <properties key="usestoresel">
+                <value tag="usestoresel" value="all"/>
+              </properties>
+              <properties key="storesel">
+                <value tag="storesel" referenceContainerList="//@selection"/>
+              </properties>
+              <properties key="geomselection">
+                <value tag="geomselection" reference="//@geom/@geoms[key='geom1']/@value" referenceContainerList="//@geom"/>
+              </properties>
+              <properties key="mesh">
+                <value tag="mesh" valueArray="1|2,'geom1','mesh1'"/>
+              </properties>
+              <properties key="useparam">
+                <value tag="useparam" value="off"/>
+              </properties>
+              <properties key="sweeptype">
+                <value tag="sweeptype" value="sparse"/>
+              </properties>
+              <properties key="pname">
+                <value tag="pname" valueArray="1|0"/>
+              </properties>
+              <properties key="plist">
+                <value tag="plist" value="" valueArray="1|0"/>
+              </properties>
+              <properties key="plistarrexcelfilename">
+                <value tag="plistarrexcelfilename" value=""/>
+              </properties>
+              <properties key="plistarrexcelsheet">
+                <value tag="plistarrexcelsheet" value=""/>
+              </properties>
+              <properties key="plistarrexcelrange">
+                <value tag="plistarrexcelrange" value=""/>
+              </properties>
+              <properties key="plistarrexceloverwrite">
+                <value tag="plistarrexceloverwrite" value="on"/>
+              </properties>
+              <properties key="plistarrexcelincludeheaders">
+                <value tag="plistarrexcelincludeheaders" value="off"/>
+              </properties>
+              <properties key="plistarrexcelseparateunits">
+                <value tag="plistarrexcelseparateunits" value="off"/>
+              </properties>
+              <properties key="plistarr">
+                <value tag="plistarr" valueArray="0"/>
+              </properties>
+              <properties key="plistarr_vector_method">
+                <value tag="plistarr_vector_method" valueArray="1|0"/>
+              </properties>
+              <properties key="plistarr_vector_start">
+                <value tag="plistarr_vector_start" valueArray="1|0"/>
+              </properties>
+              <properties key="plistarr_vector_stop">
+                <value tag="plistarr_vector_stop" valueArray="1|0"/>
+              </properties>
+              <properties key="plistarr_vector_step">
+                <value tag="plistarr_vector_step" valueArray="1|0"/>
+              </properties>
+              <properties key="plistarr_vector_numvalues">
+                <value tag="plistarr_vector_numvalues" valueArray="1|0"/>
+              </properties>
+              <properties key="plistarr_vector_function">
+                <value tag="plistarr_vector_function" valueArray="1|0"/>
+              </properties>
+              <properties key="punit">
+                <value tag="punit" valueArray="1|0"/>
+              </properties>
+              <properties key="pcontinuationmode">
+                <value tag="pcontinuationmode" value="last"/>
+              </properties>
+              <properties key="pcontinuation">
+                <value tag="pcontinuation" value=""/>
+              </properties>
+              <properties key="showpreusesol">
+                <value tag="showpreusesol" value="off"/>
+              </properties>
+              <properties key="preusesol">
+                <value tag="preusesol" value="no"/>
+              </properties>
+              <properties key="useloadcase">
+                <value tag="useloadcase" value="off"/>
+              </properties>
+              <properties key="loadcase">
+                <value tag="loadcase" valueArray="1|0"/>
+              </properties>
+              <properties key="loadgroup">
+                <value tag="loadgroup" valueArray="0"/>
+              </properties>
+              <properties key="loadgroupweight">
+                <value tag="loadgroupweight" valueArray="0"/>
+              </properties>
+              <properties key="constraintgroup">
+                <value tag="constraintgroup" valueArray="0"/>
+              </properties>
+              <properties key="adaption">
+                <value tag="adaption" value="off"/>
+              </properties>
+              <properties key="adapgeom">
+                <value tag="adapgeom" reference="//@geom/@geoms[key='geom1']/@value" referenceContainerList="//@geom"/>
+              </properties>
+              <properties key="optimization">
+                <value tag="optimization" value="off"/>
+              </properties>
+              <properties key="keepnotsolstatic">
+                <value tag="keepnotsolstatic" value="off"/>
+              </properties>
+              <properties key="goalerrest">
+                <value tag="goalerrest" value="off"/>
+              </properties>
+              <properties key="goalfunctype">
+                <value tag="goalfunctype" value="gfpredef"/>
+              </properties>
+              <properties key="goalfuncpredef">
+                <value tag="goalfuncpredef" value="gfint"/>
+              </properties>
+              <properties key="gfuncpd">
+                <value tag="gfuncpd" value=""/>
+              </properties>
+              <properties key="gfintops">
+                <value tag="gfintops" valueArray="1|0"/>
+              </properties>
+              <properties key="gfunc">
+                <value tag="gfunc" value=""/>
+              </properties>
+              <properties key="accerrest">
+                <value tag="accerrest" value=""/>
+              </properties>
+              <properties key="accrespairs">
+                <value tag="accrespairs" valueArray="1|0"/>
+              </properties>
+              <properties key="accdualpairs">
+                <value tag="accdualpairs" valueArray="1|0"/>
+              </properties>
+              <properties key="accvarerrpairs">
+                <value tag="accvarerrpairs" valueArray="1|0"/>
+              </properties>
+              <properties key="showdistribute">
+                <value tag="showdistribute" value="off"/>
+              </properties>
+              <properties key="pdistrib">
+                <value tag="pdistrib" value="off"/>
+              </properties>
+              <feature xsi:type="com.comsol.mph-v15:StudyFeatureList" model="/"/>
+              <mglevel model="/"/>
+            </value>
+          </features>
+        </feature>
+        <information entityName="Information" entityComments="" entityAuthor="" entityCreationTime="1475717068882" model="/">
+          <objects key="lastComputationTime">
+            <value tag="lastComputationTime" title="Last_computation_time" body="1 s"/>
+          </objects>
+        </information>
+      </value>
+    </objects>
+  </study>
+  <cpl entityName="List" entityComments="" entityAuthor="" entityCreationTime="1475716270238" model="/"/>
+  <frame entityName="List" entityComments="" entityAuthor="" entityCreationTime="1475716270238" model="/">
+    <frames key="material1">
+      <value tag="material1" coord="3,'x','y','z'" geom="//@geom/@geoms[key='geom1']/@value"/>
+    </frames>
+  </frame>
+  <weak entityName="List" entityComments="" entityAuthor="" entityCreationTime="1475717064688" model="/"/>
+  <selection entityName="List" entityComments="" entityAuthor="" entityCreationTime="1475716270787" model="/"/>
+  <view entityName="Views" entityComments="" entityAuthor="" entityCreationTime="1475716270289" model="/">
+    <views key="view1">
+      <value tag="view1" entityName="View 1" entityComments="" entityAuthor="" entityCreationTime="1475716270787" operationID="ModelView2D" geom="//@geom/@geoms[key='geom1']/@value" sdim="2" current="true" globalcurrent="true">
+        <entityFlags>nodeactivate</entityFlags>
+        <properties key="showlabels">
+          <value tag="showlabels" value="off"/>
+        </properties>
+        <properties key="showDirections">
+          <value tag="showDirections" value="off"/>
+        </properties>
+        <properties key="showgrid">
+          <value tag="showgrid" value="on"/>
+        </properties>
+        <properties key="locked">
+          <value tag="locked" value="off"/>
+        </properties>
+        <properties key="drawhidestatus">
+          <value tag="drawhidestatus" value="hide"/>
+        </properties>
+        <properties key="geomhidestatus">
+          <value tag="geomhidestatus" value="hide"/>
+        </properties>
+        <properties key="isnew">
+          <value tag="isnew" value="off"/>
+        </properties>
+        <properties key="postviewkey">
+          <value tag="postviewkey" value=""/>
+        </properties>
+        <properties key="workplaneclip">
+          <value tag="workplaneclip" value="off"/>
+        </properties>
+        <feature xsi:type="com.comsol.mph-v15:ViewFeatureList" model="/"/>
+        <hideObjects entityName="List" entityComments="" entityAuthor="" entityCreationTime="1475716270807" model="/"/>
+        <hideEntities entityName="List" entityComments="" entityAuthor="" entityCreationTime="1475716270807" model="/"/>
+        <axis tag="axis" entityName="Axis" entityComments="" entityAuthor="" entityCreationTime="1475716270797" operationID="Axis2D">
+          <entityFlags>noremove</entityFlags>
+          <entityFlags>nodeactivate</entityFlags>
+          <properties key="xmin">
+            <value tag="xmin" value="-0.0075249746441841125"/>
+          </properties>
+          <properties key="xmax">
+            <value tag="xmax" value="0.007526364177465439"/>
+          </properties>
+          <properties key="ymin">
+            <value tag="ymin" value="-0.008594098500907421"/>
+          </properties>
+          <properties key="ymax">
+            <value tag="ymax" value="0.008593401871621609"/>
+          </properties>
+          <properties key="xminhidden">
+            <value tag="xminhidden" value="-0.0075249746441841125"/>
+          </properties>
+          <properties key="xmaxhidden">
+            <value tag="xmaxhidden" value="0.007526364177465439"/>
+          </properties>
+          <properties key="yminhidden">
+            <value tag="yminhidden" value="-0.008594098500907421"/>
+          </properties>
+          <properties key="ymaxhidden">
+            <value tag="ymaxhidden" value="0.008593401871621609"/>
+          </properties>
+          <properties key="viewscaletype">
+            <value tag="viewscaletype" value="none"/>
+          </properties>
+          <properties key="xscale">
+            <value tag="xscale" value="1"/>
+          </properties>
+          <properties key="yscale">
+            <value tag="yscale" value="1"/>
+          </properties>
+          <properties key="abstractviewsetting">
+            <value tag="abstractviewsetting" value="on"/>
+          </properties>
+          <properties key="abstractviewlratio">
+            <value tag="abstractviewlratio" value="-0.047727975994348526"/>
+          </properties>
+          <properties key="abstractviewrratio">
+            <value tag="abstractviewrratio" value="0.04776531457901001"/>
+          </properties>
+          <properties key="abstractviewbratio">
+            <value tag="abstractviewbratio" value="-0.19404974579811096"/>
+          </properties>
+          <properties key="abstractviewtratio">
+            <value tag="abstractviewtratio" value="0.19400228559970856"/>
+          </properties>
+          <properties key="abstractviewxscale">
+            <value tag="abstractviewxscale" value="2.455357025610283E-5"/>
+          </properties>
+          <properties key="abstractviewyscale">
+            <value tag="abstractviewyscale" value="2.4553572075092234E-5"/>
+          </properties>
+          <properties key="manualgrid">
+            <value tag="manualgrid" value="off"/>
+          </properties>
+          <properties key="xspacing">
+            <value tag="xspacing" value="1"/>
+          </properties>
+          <properties key="yspacing">
+            <value tag="yspacing" value="1"/>
+          </properties>
+          <properties key="xextra">
+            <value tag="xextra" value="" valueArray="1|0"/>
+          </properties>
+          <properties key="xextra_vector_method">
+            <value tag="xextra_vector_method" value="step"/>
+          </properties>
+          <properties key="xextra_vector_start">
+            <value tag="xextra_vector_start" value=""/>
+          </properties>
+          <properties key="xextra_vector_stop">
+            <value tag="xextra_vector_stop" value=""/>
+          </properties>
+          <properties key="xextra_vector_step">
+            <value tag="xextra_vector_step" value=""/>
+          </properties>
+          <properties key="xextra_vector_numvalues">
+            <value tag="xextra_vector_numvalues" value=""/>
+          </properties>
+          <properties key="xextra_vector_function">
+            <value tag="xextra_vector_function" value="none"/>
+          </properties>
+          <properties key="yextra">
+            <value tag="yextra" value="" valueArray="1|0"/>
+          </properties>
+          <properties key="yextra_vector_method">
+            <value tag="yextra_vector_method" value="step"/>
+          </properties>
+          <properties key="yextra_vector_start">
+            <value tag="yextra_vector_start" value=""/>
+          </properties>
+          <properties key="yextra_vector_stop">
+            <value tag="yextra_vector_stop" value=""/>
+          </properties>
+          <properties key="yextra_vector_step">
+            <value tag="yextra_vector_step" value=""/>
+          </properties>
+          <properties key="yextra_vector_numvalues">
+            <value tag="yextra_vector_numvalues" value=""/>
+          </properties>
+          <properties key="yextra_vector_function">
+            <value tag="yextra_vector_function" value="none"/>
+          </properties>
+          <feature xsi:type="com.comsol.mph-v15:ViewFeatureList" model="/"/>
+        </axis>
+      </value>
+    </views>
+  </view>
+  <field entityName="List" entityComments="" entityAuthor="" entityCreationTime="1475716270299" model="/"/>
+  <constr entityName="List" entityComments="" entityAuthor="" entityCreationTime="1475717064700" model="/"/>
+  <expr entityName="Variables" entityComments="" entityAuthor="" entityCreationTime="1475716270238" model="/"/>
+  <func entityName="Functions" entityComments="" entityAuthor="" entityCreationTime="1475716270238" model="/"/>
+  <init entityName="List" entityComments="" entityAuthor="" entityCreationTime="1475716710393" model="/"/>
+  <geom entityName="Geometry Parts" entityComments="" entityAuthor="" entityCreationTime="1475716270238" model="/">
+    <geoms key="geom1">
+      <value tag="geom1" storedParent="//@modelNode/@modelNodes[key='comp1']/@value" entityName="Geometry 1" entityComments="" entityAuthor="" entityCreationTime="1475716270757" assocID="1,0,1013184484,-1517582734" angularUnit="deg" assocMaps="{0,1,0,2,3,0,4,5,6,7,8,9,0,10,11,0,12},{0,1,2,1,3,4,5,6,2,7,8,9,10,11,12,7,12},{0,1,2,3}" current="//@geom/@geoms[key='geom1']/@value/@feature/@features[key='c4']/@value" externallySet="false" geometryFrame="//@frame/@frames[key='material1']/@value" geomInfo="//@geom/@geoms[key='geom1']/@value/@geomnative" geomrep="comsol" hashKey="8843661512152632919" inverseAssocMaps="{0,1,3,4,6,7,8,9,10,11,13,14,16},{0,1,2,4,5,6,7,9,10,11,12,13,14},{0,1,2,3}" lastBuiltFeature="//@geom/@geoms[key='geom1']/@value/@feature/@features[key='fin']/@value" lengthUnit="m" materialFrame="//@frame/@frames[key='material1']/@value" meshFrame="//@frame/@frames[key='material1']/@value" sdim="2" sequenceType="STANDARD" spatialFrame="//@frame/@frames[key='material1']/@value" xmeshIndex="1">
+        <entityFlags>nodeactivate</entityFlags>
+        <geomnative numEntities="16,16,3" numEntitiesMesh="16,16,3" spaceDim="2" voidsLabeled="true"/>
+        <feature model="/" sequence="//@geom/@geoms[key='geom1']/@value">
+          <features key="c1">
+            <value xsi:type="com.comsol.mph-v15:GeomFeature" tag="c1" entityName="Circle 1" entityComments="" entityAuthor="" entityCreationTime="1475716289959" operationID="Circle" key="true[deg]angle360.0angleconstronbasecenterlayerpos0.0|0.0|posconstroff|off|r0.005rconstroffrot0.0rotconstrofftypesolidx0.0y0.0" status="built" buildStatus="built" assocConfig="ACED0005757200055B5B5B5B49D3650077CA37F6DD020000787000000004757200045B5B5B494B8DF625CB5230D4020000787000000004757200035B5B4917F7E44F198F893C020000787000000001757200025B494DBA602676EAB2A5020000787000000001000000007571007E0004000000017571007E000600000001000000017571007E0004000000017571007E000600000001000000027571007E0004000000017571007E000600000001000000037571007E0002000000047571007E0004000000017571007E000600000001000000007571007E0004000000017571007E000600000001000000017571007E0004000000017571007E000600000001000000027571007E0004000000017571007E000600000001000000037571007E0002000000007571007E0002000000027571007E0004000000007571007E0004000000017571007E00060000000100000001" cacheTag="7936347667704991740" id="2" sequence="//@geom/@geoms[key='geom1']/@value">
+              <properties key="contributeto">
+                <value tag="contributeto" value="none" referenceContainerList="//@geom/@geoms[key='geom1']/@value/@selection" compositeIndex="1"/>
+              </properties>
+              <properties key="selresult">
+                <value tag="selresult" value="off"/>
+              </properties>
+              <properties key="selresultshow">
+                <value tag="selresultshow" value="dom"/>
+              </properties>
+              <properties key="posconstr">
+                <value tag="posconstr" valueArray="1|2,'off','off'"/>
+              </properties>
+              <properties key="pos">
+                <value tag="pos" value="0 0" valueArray="1|2,'0','0'"/>
+              </properties>
+              <properties key="x">
+                <value tag="x" value="0"/>
+              </properties>
+              <properties key="y">
+                <value tag="y" value="0"/>
+              </properties>
+              <properties key="rotconstr">
+                <value tag="rotconstr" value="off"/>
+              </properties>
+              <properties key="rot">
+                <value tag="rot" value="0"/>
+              </properties>
+              <properties key="type">
+                <value tag="type" value="solid"/>
+              </properties>
+              <properties key="base">
+                <value tag="base" value="center"/>
+              </properties>
+              <properties key="layerold">
+                <value tag="layerold" valueArray="1|0"/>
+              </properties>
+              <properties key="layername">
+                <value tag="layername" valueArray="1|0"/>
+              </properties>
+              <properties key="layer">
+                <value tag="layer" valueArray="1|0"/>
+              </properties>
+              <properties key="layer_vector_method">
+                <value tag="layer_vector_method" value="step"/>
+              </properties>
+              <properties key="layer_vector_start">
+                <value tag="layer_vector_start" value=""/>
+              </properties>
+              <properties key="layer_vector_stop">
+                <value tag="layer_vector_stop" value=""/>
+              </properties>
+              <properties key="layer_vector_step">
+                <value tag="layer_vector_step" value=""/>
+              </properties>
+              <properties key="layer_vector_numvalues">
+                <value tag="layer_vector_numvalues" value=""/>
+              </properties>
+              <properties key="layer_vector_function">
+                <value tag="layer_vector_function" value="none"/>
+              </properties>
+              <properties key="rconstr">
+                <value tag="rconstr" value="off"/>
+              </properties>
+              <properties key="r">
+                <value tag="r" value="0.005"/>
+              </properties>
+              <properties key="angleconstr">
+                <value tag="angleconstr" value="on"/>
+              </properties>
+              <properties key="angle">
+                <value tag="angle" value="360"/>
+              </properties>
+              <feature xsi:type="com.comsol.mph-v15:GeomFeatureList" model="/" sequence="//@geom/@geoms[key='geom1']/@value"/>
+              <geom model="/">
+                <objects key="c1(1)">
+                  <value tag="c1(1)" entityName="Circle" entityComments="" entityAuthor="" entityCreationTime="1475716301739" assocID="2,0,1847824935,481148671">
+                    <entityFlags>norename</entityFlags>
+                    <geomnative numEntities="4,4,1" numEntitiesMesh="4,4,1" spaceDim="2" voidsLabeled="true"/>
+                  </value>
+                </objects>
+              </geom>
+            </value>
+          </features>
+          <features key="c2">
+            <value xsi:type="com.comsol.mph-v15:GeomFeature" tag="c2" entityName="Circle 2" entityComments="" entityAuthor="" entityCreationTime="1475716312921" operationID="Circle" key="true[deg]angle360.0angleconstronbasecenterlayerpos0.0|0.0|posconstroff|off|r0.005089rconstroffrot0.0rotconstrofftypesolidx0.0y0.0" status="built" buildStatus="built" assocConfig="ACED0005757200055B5B5B5B49D3650077CA37F6DD020000787000000004757200045B5B5B494B8DF625CB5230D4020000787000000004757200035B5B4917F7E44F198F893C020000787000000001757200025B494DBA602676EAB2A5020000787000000001000000007571007E0004000000017571007E000600000001000000017571007E0004000000017571007E000600000001000000027571007E0004000000017571007E000600000001000000037571007E0002000000047571007E0004000000017571007E000600000001000000007571007E0004000000017571007E000600000001000000017571007E0004000000017571007E000600000001000000027571007E0004000000017571007E000600000001000000037571007E0002000000007571007E0002000000027571007E0004000000007571007E0004000000017571007E00060000000100000001" cacheTag="-7285813577360298823" id="3" sequence="//@geom/@geoms[key='geom1']/@value">
+              <properties key="contributeto">
+                <value tag="contributeto" value="none" referenceContainerList="//@geom/@geoms[key='geom1']/@value/@selection" compositeIndex="1"/>
+              </properties>
+              <properties key="selresult">
+                <value tag="selresult" value="off"/>
+              </properties>
+              <properties key="selresultshow">
+                <value tag="selresultshow" value="dom"/>
+              </properties>
+              <properties key="posconstr">
+                <value tag="posconstr" valueArray="1|2,'off','off'"/>
+              </properties>
+              <properties key="pos">
+                <value tag="pos" value="0 0" valueArray="1|2,'0','0'"/>
+              </properties>
+              <properties key="x">
+                <value tag="x" value="0"/>
+              </properties>
+              <properties key="y">
+                <value tag="y" value="0"/>
+              </properties>
+              <properties key="rotconstr">
+                <value tag="rotconstr" value="off"/>
+              </properties>
+              <properties key="rot">
+                <value tag="rot" value="0"/>
+              </properties>
+              <properties key="type">
+                <value tag="type" value="solid"/>
+              </properties>
+              <properties key="base">
+                <value tag="base" value="center"/>
+              </properties>
+              <properties key="layerold">
+                <value tag="layerold" valueArray="1|0"/>
+              </properties>
+              <properties key="layername">
+                <value tag="layername" valueArray="1|0"/>
+              </properties>
+              <properties key="layer">
+                <value tag="layer" valueArray="1|0"/>
+              </properties>
+              <properties key="layer_vector_method">
+                <value tag="layer_vector_method" value="step"/>
+              </properties>
+              <properties key="layer_vector_start">
+                <value tag="layer_vector_start" value=""/>
+              </properties>
+              <properties key="layer_vector_stop">
+                <value tag="layer_vector_stop" value=""/>
+              </properties>
+              <properties key="layer_vector_step">
+                <value tag="layer_vector_step" value=""/>
+              </properties>
+              <properties key="layer_vector_numvalues">
+                <value tag="layer_vector_numvalues" value=""/>
+              </properties>
+              <properties key="layer_vector_function">
+                <value tag="layer_vector_function" value="none"/>
+              </properties>
+              <properties key="rconstr">
+                <value tag="rconstr" value="off"/>
+              </properties>
+              <properties key="r">
+                <value tag="r" value=".005089"/>
+              </properties>
+              <properties key="angleconstr">
+                <value tag="angleconstr" value="on"/>
+              </properties>
+              <properties key="angle">
+                <value tag="angle" value="360"/>
+              </properties>
+              <feature xsi:type="com.comsol.mph-v15:GeomFeatureList" model="/" sequence="//@geom/@geoms[key='geom1']/@value"/>
+              <geom model="/">
+                <objects key="c2(1)">
+                  <value tag="c2(1)" entityName="Circle" entityComments="" entityAuthor="" entityCreationTime="1475716323308" assocID="3,0,-1696360665,-1630004292">
+                    <entityFlags>norename</entityFlags>
+                    <geomnative numEntities="4,4,1" numEntitiesMesh="4,4,1" spaceDim="2" voidsLabeled="true"/>
+                  </value>
+                </objects>
+              </geom>
+            </value>
+          </features>
+          <features key="c3">
+            <value xsi:type="com.comsol.mph-v15:GeomFeature" tag="c3" entityName="Circle 3" entityComments="" entityAuthor="" entityCreationTime="1475716418768" operationID="Circle" key="true[deg]angle360.0angleconstronbasecenterlayerpos0.0|0.0|posconstroff|off|r0.005749rconstroffrot0.0rotconstrofftypesolidx0.0y0.0" status="built" buildStatus="built" assocConfig="ACED0005757200055B5B5B5B49D3650077CA37F6DD020000787000000004757200045B5B5B494B8DF625CB5230D4020000787000000004757200035B5B4917F7E44F198F893C020000787000000001757200025B494DBA602676EAB2A5020000787000000001000000007571007E0004000000017571007E000600000001000000017571007E0004000000017571007E000600000001000000027571007E0004000000017571007E000600000001000000037571007E0002000000047571007E0004000000017571007E000600000001000000007571007E0004000000017571007E000600000001000000017571007E0004000000017571007E000600000001000000027571007E0004000000017571007E000600000001000000037571007E0002000000007571007E0002000000027571007E0004000000007571007E0004000000017571007E00060000000100000001" cacheTag="7514545827510321808" id="4" sequence="//@geom/@geoms[key='geom1']/@value">
+              <properties key="contributeto">
+                <value tag="contributeto" value="none" referenceContainerList="//@geom/@geoms[key='geom1']/@value/@selection" compositeIndex="1"/>
+              </properties>
+              <properties key="selresult">
+                <value tag="selresult" value="off"/>
+              </properties>
+              <properties key="selresultshow">
+                <value tag="selresultshow" value="dom"/>
+              </properties>
+              <properties key="posconstr">
+                <value tag="posconstr" valueArray="1|2,'off','off'"/>
+              </properties>
+              <properties key="pos">
+                <value tag="pos" value="0 0" valueArray="1|2,'0','0'"/>
+              </properties>
+              <properties key="x">
+                <value tag="x" value="0"/>
+              </properties>
+              <properties key="y">
+                <value tag="y" value="0"/>
+              </properties>
+              <properties key="rotconstr">
+                <value tag="rotconstr" value="off"/>
+              </properties>
+              <properties key="rot">
+                <value tag="rot" value="0"/>
+              </properties>
+              <properties key="type">
+                <value tag="type" value="solid"/>
+              </properties>
+              <properties key="base">
+                <value tag="base" value="center"/>
+              </properties>
+              <properties key="layerold">
+                <value tag="layerold" valueArray="1|0"/>
+              </properties>
+              <properties key="layername">
+                <value tag="layername" valueArray="1|0"/>
+              </properties>
+              <properties key="layer">
+                <value tag="layer" valueArray="1|0"/>
+              </properties>
+              <properties key="layer_vector_method">
+                <value tag="layer_vector_method" value="step"/>
+              </properties>
+              <properties key="layer_vector_start">
+                <value tag="layer_vector_start" value=""/>
+              </properties>
+              <properties key="layer_vector_stop">
+                <value tag="layer_vector_stop" value=""/>
+              </properties>
+              <properties key="layer_vector_step">
+                <value tag="layer_vector_step" value=""/>
+              </properties>
+              <properties key="layer_vector_numvalues">
+                <value tag="layer_vector_numvalues" value=""/>
+              </properties>
+              <properties key="layer_vector_function">
+                <value tag="layer_vector_function" value="none"/>
+              </properties>
+              <properties key="rconstr">
+                <value tag="rconstr" value="off"/>
+              </properties>
+              <properties key="r">
+                <value tag="r" value="0.005749"/>
+              </properties>
+              <properties key="angleconstr">
+                <value tag="angleconstr" value="on"/>
+              </properties>
+              <properties key="angle">
+                <value tag="angle" value="360"/>
+              </properties>
+              <feature xsi:type="com.comsol.mph-v15:GeomFeatureList" model="/" sequence="//@geom/@geoms[key='geom1']/@value"/>
+              <geom model="/">
+                <objects key="c3(1)">
+                  <value tag="c3(1)" entityName="Circle" entityComments="" entityAuthor="" entityCreationTime="1475716459322" assocID="4,0,1749616541,709161363">
+                    <entityFlags>norename</entityFlags>
+                    <geomnative numEntities="4,4,1" numEntitiesMesh="4,4,1" spaceDim="2" voidsLabeled="true"/>
+                  </value>
+                </objects>
+              </geom>
+            </value>
+          </features>
+          <features key="c4">
+            <value xsi:type="com.comsol.mph-v15:GeomFeature" tag="c4" entityName="Adiabatic Boundary" entityComments="" entityAuthor="" entityCreationTime="1475717784829" operationID="Circle" key="true[deg]angle360.0angleconstronbasecenterlayerpos0.0|0.0|posconstroff|off|r0.005749rconstroffrot18.0rotconstrofftypesolidx0.0y0.0" status="built" buildStatus="built" assocConfig="ACED0005757200055B5B5B5B49D3650077CA37F6DD020000787000000004757200045B5B5B494B8DF625CB5230D4020000787000000004757200035B5B4917F7E44F198F893C020000787000000001757200025B494DBA602676EAB2A5020000787000000001000000007571007E0004000000017571007E000600000001000000017571007E0004000000017571007E000600000001000000027571007E0004000000017571007E000600000001000000037571007E0002000000047571007E0004000000017571007E000600000001000000007571007E0004000000017571007E000600000001000000017571007E0004000000017571007E000600000001000000027571007E0004000000017571007E000600000001000000037571007E0002000000007571007E0002000000027571007E0004000000007571007E0004000000017571007E00060000000100000001" cacheTag="-8238836532230082711" id="5" sequence="//@geom/@geoms[key='geom1']/@value">
+              <properties key="contributeto">
+                <value tag="contributeto" value="none" referenceContainerList="//@geom/@geoms[key='geom1']/@value/@selection" compositeIndex="1"/>
+              </properties>
+              <properties key="selresult">
+                <value tag="selresult" value="off"/>
+              </properties>
+              <properties key="selresultshow">
+                <value tag="selresultshow" value="dom"/>
+              </properties>
+              <properties key="posconstr">
+                <value tag="posconstr" valueArray="1|2,'off','off'"/>
+              </properties>
+              <properties key="pos">
+                <value tag="pos" value="0 0" valueArray="1|2,'0','0'"/>
+              </properties>
+              <properties key="x">
+                <value tag="x" value="0"/>
+              </properties>
+              <properties key="y">
+                <value tag="y" value="0"/>
+              </properties>
+              <properties key="rotconstr">
+                <value tag="rotconstr" value="off"/>
+              </properties>
+              <properties key="rot">
+                <value tag="rot" value="18"/>
+              </properties>
+              <properties key="type">
+                <value tag="type" value="solid"/>
+              </properties>
+              <properties key="base">
+                <value tag="base" value="center"/>
+              </properties>
+              <properties key="layerold">
+                <value tag="layerold" valueArray="1|0"/>
+              </properties>
+              <properties key="layername">
+                <value tag="layername" valueArray="1|0"/>
+              </properties>
+              <properties key="layer">
+                <value tag="layer" valueArray="1|0"/>
+              </properties>
+              <properties key="layer_vector_method">
+                <value tag="layer_vector_method" value="step"/>
+              </properties>
+              <properties key="layer_vector_start">
+                <value tag="layer_vector_start" value=""/>
+              </properties>
+              <properties key="layer_vector_stop">
+                <value tag="layer_vector_stop" value=""/>
+              </properties>
+              <properties key="layer_vector_step">
+                <value tag="layer_vector_step" value=""/>
+              </properties>
+              <properties key="layer_vector_numvalues">
+                <value tag="layer_vector_numvalues" value=""/>
+              </properties>
+              <properties key="layer_vector_function">
+                <value tag="layer_vector_function" value="none"/>
+              </properties>
+              <properties key="rconstr">
+                <value tag="rconstr" value="off"/>
+              </properties>
+              <properties key="r">
+                <value tag="r" value="0.005749"/>
+              </properties>
+              <properties key="angleconstr">
+                <value tag="angleconstr" value="on"/>
+              </properties>
+              <properties key="angle">
+                <value tag="angle" value="360"/>
+              </properties>
+              <feature xsi:type="com.comsol.mph-v15:GeomFeatureList" model="/" sequence="//@geom/@geoms[key='geom1']/@value"/>
+              <geom model="/">
+                <objects key="c4(1)">
+                  <value tag="c4(1)" entityName="Circle" entityComments="" entityAuthor="" entityCreationTime="1475717807791" assocID="5,0,-1918253613,-1626759572">
+                    <entityFlags>norename</entityFlags>
+                    <geomnative numEntities="4,4,1" numEntitiesMesh="4,4,1" spaceDim="2" voidsLabeled="true"/>
+                  </value>
+                </objects>
+              </geom>
+            </value>
+          </features>
+          <features key="fin">
+            <value xsi:type="com.comsol.mph-v15:GeomFeature" tag="fin" entityName="Form Union" entityComments="" entityAuthor="" entityCreationTime="1475716270757" operationID="Finalize" key="true[deg]actionunioncreatepairsongeomrepcomsolimprintoffpairtypeidentityrepairtol1.0E-6splitpairsoff" status="built" buildStatus="built" cacheTag="4351594224160757701" id="1" sequence="//@geom/@geoms[key='geom1']/@value">
+              <entityFlags>noremove</entityFlags>
+              <entityFlags>nodeactivate</entityFlags>
+              <entityFlags>norename</entityFlags>
+              <properties key="action">
+                <value tag="action" value="union"/>
+              </properties>
+              <properties key="imprint">
+                <value tag="imprint" value="off"/>
+              </properties>
+              <properties key="createpairs">
+                <value tag="createpairs" value="on"/>
+              </properties>
+              <properties key="splitpairs">
+                <value tag="splitpairs" value="off"/>
+              </properties>
+              <properties key="pairtype">
+                <value tag="pairtype" value="identity"/>
+              </properties>
+              <properties key="repairtol">
+                <value tag="repairtol" value="1.0E-6"/>
+              </properties>
+              <properties key="geomrep">
+                <value tag="geomrep" value="comsol"/>
+              </properties>
+              <feature xsi:type="com.comsol.mph-v15:GeomFeatureList" model="/" sequence="//@geom/@geoms[key='geom1']/@value"/>
+              <geom model="/">
+                <objects key="fin(1)">
+                  <value tag="fin(1)" entityName="Form_union/assembly" entityComments="" entityAuthor="" entityCreationTime="1475716477354" assocID="1,0,1013184484,-1517582734">
+                    <entityFlags>norename</entityFlags>
+                    <geomnative numEntities="16,16,3" numEntitiesMesh="16,16,3" spaceDim="2" voidsLabeled="true"/>
+                  </value>
+                </objects>
+              </geom>
+            </value>
+          </features>
+        </feature>
+        <selection entityName="Cumulative Selections" entityComments="" entityAuthor="" entityCreationTime="1475716270757" model="/"/>
+      </value>
+    </geoms>
+  </geom>
+  <mesh entityName="Mesh Parts" entityComments="" entityAuthor="" entityCreationTime="1475716270238" model="/">
+    <meshes key="mesh1">
+      <value tag="mesh1" entityName="Mesh 1" entityComments="" entityAuthor="" entityCreationTime="1475716270837" cacheTagCurrent="3882871894216089244" currentFeature="//@mesh/@meshes[key='mesh1']/@value/@feature/@features[key='ftri1']/@value" geom="//@geom/@geoms[key='geom1']/@value" lastBuiltFeature="//@mesh/@meshes[key='mesh1']/@value/@feature/@features[key='ftri1']/@value" type="AUTOMATIC" autogenerated="true" constructionEntitiesToKeep="{},{},{}">
+        <entityFlags>nodeactivate</entityFlags>
+        <importAssoc tag="/meshassoc9.mphbin"/>
+        <feature model="/" sequence="//@mesh/@meshes[key='mesh1']/@value">
+          <features key="size">
+            <value xsi:type="com.comsol.mph-v15:MeshFeature" tag="size" entityName="Size" entityComments="" entityAuthor="" entityCreationTime="1475716477374" operationID="MeshSizeDefault" key="true[deg]hcurve0.3hgrad1.3hmax7.7E-4hmin3.45E-6hnarrow1.0tabledefaultextrHsh=0" status="built" buildStatus="built" sequence="//@mesh/@meshes[key='mesh1']/@value">
+              <entityFlags>nodeactivate</entityFlags>
+              <entityFlags>noremove</entityFlags>
+              <entityFlags>norename</entityFlags>
+              <properties key="table">
+                <value tag="table" value="default"/>
+              </properties>
+              <properties key="hmax">
+                <value tag="hmax" value="7.7E-4"/>
+              </properties>
+              <properties key="hmin">
+                <value tag="hmin" value="3.45E-6"/>
+              </properties>
+              <properties key="hcurve">
+                <value tag="hcurve" value="0.3"/>
+              </properties>
+              <properties key="hnarrow">
+                <value tag="hnarrow" value="1"/>
+              </properties>
+              <properties key="hgrad">
+                <value tag="hgrad" value="1.3"/>
+              </properties>
+              <properties key="hauto">
+                <value tag="hauto" value="5"/>
+              </properties>
+              <properties key="custom">
+                <value tag="custom" value="off"/>
+              </properties>
+              <feature xsi:type="com.comsol.mph-v15:MeshFeatureList" model="/" sequence="//@mesh/@meshes[key='mesh1']/@value"/>
+            </value>
+          </features>
+          <features key="ftri1">
+            <value xsi:type="com.comsol.mph-v15:MeshFeature" tag="ftri1" entityName="Free Triangular 1" entityComments="" entityAuthor="" entityCreationTime="1475718538431" operationID="FreeTri" key="true[deg]continueonmethodautosmoothcontrolonsmoothmaxdepth8smoothmaxiter8xscale1.0yscale1.0MESHREMAININGextrHsh=0" status="built" buildStatus="built" sequence="//@mesh/@meshes[key='mesh1']/@value">
+              <selection xsi:type="com.comsol.mph-v15:MeshSelection" entityName="Selection" entityComments="" entityAuthor="" entityCreationTime="1475718538431" selType="meshremaining"/>
+              <properties key="continue">
+                <value tag="continue" value="on"/>
+              </properties>
+              <properties key="xscale">
+                <value tag="xscale" value="1"/>
+              </properties>
+              <properties key="yscale">
+                <value tag="yscale" value="1"/>
+              </properties>
+              <properties key="smoothcontrol">
+                <value tag="smoothcontrol" value="on"/>
+              </properties>
+              <properties key="smoothmaxiter">
+                <value tag="smoothmaxiter" value="8"/>
+              </properties>
+              <properties key="smoothmaxdepth">
+                <value tag="smoothmaxdepth" value="8"/>
+              </properties>
+              <properties key="method">
+                <value tag="method" value="auto"/>
+              </properties>
+              <feature xsi:type="com.comsol.mph-v15:MeshFeatureList" model="/" sequence="//@mesh/@meshes[key='mesh1']/@value"/>
+            </value>
+          </features>
+        </feature>
+        <meshnative numEntities="16,16,3" numEntitiesMesh="16,16,3" spaceDim="2"/>
+      </value>
+    </meshes>
+  </mesh>
+  <modelNode entityName="Extra Dimensions" entityComments="" entityAuthor="" entityCreationTime="1475716270289" model="/">
+    <modelNodes key="comp1">
+      <value tag="comp1" entityName="Component 1" entityComments="" entityAuthor="" entityCreationTime="1475716270727" identifier="comp1" defineLocalCoord="true">
+        <entityFlags>nodeactivate</entityFlags>
+      </value>
+    </modelNodes>
+  </modelNode>
+  <shape entityName="List" entityComments="" entityAuthor="" entityCreationTime="1475716270299" model="/"/>
+  <material entityName="Materials" entityComments="" entityAuthor="" entityCreationTime="1475716270238" model="/">
+    <materials key="mat1">
+      <value tag="mat1" storedParent="//@modelNode/@modelNodes[key='comp1']/@value" entityName="Fuel (UO2)" entityComments="" entityAuthor="" entityCreationTime="1475716710069" operationID="Common" identifier="mat1">
+        <selection xsi:type="com.comsol.mph-v15:XDLocalSelection" entityName="Selection" entityComments="" entityAuthor="" entityCreationTime="1475716710073" selType="geomdim" geom="//@geom/@geoms[key='geom1']/@value" domains="4,3" dim="2" hDim="2"/>
+        <properties key="family">
+          <value tag="family" value="plastic"/>
+        </properties>
+        <properties key="specular">
+          <value tag="specular" value="white"/>
+        </properties>
+        <properties key="customspecular">
+          <value tag="customspecular" valueArray="1|3,'1','1','1'"/>
+        </properties>
+        <properties key="customspecular_vector_method">
+          <value tag="customspecular_vector_method" value="step"/>
+        </properties>
+        <properties key="customspecular_vector_start">
+          <value tag="customspecular_vector_start" value=""/>
+        </properties>
+        <properties key="customspecular_vector_stop">
+          <value tag="customspecular_vector_stop" value=""/>
+        </properties>
+        <properties key="customspecular_vector_step">
+          <value tag="customspecular_vector_step" value=""/>
+        </properties>
+        <properties key="customspecular_vector_numvalues">
+          <value tag="customspecular_vector_numvalues" value=""/>
+        </properties>
+        <properties key="customspecular_vector_function">
+          <value tag="customspecular_vector_function" value="none"/>
+        </properties>
+        <properties key="diffuse">
+          <value tag="diffuse" value="white"/>
+        </properties>
+        <properties key="customdiffuse">
+          <value tag="customdiffuse" valueArray="1|3,'1','1','1'"/>
+        </properties>
+        <properties key="customdiffuse_vector_method">
+          <value tag="customdiffuse_vector_method" value="step"/>
+        </properties>
+        <properties key="customdiffuse_vector_start">
+          <value tag="customdiffuse_vector_start" value=""/>
+        </properties>
+        <properties key="customdiffuse_vector_stop">
+          <value tag="customdiffuse_vector_stop" value=""/>
+        </properties>
+        <properties key="customdiffuse_vector_step">
+          <value tag="customdiffuse_vector_step" value=""/>
+        </properties>
+        <properties key="customdiffuse_vector_numvalues">
+          <value tag="customdiffuse_vector_numvalues" value=""/>
+        </properties>
+        <properties key="customdiffuse_vector_function">
+          <value tag="customdiffuse_vector_function" value="none"/>
+        </properties>
+        <properties key="ambient">
+          <value tag="ambient" value="white"/>
+        </properties>
+        <properties key="customambient">
+          <value tag="customambient" valueArray="1|3,'1','1','1'"/>
+        </properties>
+        <properties key="customambient_vector_method">
+          <value tag="customambient_vector_method" value="step"/>
+        </properties>
+        <properties key="customambient_vector_start">
+          <value tag="customambient_vector_start" value=""/>
+        </properties>
+        <properties key="customambient_vector_stop">
+          <value tag="customambient_vector_stop" value=""/>
+        </properties>
+        <properties key="customambient_vector_step">
+          <value tag="customambient_vector_step" value=""/>
+        </properties>
+        <properties key="customambient_vector_numvalues">
+          <value tag="customambient_vector_numvalues" value=""/>
+        </properties>
+        <properties key="customambient_vector_function">
+          <value tag="customambient_vector_function" value="none"/>
+        </properties>
+        <properties key="noise">
+          <value tag="noise" value="off"/>
+        </properties>
+        <properties key="noisescale">
+          <value tag="noisescale" value="0"/>
+        </properties>
+        <properties key="noisefreq">
+          <value tag="noisefreq" value="0"/>
+        </properties>
+        <properties key="alpha">
+          <value tag="alpha" value="1"/>
+        </properties>
+        <properties key="lighting">
+          <value tag="lighting" value="simple"/>
+        </properties>
+        <properties key="fresnel">
+          <value tag="fresnel" value="0.5"/>
+        </properties>
+        <properties key="roughness">
+          <value tag="roughness" value="0.1"/>
+        </properties>
+        <properties key="shininess">
+          <value tag="shininess" value="100"/>
+        </properties>
+        <properties key="lastfamily">
+          <value tag="lastfamily" value="plastic"/>
+        </properties>
+        <materialmodel entityName="List" entityComments="" entityAuthor="" entityCreationTime="1475716710075" model="/">
+          <models key="def">
+            <value tag="def" entityName="Basic" entityComments="" entityAuthor="" entityCreationTime="1475716710078" identifier="def">
+              <entityFlags>noremove</entityFlags>
+              <entityFlags>norename</entityFlags>
+              <param key="thermalconductivity">
+                <value tag="thermalconductivity" value="9|1,'3.6'|1,'0'|1,'0'|1,'0'|1,'3.6'|1,'0'|1,'0'|1,'0'|1,'3.6'"/>
+              </param>
+              <param key="density">
+                <value tag="density" value="1|1,'1097'"/>
+              </param>
+              <param key="heatcapacity">
+                <value tag="heatcapacity" value="1|1,'247'"/>
+              </param>
+              <func model="/"/>
+            </value>
+          </models>
+        </materialmodel>
+      </value>
+    </materials>
+    <materials key="mat3">
+      <value tag="mat3" storedParent="//@modelNode/@modelNodes[key='comp1']/@value" entityName="Helium" entityComments="" entityAuthor="" entityCreationTime="1475716800592" operationID="Common" identifier="mat3">
+        <selection xsi:type="com.comsol.mph-v15:XDLocalSelection" entityName="Selection" entityComments="" entityAuthor="" entityCreationTime="1475716800602" selType="geomdim" geom="//@geom/@geoms[key='geom1']/@value" domains="4,2" dim="2" hDim="2"/>
+        <properties key="family">
+          <value tag="family" value="air"/>
+        </properties>
+        <properties key="specular">
+          <value tag="specular" value="white"/>
+        </properties>
+        <properties key="customspecular">
+          <value tag="customspecular" valueArray="1|3,'1','1','1'"/>
+        </properties>
+        <properties key="customspecular_vector_method">
+          <value tag="customspecular_vector_method" value="step"/>
+        </properties>
+        <properties key="customspecular_vector_start">
+          <value tag="customspecular_vector_start" value=""/>
+        </properties>
+        <properties key="customspecular_vector_stop">
+          <value tag="customspecular_vector_stop" value=""/>
+        </properties>
+        <properties key="customspecular_vector_step">
+          <value tag="customspecular_vector_step" value=""/>
+        </properties>
+        <properties key="customspecular_vector_numvalues">
+          <value tag="customspecular_vector_numvalues" value=""/>
+        </properties>
+        <properties key="customspecular_vector_function">
+          <value tag="customspecular_vector_function" value="none"/>
+        </properties>
+        <properties key="diffuse">
+          <value tag="diffuse" value="white"/>
+        </properties>
+        <properties key="customdiffuse">
+          <value tag="customdiffuse" valueArray="1|3,'1','1','1'"/>
+        </properties>
+        <properties key="customdiffuse_vector_method">
+          <value tag="customdiffuse_vector_method" value="step"/>
+        </properties>
+        <properties key="customdiffuse_vector_start">
+          <value tag="customdiffuse_vector_start" value=""/>
+        </properties>
+        <properties key="customdiffuse_vector_stop">
+          <value tag="customdiffuse_vector_stop" value=""/>
+        </properties>
+        <properties key="customdiffuse_vector_step">
+          <value tag="customdiffuse_vector_step" value=""/>
+        </properties>
+        <properties key="customdiffuse_vector_numvalues">
+          <value tag="customdiffuse_vector_numvalues" value=""/>
+        </properties>
+        <properties key="customdiffuse_vector_function">
+          <value tag="customdiffuse_vector_function" value="none"/>
+        </properties>
+        <properties key="ambient">
+          <value tag="ambient" value="white"/>
+        </properties>
+        <properties key="customambient">
+          <value tag="customambient" valueArray="1|3,'1','1','1'"/>
+        </properties>
+        <properties key="customambient_vector_method">
+          <value tag="customambient_vector_method" value="step"/>
+        </properties>
+        <properties key="customambient_vector_start">
+          <value tag="customambient_vector_start" value=""/>
+        </properties>
+        <properties key="customambient_vector_stop">
+          <value tag="customambient_vector_stop" value=""/>
+        </properties>
+        <properties key="customambient_vector_step">
+          <value tag="customambient_vector_step" value=""/>
+        </properties>
+        <properties key="customambient_vector_numvalues">
+          <value tag="customambient_vector_numvalues" value=""/>
+        </properties>
+        <properties key="customambient_vector_function">
+          <value tag="customambient_vector_function" value="none"/>
+        </properties>
+        <properties key="noise">
+          <value tag="noise" value="off"/>
+        </properties>
+        <properties key="noisescale">
+          <value tag="noisescale" value="0"/>
+        </properties>
+        <properties key="noisefreq">
+          <value tag="noisefreq" value="0"/>
+        </properties>
+        <properties key="alpha">
+          <value tag="alpha" value="1"/>
+        </properties>
+        <properties key="lighting">
+          <value tag="lighting" value="simple"/>
+        </properties>
+        <properties key="fresnel">
+          <value tag="fresnel" value="0.5"/>
+        </properties>
+        <properties key="roughness">
+          <value tag="roughness" value="0.1"/>
+        </properties>
+        <properties key="shininess">
+          <value tag="shininess" value="100"/>
+        </properties>
+        <properties key="lastfamily">
+          <value tag="lastfamily" value="air"/>
+        </properties>
+        <materialmodel entityName="List" entityComments="" entityAuthor="" entityCreationTime="1475716800602" model="/">
+          <models key="def">
+            <value tag="def" entityName="Basic" entityComments="" entityAuthor="" entityCreationTime="1475716800612" identifier="def">
+              <entityFlags>noremove</entityFlags>
+              <entityFlags>norename</entityFlags>
+              <param key="dynamicviscosity">
+                <value tag="dynamicviscosity" value="1|1,'eta(T[1/K])[Pa*s]'"/>
+              </param>
+              <param key="ratioofspecificheat">
+                <value tag="ratioofspecificheat" value="1|1,'1.66'"/>
+              </param>
+              <param key="heatcapacity">
+                <value tag="heatcapacity" value="1|1,'Cp(T[1/K])[J/(kg*K)]'"/>
+              </param>
+              <param key="density">
+                <value tag="density" value="1|1,'rho(pA[1/Pa]\,T[1/K])[kg/m^3]'"/>
+              </param>
+              <param key="thermalconductivity">
+                <value tag="thermalconductivity" value="9|1,'k(T[1/K])[W/(m*K)]'|1,'0'|1,'0'|1,'0'|1,'k(T[1/K])[W/(m*K)]'|1,'0'|1,'0'|1,'0'|1,'k(T[1/K])[W/(m*K)]'"/>
+              </param>
+              <input>temperature</input>
+              <input>pressure</input>
+              <func model="/">
+                <features key="eta">
+                  <value xsi:type="com.comsol.mph-v15:FunctionFeature" tag="eta" entityName="Piecewise" entityComments="" entityAuthor="" entityCreationTime="1475716800652" operationID="Piecewise">
+                    <properties key="relaxnamecheck">
+                      <value tag="relaxnamecheck" value="off"/>
+                    </properties>
+                    <properties key="funcname">
+                      <value tag="funcname" value="eta"/>
+                    </properties>
+                    <properties key="arg">
+                      <value tag="arg" value="T"/>
+                    </properties>
+                    <properties key="extrap">
+                      <value tag="extrap" value="constant"/>
+                    </properties>
+                    <properties key="extrapvalue">
+                      <value tag="extrapvalue" value="0"/>
+                    </properties>
+                    <properties key="smooth">
+                      <value tag="smooth" value="none"/>
+                    </properties>
+                    <properties key="zonelengthtype">
+                      <value tag="zonelengthtype" value="relative"/>
+                    </properties>
+                    <properties key="smoothzone">
+                      <value tag="smoothzone" value="0.1"/>
+                    </properties>
+                    <properties key="showbox">
+                      <value tag="showbox" value="off"/>
+                    </properties>
+                    <properties key="smoothends">
+                      <value tag="smoothends" value="off"/>
+                    </properties>
+                    <properties key="piecesexcelfilename">
+                      <value tag="piecesexcelfilename" value=""/>
+                    </properties>
+                    <properties key="piecesexcelsheet">
+                      <value tag="piecesexcelsheet" value=""/>
+                    </properties>
+                    <properties key="piecesexcelrange">
+                      <value tag="piecesexcelrange" value=""/>
+                    </properties>
+                    <properties key="piecesexceloverwrite">
+                      <value tag="piecesexceloverwrite" value="on"/>
+                    </properties>
+                    <properties key="piecesexcelincludeheaders">
+                      <value tag="piecesexcelincludeheaders" value="off"/>
+                    </properties>
+                    <properties key="piecesexcelseparateunits">
+                      <value tag="piecesexcelseparateunits" value="off"/>
+                    </properties>
+                    <properties key="pieces">
+                      <value tag="pieces" valueArray="1|3,'144.0','900.0','3.7251756E-6+6.83450863E-8*T^1-5.07299333E-11*T^2+2.36688744E-14*T^3'"/>
+                    </properties>
+                    <properties key="argunit">
+                      <value tag="argunit" value=""/>
+                    </properties>
+                    <properties key="fununit">
+                      <value tag="fununit" value=""/>
+                    </properties>
+                    <feature xsi:type="com.comsol.mph-v15:FunctionFeatureList" model="/"/>
+                  </value>
+                </features>
+                <features key="Cp">
+                  <value xsi:type="com.comsol.mph-v15:FunctionFeature" tag="Cp" entityName="Piecewise 2" entityComments="" entityAuthor="" entityCreationTime="1475716800662" operationID="Piecewise">
+                    <properties key="relaxnamecheck">
+                      <value tag="relaxnamecheck" value="off"/>
+                    </properties>
+                    <properties key="funcname">
+                      <value tag="funcname" value="Cp"/>
+                    </properties>
+                    <properties key="arg">
+                      <value tag="arg" value="T"/>
+                    </properties>
+                    <properties key="extrap">
+                      <value tag="extrap" value="constant"/>
+                    </properties>
+                    <properties key="extrapvalue">
+                      <value tag="extrapvalue" value="0"/>
+                    </properties>
+                    <properties key="smooth">
+                      <value tag="smooth" value="none"/>
+                    </properties>
+                    <properties key="zonelengthtype">
+                      <value tag="zonelengthtype" value="relative"/>
+                    </properties>
+                    <properties key="smoothzone">
+                      <value tag="smoothzone" value="0.1"/>
+                    </properties>
+                    <properties key="showbox">
+                      <value tag="showbox" value="off"/>
+                    </properties>
+                    <properties key="smoothends">
+                      <value tag="smoothends" value="off"/>
+                    </properties>
+                    <properties key="piecesexcelfilename">
+                      <value tag="piecesexcelfilename" value=""/>
+                    </properties>
+                    <properties key="piecesexcelsheet">
+                      <value tag="piecesexcelsheet" value=""/>
+                    </properties>
+                    <properties key="piecesexcelrange">
+                      <value tag="piecesexcelrange" value=""/>
+                    </properties>
+                    <properties key="piecesexceloverwrite">
+                      <value tag="piecesexceloverwrite" value="on"/>
+                    </properties>
+                    <properties key="piecesexcelincludeheaders">
+                      <value tag="piecesexcelincludeheaders" value="off"/>
+                    </properties>
+                    <properties key="piecesexcelseparateunits">
+                      <value tag="piecesexcelseparateunits" value="off"/>
+                    </properties>
+                    <properties key="pieces">
+                      <value tag="pieces" valueArray="1|3,'144.0','900.0','5200.0'"/>
+                    </properties>
+                    <properties key="argunit">
+                      <value tag="argunit" value=""/>
+                    </properties>
+                    <properties key="fununit">
+                      <value tag="fununit" value=""/>
+                    </properties>
+                    <feature xsi:type="com.comsol.mph-v15:FunctionFeatureList" model="/"/>
+                  </value>
+                </features>
+                <features key="rho">
+                  <value xsi:type="com.comsol.mph-v15:FunctionFeature" tag="rho" entityName="Analytic" entityComments="" entityAuthor="" entityCreationTime="1475716800672" operationID="Analytic">
+                    <properties key="relaxnamecheck">
+                      <value tag="relaxnamecheck" value="off"/>
+                    </properties>
+                    <properties key="funcname">
+                      <value tag="funcname" value="rho"/>
+                    </properties>
+                    <properties key="expr">
+                      <value tag="expr" value="pA*0.004003/8.314/T"/>
+                    </properties>
+                    <properties key="args">
+                      <value tag="args" valueArray="1|2,'pA','T'"/>
+                    </properties>
+                    <properties key="dermethod">
+                      <value tag="dermethod" value="manual"/>
+                    </properties>
+                    <properties key="argders">
+                      <value tag="argders" valueArray="2|2,'pA','d(pA*0.004003/8.314/T\,pA)'|2,'T','d(pA*0.004003/8.314/T\,T)'"/>
+                    </properties>
+                    <properties key="periodic">
+                      <value tag="periodic" value="off"/>
+                    </properties>
+                    <properties key="periodiclower">
+                      <value tag="periodiclower" value="0"/>
+                    </properties>
+                    <properties key="periodicupper">
+                      <value tag="periodicupper" value="1"/>
+                    </properties>
+                    <properties key="argunit">
+                      <value tag="argunit" value=""/>
+                    </properties>
+                    <properties key="fununit">
+                      <value tag="fununit" value=""/>
+                    </properties>
+                    <properties key="complex">
+                      <value tag="complex" value="off"/>
+                    </properties>
+                    <properties key="plotargs">
+                      <value tag="plotargs" valueArray="2|3,'pA','0','1'|3,'T','0','1'"/>
+                    </properties>
+                    <feature xsi:type="com.comsol.mph-v15:FunctionFeatureList" model="/"/>
+                  </value>
+                </features>
+                <features key="k">
+                  <value xsi:type="com.comsol.mph-v15:FunctionFeature" tag="k" entityName="Piecewise 3" entityComments="" entityAuthor="" entityCreationTime="1475716800682" operationID="Piecewise">
+                    <properties key="relaxnamecheck">
+                      <value tag="relaxnamecheck" value="off"/>
+                    </properties>
+                    <properties key="funcname">
+                      <value tag="funcname" value="k"/>
+                    </properties>
+                    <properties key="arg">
+                      <value tag="arg" value="T"/>
+                    </properties>
+                    <properties key="extrap">
+                      <value tag="extrap" value="constant"/>
+                    </properties>
+                    <properties key="extrapvalue">
+                      <value tag="extrapvalue" value="0"/>
+                    </properties>
+                    <properties key="smooth">
+                      <value tag="smooth" value="none"/>
+                    </properties>
+                    <properties key="zonelengthtype">
+                      <value tag="zonelengthtype" value="relative"/>
+                    </properties>
+                    <properties key="smoothzone">
+                      <value tag="smoothzone" value="0.1"/>
+                    </properties>
+                    <properties key="showbox">
+                      <value tag="showbox" value="off"/>
+                    </properties>
+                    <properties key="smoothends">
+                      <value tag="smoothends" value="off"/>
+                    </properties>
+                    <properties key="piecesexcelfilename">
+                      <value tag="piecesexcelfilename" value=""/>
+                    </properties>
+                    <properties key="piecesexcelsheet">
+                      <value tag="piecesexcelsheet" value=""/>
+                    </properties>
+                    <properties key="piecesexcelrange">
+                      <value tag="piecesexcelrange" value=""/>
+                    </properties>
+                    <properties key="piecesexceloverwrite">
+                      <value tag="piecesexceloverwrite" value="on"/>
+                    </properties>
+                    <properties key="piecesexcelincludeheaders">
+                      <value tag="piecesexcelincludeheaders" value="off"/>
+                    </properties>
+                    <properties key="piecesexcelseparateunits">
+                      <value tag="piecesexcelseparateunits" value="off"/>
+                    </properties>
+                    <properties key="pieces">
+                      <value tag="pieces" valueArray="1|3,'144.0','900.0','0.0294900023+5.07655059E-4*T^1-4.22501605E-7*T^2+2.1209438E-10*T^3'"/>
+                    </properties>
+                    <properties key="argunit">
+                      <value tag="argunit" value=""/>
+                    </properties>
+                    <properties key="fununit">
+                      <value tag="fununit" value=""/>
+                    </properties>
+                    <feature xsi:type="com.comsol.mph-v15:FunctionFeatureList" model="/"/>
+                  </value>
+                </features>
+              </func>
+            </value>
+          </models>
+        </materialmodel>
+      </value>
+    </materials>
+    <materials key="mat4">
+      <value tag="mat4" storedParent="//@modelNode/@modelNodes[key='comp1']/@value" entityName="Clad (Zirc2)" entityComments="" entityAuthor="" entityCreationTime="1475716814718" operationID="Common" identifier="mat4">
+        <selection xsi:type="com.comsol.mph-v15:XDLocalSelection" entityName="Selection" entityComments="" entityAuthor="" entityCreationTime="1475716814728" selType="geomdim" geom="//@geom/@geoms[key='geom1']/@value" domains="4,1" dim="2" hDim="2"/>
+        <properties key="family">
+          <value tag="family" value="plastic"/>
+        </properties>
+        <properties key="specular">
+          <value tag="specular" value="white"/>
+        </properties>
+        <properties key="customspecular">
+          <value tag="customspecular" valueArray="1|3,'1','1','1'"/>
+        </properties>
+        <properties key="customspecular_vector_method">
+          <value tag="customspecular_vector_method" value="step"/>
+        </properties>
+        <properties key="customspecular_vector_start">
+          <value tag="customspecular_vector_start" value=""/>
+        </properties>
+        <properties key="customspecular_vector_stop">
+          <value tag="customspecular_vector_stop" value=""/>
+        </properties>
+        <properties key="customspecular_vector_step">
+          <value tag="customspecular_vector_step" value=""/>
+        </properties>
+        <properties key="customspecular_vector_numvalues">
+          <value tag="customspecular_vector_numvalues" value=""/>
+        </properties>
+        <properties key="customspecular_vector_function">
+          <value tag="customspecular_vector_function" value="none"/>
+        </properties>
+        <properties key="diffuse">
+          <value tag="diffuse" value="white"/>
+        </properties>
+        <properties key="customdiffuse">
+          <value tag="customdiffuse" valueArray="1|3,'1','1','1'"/>
+        </properties>
+        <properties key="customdiffuse_vector_method">
+          <value tag="customdiffuse_vector_method" value="step"/>
+        </properties>
+        <properties key="customdiffuse_vector_start">
+          <value tag="customdiffuse_vector_start" value=""/>
+        </properties>
+        <properties key="customdiffuse_vector_stop">
+          <value tag="customdiffuse_vector_stop" value=""/>
+        </properties>
+        <properties key="customdiffuse_vector_step">
+          <value tag="customdiffuse_vector_step" value=""/>
+        </properties>
+        <properties key="customdiffuse_vector_numvalues">
+          <value tag="customdiffuse_vector_numvalues" value=""/>
+        </properties>
+        <properties key="customdiffuse_vector_function">
+          <value tag="customdiffuse_vector_function" value="none"/>
+        </properties>
+        <properties key="ambient">
+          <value tag="ambient" value="white"/>
+        </properties>
+        <properties key="customambient">
+          <value tag="customambient" valueArray="1|3,'1','1','1'"/>
+        </properties>
+        <properties key="customambient_vector_method">
+          <value tag="customambient_vector_method" value="step"/>
+        </properties>
+        <properties key="customambient_vector_start">
+          <value tag="customambient_vector_start" value=""/>
+        </properties>
+        <properties key="customambient_vector_stop">
+          <value tag="customambient_vector_stop" value=""/>
+        </properties>
+        <properties key="customambient_vector_step">
+          <value tag="customambient_vector_step" value=""/>
+        </properties>
+        <properties key="customambient_vector_numvalues">
+          <value tag="customambient_vector_numvalues" value=""/>
+        </properties>
+        <properties key="customambient_vector_function">
+          <value tag="customambient_vector_function" value="none"/>
+        </properties>
+        <properties key="noise">
+          <value tag="noise" value="off"/>
+        </properties>
+        <properties key="noisescale">
+          <value tag="noisescale" value="0"/>
+        </properties>
+        <properties key="noisefreq">
+          <value tag="noisefreq" value="0"/>
+        </properties>
+        <properties key="alpha">
+          <value tag="alpha" value="1"/>
+        </properties>
+        <properties key="lighting">
+          <value tag="lighting" value="simple"/>
+        </properties>
+        <properties key="fresnel">
+          <value tag="fresnel" value="0.5"/>
+        </properties>
+        <properties key="roughness">
+          <value tag="roughness" value="0.1"/>
+        </properties>
+        <properties key="shininess">
+          <value tag="shininess" value="100"/>
+        </properties>
+        <properties key="lastfamily">
+          <value tag="lastfamily" value="plastic"/>
+        </properties>
+        <materialmodel entityName="List" entityComments="" entityAuthor="" entityCreationTime="1475716814729" model="/">
+          <models key="def">
+            <value tag="def" entityName="Basic" entityComments="" entityAuthor="" entityCreationTime="1475716814732" identifier="def">
+              <entityFlags>noremove</entityFlags>
+              <entityFlags>norename</entityFlags>
+              <param key="thermalconductivity">
+                <value tag="thermalconductivity" value="9|1,'13'|1,'0'|1,'0'|1,'0'|1,'13'|1,'0'|1,'0'|1,'0'|1,'13'"/>
+              </param>
+              <param key="density">
+                <value tag="density" value="1|1,'6500'"/>
+              </param>
+              <param key="heatcapacity">
+                <value tag="heatcapacity" value="1|1,'330'"/>
+              </param>
+              <func model="/"/>
+            </value>
+          </models>
+        </materialmodel>
+      </value>
+    </materials>
+    <valid>true</valid>
+  </material>
+  <physics entityName="Physics" entityComments="" entityAuthor="" entityCreationTime="1475716270238" model="/">
+    <physints key="ht">
+      <value tag="ht" entityName="Heat Transfer in Solids" entityComments="" entityAuthor="" entityCreationTime="1475716271427" applmodeID="HeatTransfer" geom="//@geom/@geoms[key='geom1']/@value" applmodeIDs="0" identifier="ht">
+        <selection entityName="Selection" entityComments="" entityAuthor="" entityCreationTime="1475716271077" selType="geomdim" geom="//@geom/@geoms[key='geom1']/@value" allgeom="true" dim="2" hDim="2"/>
+        <prop model="/">
+          <props key="ShapeProperty">
+            <value tag="ShapeProperty" applmode="//@physics/@physints[key='ht']/@value">
+              <param key="order_temperature">
+                <value tag="order_temperature" value="1|1,'2'"/>
+              </param>
+              <param key="boundaryFlux_temperature">
+                <value tag="boundaryFlux_temperature" value="1|1,'1'"/>
+              </param>
+              <param key="boundaryFluxSmooth_temperature">
+                <value tag="boundaryFluxSmooth_temperature" value="1|1,'1'"/>
+              </param>
+              <param key="hiddenRowLabels">
+                <value tag="hiddenRowLabels" value="1|1,'Temperature'"/>
+              </param>
+              <param key="valueType">
+                <value tag="valueType" value="1|1,'real'"/>
+              </param>
+              <param key="frame">
+                <value tag="frame" value="1|1,'spatial'"/>
+              </param>
+            </value>
+          </props>
+          <props key="EquationForm">
+            <value tag="EquationForm" applmode="//@physics/@physints[key='ht']/@value">
+              <param key="form">
+                <value tag="form" value="1|1,'Automatic'"/>
+              </param>
+              <param key="freq_src">
+                <value tag="freq_src" value="1|1,'fromSolver'"/>
+              </param>
+              <param key="freq">
+                <value tag="freq" value="1|1,'1[kHz]'"/>
+              </param>
+              <param key="showAllModelInputs">
+                <value tag="showAllModelInputs" value="1|1,'0'"/>
+              </param>
+            </value>
+          </props>
+          <props key="equationDisplayHTSolids">
+            <value tag="equationDisplayHTSolids" applmode="//@physics/@physints[key='ht']/@value"/>
+          </props>
+          <props key="PhysicalModelProperty">
+            <value tag="PhysicalModelProperty" applmode="//@physics/@physints[key='ht']/@value">
+              <param key="outOfPlaneProperty">
+                <value tag="outOfPlaneProperty" value="1|1,'1'"/>
+              </param>
+              <param key="dz">
+                <value tag="dz" value="1|1,'1[m]'"/>
+              </param>
+              <param key="SurfaceToSurfaceRadiation">
+                <value tag="SurfaceToSurfaceRadiation" value="1|1,'0'"/>
+              </param>
+              <param key="RadiationInParticipatingMedia">
+                <value tag="RadiationInParticipatingMedia" value="1|1,'0'"/>
+              </param>
+              <param key="HeatTransferInBiologicalTissue">
+                <value tag="HeatTransferInBiologicalTissue" value="1|1,'0'"/>
+              </param>
+              <param key="IsothermalDomain">
+                <value tag="IsothermalDomain" value="1|1,'0'"/>
+              </param>
+              <param key="HeatTransferInPorousMedia">
+                <value tag="HeatTransferInPorousMedia" value="1|1,'0'"/>
+              </param>
+              <param key="PorousMatrixModelType">
+                <value tag="PorousMatrixModelType" value="1|1,'Standard'"/>
+              </param>
+              <param key="isStandalone">
+                <value tag="isStandalone" value="1|1,'0'"/>
+              </param>
+              <param key="isLocalThermalNonEquilibrium">
+                <value tag="isLocalThermalNonEquilibrium" value="1|1,'0'"/>
+              </param>
+              <param key="IsMaterialFrame">
+                <value tag="IsMaterialFrame" value="1|1,'0'"/>
+              </param>
+              <param key="IsGlobalSystem">
+                <value tag="IsGlobalSystem" value="1|1,'1'"/>
+              </param>
+              <param key="solvesFrameSplitting">
+                <value tag="solvesFrameSplitting" value="1|1,'0'"/>
+              </param>
+            </value>
+          </props>
+          <props key="ConsistentStabilization">
+            <value tag="ConsistentStabilization" applmode="//@physics/@physints[key='ht']/@value">
+              <param key="heatStreamlineDiffusion">
+                <value tag="heatStreamlineDiffusion" value="1|1,'1'"/>
+              </param>
+              <param key="heatCrosswindDiffusion">
+                <value tag="heatCrosswindDiffusion" value="1|1,'1'"/>
+              </param>
+              <param key="glim">
+                <value tag="glim" value="1|1,'(0.01[K])/ht.helem'"/>
+              </param>
+              <param key="CrosswindDiffusionOldFormS">
+                <value tag="CrosswindDiffusionOldFormS" value="1|1,'0'"/>
+              </param>
+              <param key="StreamlineDiffusionOldForm">
+                <value tag="StreamlineDiffusionOldForm" value="1|1,'0'"/>
+              </param>
+            </value>
+          </props>
+          <props key="InconsistentStabilization">
+            <value tag="InconsistentStabilization" applmode="//@physics/@physints[key='ht']/@value">
+              <param key="HeatIsotropicDiffusion">
+                <value tag="HeatIsotropicDiffusion" value="1|1,'0'"/>
+              </param>
+              <param key="delidht">
+                <value tag="delidht" value="1|1,'0.25'"/>
+              </param>
+            </value>
+          </props>
+          <props key="DamageIntegralAnalysisDiscretization">
+            <value tag="DamageIntegralAnalysisDiscretization" applmode="//@physics/@physints[key='ht']/@value">
+              <param key="DamagedTissueShapeFunction">
+                <value tag="DamagedTissueShapeFunction" value="1|1,'DiscontinuousLagrange'"/>
+              </param>
+              <param key="OrderDisc">
+                <value tag="OrderDisc" value="1|1,'0'"/>
+              </param>
+              <param key="OrderCont">
+                <value tag="OrderCont" value="1|1,'1'"/>
+              </param>
+            </value>
+          </props>
+          <props key="RadiationProperty">
+            <value tag="RadiationProperty" applmode="//@physics/@physints[key='ht']/@value">
+              <param key="nS2S">
+                <value tag="nS2S" value="1|1,'1'"/>
+              </param>
+              <param key="RadiationMethod">
+                <value tag="RadiationMethod" value="1|1,'hemicube'"/>
+              </param>
+              <param key="RadiationIntegrationOrder">
+                <value tag="RadiationIntegrationOrder" value="1|1,'4'"/>
+              </param>
+              <param key="RadiationResolution">
+                <value tag="RadiationResolution" value="1|1,'256'"/>
+              </param>
+              <param key="RadiationGroups">
+                <value tag="RadiationGroups" value="1|1,'0'"/>
+              </param>
+              <param key="order_heatflux">
+                <value tag="order_heatflux" value="1|1,'1'"/>
+              </param>
+              <param key="WavelengthDependenceOfEmissivity">
+                <value tag="WavelengthDependenceOfEmissivity" value="1|1,'Constant'"/>
+              </param>
+              <param key="numberOfWavelengthBands">
+                <value tag="numberOfWavelengthBands" value="1|1,'2'"/>
+              </param>
+              <param key="lambda1">
+                <value tag="lambda1" value="1|1,'2.5[um]'"/>
+              </param>
+              <param key="lambda1_NN">
+                <value tag="lambda1_NN" value="1|1,'0.5[um]'"/>
+              </param>
+              <param key="lambda2">
+                <value tag="lambda2" value="1|1,'2.5[um]'"/>
+              </param>
+              <param key="lambda3">
+                <value tag="lambda3" value="1|1,'10[um]'"/>
+              </param>
+              <param key="lambda4">
+                <value tag="lambda4" value="1|1,'50[um]'"/>
+              </param>
+              <param key="fieldName">
+                <value tag="fieldName" value="1|1,'#'"/>
+              </param>
+              <param key="ExteriorRadiation">
+                <value tag="ExteriorRadiation" value="1|1,'Transparent'"/>
+              </param>
+              <param key="ExteriorRadiationSol">
+                <value tag="ExteriorRadiationSol" value="1|1,'Transparent'"/>
+              </param>
+              <param key="ExteriorRadiationAmb">
+                <value tag="ExteriorRadiationAmb" value="1|1,'Transparent'"/>
+              </param>
+              <param key="ExteriorRadiationB1">
+                <value tag="ExteriorRadiationB1" value="1|1,'Transparent'"/>
+              </param>
+              <param key="ExteriorRadiationB2">
+                <value tag="ExteriorRadiationB2" value="1|1,'Transparent'"/>
+              </param>
+              <param key="ExteriorRadiationB3">
+                <value tag="ExteriorRadiationB3" value="1|1,'Transparent'"/>
+              </param>
+              <param key="ExteriorRadiationB4">
+                <value tag="ExteriorRadiationB4" value="1|1,'Transparent'"/>
+              </param>
+              <param key="ExteriorRadiationB5">
+                <value tag="ExteriorRadiationB5" value="1|1,'Transparent'"/>
+              </param>
+            </value>
+          </props>
+          <props key="ParticipatingMediaSettingsProperty">
+            <value tag="ParticipatingMediaSettingsProperty" applmode="//@physics/@physints[key='ht']/@value">
+              <param key="RadiationDiscretizationMethod">
+                <value tag="RadiationDiscretizationMethod" value="1|1,'DiscreteOrdinateMethod'"/>
+              </param>
+              <param key="nrad">
+                <value tag="nrad" value="1|1,'1'"/>
+              </param>
+              <param key="PerfIndex">
+                <value tag="PerfIndex" value="1|1,'0.4'"/>
+              </param>
+              <param key="DiscreteOrdinatesMethod">
+                <value tag="DiscreteOrdinatesMethod" value="1|1,'S4'"/>
+              </param>
+              <param key="DiscretizationLevel">
+                <value tag="DiscretizationLevel" value="1|1,'1'"/>
+              </param>
+            </value>
+          </props>
+          <props key="NormalVector">
+            <value tag="NormalVector" applmode="//@physics/@physints[key='ht']/@value"/>
+          </props>
+          <props key="PropertyLinks">
+            <value tag="PropertyLinks" applmode="//@physics/@physints[key='ht']/@value"/>
+          </props>
+          <props key="AdvancedSettingProperty">
+            <value tag="AdvancedSettingProperty" applmode="//@physics/@physints[key='ht']/@value">
+              <param key="EnableFramesConversion">
+                <value tag="EnableFramesConversion" value="1|1,'1'"/>
+              </param>
+            </value>
+          </props>
+          <props key="HeatBalanceGlobalVariables">
+            <value tag="HeatBalanceGlobalVariables" applmode="//@physics/@physints[key='ht']/@value"/>
+          </props>
+          <props key="StudyStep">
+            <value tag="StudyStep" applmode="//@physics/@physints[key='ht']/@value">
+              <param key="StudyStep">
+                <value tag="StudyStep" value="1|1,'std1/stat'"/>
+              </param>
+            </value>
+          </props>
+        </prop>
+        <field model="/">
+          <fields key="temperature">
+            <value tag="temperature" applfieldID="temperature" components="1,'T'" applmode="//@physics/@physints[key='ht']/@value" fieldname="T">
+              <entityFlags>noremove</entityFlags>
+              <entityFlags>norename</entityFlags>
+              <entityFlags>nodeactivate</entityFlags>
+            </value>
+          </fields>
+        </field>
+        <feature model="/" appl="//@physics/@physints[key='ht']/@value">
+          <features key="solid1">
+            <value tag="solid1" entityName="Heat Transfer in Solids 1" entityComments="" entityAuthor="" entityCreationTime="1475716271087" applfeatureID="SolidHeatTransferModel" applmode="//@physics/@physints[key='ht']/@value" edim="2" default="true">
+              <tags tag="DomainType" values="1,'GEOMETRY'"/>
+              <entityFlags>noremove</entityFlags>
+              <entityFlags>nodeactivate</entityFlags>
+              <selection xsi:type="com.comsol.mph-v15:XDLocalSelection" entityName="Selection" entityComments="" entityAuthor="" entityCreationTime="1475716271097" selType="geomdim" locked="true" geom="//@geom/@geoms[key='geom1']/@value" allgeom="true" dim="2" hDim="2"/>
+              <param key="Solid_material">
+                <value tag="Solid_material" value="1|1,'dommat'"/>
+              </param>
+              <param key="k_mat">
+                <value tag="k_mat" value="1|1,'from_mat'"/>
+              </param>
+              <param key="k">
+                <value tag="k" value="9|1,'0'|1,'0'|1,'0'|1,'0'|1,'0'|1,'0'|1,'0'|1,'0'|1,'0'"/>
+              </param>
+              <param key="rho_mat">
+                <value tag="rho_mat" value="1|1,'from_mat'"/>
+              </param>
+              <param key="rho">
+                <value tag="rho" value="1|1,'0'"/>
+              </param>
+              <param key="Cp_mat">
+                <value tag="Cp_mat" value="1|1,'from_mat'"/>
+              </param>
+              <param key="Cp">
+                <value tag="Cp" value="1|1,'0'"/>
+              </param>
+              <param key="u_prime_src">
+                <value tag="u_prime_src" value="1|1,'userdef'"/>
+              </param>
+              <param key="u_prime">
+                <value tag="u_prime" value="3|1,'0'|1,'0'|1,'0'"/>
+              </param>
+              <param key="pRef_src">
+                <value tag="pRef_src" value="1|1,'userdef'"/>
+              </param>
+              <param key="pRef">
+                <value tag="pRef" value="1|1,'1[atm]'"/>
+              </param>
+              <param key="crosswind">
+                <value tag="crosswind" value="1|1,'0'"/>
+              </param>
+              <param key="streamline">
+                <value tag="streamline" value="1|1,'0'"/>
+              </param>
+              <param key="coordinateSystem">
+                <value tag="coordinateSystem" value="1|1,'GlobalSystem'"/>
+              </param>
+              <param key="minput_temperature_src">
+                <value tag="minput_temperature_src" value="1|1,'userdef'"/>
+              </param>
+              <param key="minput_temperature">
+                <value tag="minput_temperature" value="1|1,'293.15[K]'"/>
+              </param>
+              <param key="minput_pressure_src">
+                <value tag="minput_pressure_src" value="1|1,'userdef'"/>
+              </param>
+              <param key="minput_pressure">
+                <value tag="minput_pressure" value="1|1,'1[atm]'"/>
+              </param>
+              <param key="minput_electricfield_src">
+                <value tag="minput_electricfield_src" value="1|1,'userdef'"/>
+              </param>
+              <param key="minput_electricfield">
+                <value tag="minput_electricfield" value="3|1,'0'|1,'0'|1,'0'"/>
+              </param>
+              <param key="minput_magneticfield_src">
+                <value tag="minput_magneticfield_src" value="1|1,'userdef'"/>
+              </param>
+              <param key="minput_magneticfield">
+                <value tag="minput_magneticfield" value="3|1,'0'|1,'0'|1,'0'"/>
+              </param>
+              <param key="minput_magneticfluxdensity_src">
+                <value tag="minput_magneticfluxdensity_src" value="1|1,'userdef'"/>
+              </param>
+              <param key="minput_magneticfluxdensity">
+                <value tag="minput_magneticfluxdensity" value="3|1,'0'|1,'0'|1,'0'"/>
+              </param>
+              <param key="minput_velocity_src">
+                <value tag="minput_velocity_src" value="1|1,'userdef'"/>
+              </param>
+              <param key="minput_velocity">
+                <value tag="minput_velocity" value="3|1,'0'|1,'0'|1,'0'"/>
+              </param>
+              <param key="minput_frequency_src">
+                <value tag="minput_frequency_src" value="1|1,'userdef'"/>
+              </param>
+              <param key="minput_frequency">
+                <value tag="minput_frequency" value="1|1,'root.freq'"/>
+              </param>
+              <param key="minput_stress_src">
+                <value tag="minput_stress_src" value="1|1,'userdef'"/>
+              </param>
+              <param key="minput_stress">
+                <value tag="minput_stress" value="9|1,'0'|1,'0'|1,'0'|1,'0'|1,'0'|1,'0'|1,'0'|1,'0'|1,'0'"/>
+              </param>
+              <param key="minput_effectiveplasticstrain_src">
+                <value tag="minput_effectiveplasticstrain_src" value="1|1,'userdef'"/>
+              </param>
+              <param key="minput_effectiveplasticstrain">
+                <value tag="minput_effectiveplasticstrain" value="1|1,'0'"/>
+              </param>
+              <param key="minput_strainreferencetemperature_src">
+                <value tag="minput_strainreferencetemperature_src" value="1|1,'userdef'"/>
+              </param>
+              <param key="minput_strainreferencetemperature">
+                <value tag="minput_strainreferencetemperature" value="1|1,'293.15[K]'"/>
+              </param>
+              <param key="minput_concentration_src">
+                <value tag="minput_concentration_src" value="1|1,'userdef'"/>
+              </param>
+              <param key="minput_concentration">
+                <value tag="minput_concentration" value="1|1,'0'"/>
+              </param>
+              <param key="minput_numberdensity_src">
+                <value tag="minput_numberdensity_src" value="1|1,'userdef'"/>
+              </param>
+              <param key="minput_numberdensity">
+                <value tag="minput_numberdensity" value="1|1,'0'"/>
+              </param>
+              <param key="minput_currentdensity_src">
+                <value tag="minput_currentdensity_src" value="1|1,'userdef'"/>
+              </param>
+              <param key="minput_currentdensity">
+                <value tag="minput_currentdensity" value="3|1,'0'|1,'0'|1,'0'"/>
+              </param>
+              <param key="editModelInputs">
+                <value tag="editModelInputs" value="1|1,'0'"/>
+              </param>
+              <param key="StudyStep">
+                <value tag="StudyStep" value="1|1,'std1/stat'"/>
+              </param>
+              <feature model="/" appl="//@physics/@physints[key='ht']/@value">
+                <features key="opq1">
+                  <value tag="opq1" activeFlag="false" entityName="Opaque 1" entityComments="" entityAuthor="" entityCreationTime="1475716271097" applfeatureID="Opaque" applmode="//@physics/@physints[key='ht']/@value" edim="2" default="true">
+                    <tags tag="DomainType" values="1,'ACTIVE'"/>
+                    <entityFlags>autodeactivate</entityFlags>
+                    <entityFlags>noremove</entityFlags>
+                    <entityFlags>nodeactivate</entityFlags>
+                    <selection xsi:type="com.comsol.mph-v15:XDLocalSelection" entityName="Selection" entityComments="" entityAuthor="" entityCreationTime="1475716271097" selType="geomdim" geom="//@geom/@geoms[key='geom1']/@value" allgeom="true" dim="2" hDim="2"/>
+                    <param key="OpaqueB1">
+                      <value tag="OpaqueB1" value="1|1,'1'"/>
+                    </param>
+                    <param key="OpaqueB2">
+                      <value tag="OpaqueB2" value="1|1,'1'"/>
+                    </param>
+                    <param key="OpaqueB3">
+                      <value tag="OpaqueB3" value="1|1,'1'"/>
+                    </param>
+                    <param key="OpaqueB4">
+                      <value tag="OpaqueB4" value="1|1,'1'"/>
+                    </param>
+                    <param key="OpaqueB5">
+                      <value tag="OpaqueB5" value="1|1,'1'"/>
+                    </param>
+                    <param key="OpaqueB1S">
+                      <value tag="OpaqueB1S" value="1|1,'1'"/>
+                    </param>
+                    <param key="OpaqueB2S">
+                      <value tag="OpaqueB2S" value="1|1,'1'"/>
+                    </param>
+                    <param key="StudyStep">
+                      <value tag="StudyStep" value="1|1,'0'"/>
+                    </param>
+                    <feature model="/" appl="//@physics/@physints[key='ht']/@value"/>
+                    <featureInfo model="/">
+                      <objects key="info">
+                        <value tag="info" entityName="Equation View" entityComments="" entityAuthor="" entityCreationTime="1475716271097">
+                          <entityFlags>noremove</entityFlags>
+                          <entityFlags>nodeactivate</entityFlags>
+                        </value>
+                      </objects>
+                    </featureInfo>
+                  </value>
+                </features>
+              </feature>
+              <featureInfo model="/">
+                <objects key="info">
+                  <value tag="info" entityName="Equation View" entityComments="" entityAuthor="" entityCreationTime="1475716271097" touched="true" studyType="/StudyList/std1/StudyFeatureList/stat">
+                    <entityFlags>noremove</entityFlags>
+                    <entityFlags>nodeactivate</entityFlags>
+                  </value>
+                </objects>
+              </featureInfo>
+            </value>
+          </features>
+          <features key="init1">
+            <value tag="init1" entityName="Initial Values 1" entityComments="" entityAuthor="" entityCreationTime="1475716271097" applfeatureID="init" applmode="//@physics/@physints[key='ht']/@value" edim="2" default="true">
+              <tags tag="DomainType" values="1,'GEOMETRY'"/>
+              <entityFlags>noremove</entityFlags>
+              <entityFlags>nodeactivate</entityFlags>
+              <selection xsi:type="com.comsol.mph-v15:XDLocalSelection" entityName="Selection" entityComments="" entityAuthor="" entityCreationTime="1475716271097" selType="geomdim" locked="true" geom="//@geom/@geoms[key='geom1']/@value" allgeom="true" dim="2" hDim="2"/>
+              <param key="Tinit">
+                <value tag="Tinit" value="1|1,'293.15[K]'"/>
+              </param>
+              <param key="StudyStep">
+                <value tag="StudyStep" value="1|1,'std1/stat'"/>
+              </param>
+              <feature model="/" appl="//@physics/@physints[key='ht']/@value"/>
+              <featureInfo model="/">
+                <objects key="info">
+                  <value tag="info" entityName="Equation View" entityComments="" entityAuthor="" entityCreationTime="1475716271097" touched="true" studyType="/StudyList/std1/StudyFeatureList/stat">
+                    <entityFlags>noremove</entityFlags>
+                    <entityFlags>nodeactivate</entityFlags>
+                  </value>
+                </objects>
+              </featureInfo>
+            </value>
+          </features>
+          <features key="ins1">
+            <value tag="ins1" entityName="Thermal Insulation 1" entityComments="" entityAuthor="" entityCreationTime="1475716271097" applfeatureID="ThermalInsulation" applmode="//@physics/@physints[key='ht']/@value" edim="1" default="true">
+              <tags tag="DomainType" values="1,'EXTERIOR'"/>
+              <entityFlags>noremove</entityFlags>
+              <entityFlags>nodeactivate</entityFlags>
+              <selection xsi:type="com.comsol.mph-v15:XDLocalSelection" entityName="Selection" entityComments="" entityAuthor="" entityCreationTime="1475716271107" selType="geomdim" locked="true" geom="//@geom/@geoms[key='geom1']/@value" allgeom="true" dim="1" hDim="1"/>
+              <param key="StudyStep">
+                <value tag="StudyStep" value="1|1,'std1/stat'"/>
+              </param>
+              <feature model="/" appl="//@physics/@physints[key='ht']/@value"/>
+              <featureInfo model="/">
+                <objects key="info">
+                  <value tag="info" entityName="Equation View" entityComments="" entityAuthor="" entityCreationTime="1475716271107" touched="true" studyType="/StudyList/std1/StudyFeatureList/stat">
+                    <entityFlags>noremove</entityFlags>
+                    <entityFlags>nodeactivate</entityFlags>
+                  </value>
+                </objects>
+              </featureInfo>
+            </value>
+          </features>
+          <features key="idi1">
+            <value tag="idi1" activeFlag="false" entityName="Isothermal Domain Interface 1" entityComments="" entityAuthor="" entityCreationTime="1475716271107" applfeatureID="IsothermalDomainInterface" applmode="//@physics/@physints[key='ht']/@value" edim="1" default="true">
+              <tags tag="DomainType" values="1,'EXTERIOR'"/>
+              <entityFlags>autodeactivate</entityFlags>
+              <entityFlags>noremove</entityFlags>
+              <entityFlags>nodeactivate</entityFlags>
+              <selection xsi:type="com.comsol.mph-v15:XDLocalSelection" entityName="Selection" entityComments="" entityAuthor="" entityCreationTime="1475716271107" selType="geomdim" locked="true" geom="//@geom/@geoms[key='geom1']/@value" allgeom="true" dim="1" hDim="1"/>
+              <param key="InterfaceType">
+                <value tag="InterfaceType" value="1|1,'ThermalInsulation'"/>
+              </param>
+              <param key="FlowDirectionType">
+                <value tag="FlowDirectionType" value="1|1,'FlowDirectionPlus'"/>
+              </param>
+              <param key="VentilationPlusChoice">
+                <value tag="VentilationPlusChoice" value="1|1,'MassFluxPlus'"/>
+              </param>
+              <param key="VentilationMinusChoice">
+                <value tag="VentilationMinusChoice" value="1|1,'MassFluxMinus'"/>
+              </param>
+              <param key="VentilationBothChoice">
+                <value tag="VentilationBothChoice" value="1|1,'MassFluxBoth'"/>
+              </param>
+              <param key="ConvectiveHeatFluxChoice">
+                <value tag="ConvectiveHeatFluxChoice" value="1|1,'HeatTransferCoefficient'"/>
+              </param>
+              <param key="ThermalContactChoice">
+                <value tag="ThermalContactChoice" value="1|1,'ThermalResistance'"/>
+              </param>
+              <param key="h">
+                <value tag="h" value="1|1,'0'"/>
+              </param>
+              <param key="hth">
+                <value tag="hth" value="1|1,'0'"/>
+              </param>
+              <param key="mfPlus">
+                <value tag="mfPlus" value="1|1,'0'"/>
+              </param>
+              <param key="mrPlus">
+                <value tag="mrPlus" value="1|1,'0'"/>
+              </param>
+              <param key="mfMinus">
+                <value tag="mfMinus" value="1|1,'0'"/>
+              </param>
+              <param key="mrMinus">
+                <value tag="mrMinus" value="1|1,'0'"/>
+              </param>
+              <param key="mfBothPlus">
+                <value tag="mfBothPlus" value="1|1,'0'"/>
+              </param>
+              <param key="mrBothPlus">
+                <value tag="mrBothPlus" value="1|1,'0'"/>
+              </param>
+              <param key="mfBothMinus">
+                <value tag="mfBothMinus" value="1|1,'0'"/>
+              </param>
+              <param key="mrBothMinus">
+                <value tag="mrBothMinus" value="1|1,'0'"/>
+              </param>
+              <param key="R_t">
+                <value tag="R_t" value="1|1,'0'"/>
+              </param>
+              <param key="R_tth">
+                <value tag="R_tth" value="1|1,'0'"/>
+              </param>
+              <param key="Text">
+                <value tag="Text" value="1|1,'293.15[K]'"/>
+              </param>
+              <param key="StudyStep">
+                <value tag="StudyStep" value="1|1,'0'"/>
+              </param>
+              <feature model="/" appl="//@physics/@physints[key='ht']/@value"/>
+              <featureInfo model="/">
+                <objects key="info">
+                  <value tag="info" entityName="Equation View" entityComments="" entityAuthor="" entityCreationTime="1475716271107">
+                    <entityFlags>noremove</entityFlags>
+                    <entityFlags>nodeactivate</entityFlags>
+                  </value>
+                </objects>
+              </featureInfo>
+            </value>
+          </features>
+          <features key="os1">
+            <value tag="os1" activeFlag="false" entityName="Opaque Surface 1" entityComments="" entityAuthor="" entityCreationTime="1475716271107" applfeatureID="OpaqueSurface" applmode="//@physics/@physints[key='ht']/@value" edim="1" default="true">
+              <tags tag="DomainType" values="2,'EXTGEOM','INTERIOR'"/>
+              <entityFlags>autodeactivate</entityFlags>
+              <entityFlags>noremove</entityFlags>
+              <entityFlags>nodeactivate</entityFlags>
+              <selection xsi:type="com.comsol.mph-v15:XDLocalSelection" entityName="Selection" entityComments="" entityAuthor="" entityCreationTime="1475716271107" selType="geomdim" geom="//@geom/@geoms[key='geom1']/@value" allgeom="true" dim="1" hDim="1"/>
+              <param key="WallType">
+                <value tag="WallType" value="1|1,'GrayWall'"/>
+              </param>
+              <param key="epsilon_rad_mat">
+                <value tag="epsilon_rad_mat" value="1|1,'from_mat'"/>
+              </param>
+              <param key="epsilon_rad">
+                <value tag="epsilon_rad" value="1|1,'0'"/>
+              </param>
+              <param key="minput_temperature_src">
+                <value tag="minput_temperature_src" value="1|1,'userdef'"/>
+              </param>
+              <param key="minput_temperature">
+                <value tag="minput_temperature" value="1|1,'293.15[K]'"/>
+              </param>
+              <param key="minput_pressure_src">
+                <value tag="minput_pressure_src" value="1|1,'userdef'"/>
+              </param>
+              <param key="minput_pressure">
+                <value tag="minput_pressure" value="1|1,'1[atm]'"/>
+              </param>
+              <param key="minput_electricfield_src">
+                <value tag="minput_electricfield_src" value="1|1,'userdef'"/>
+              </param>
+              <param key="minput_electricfield">
+                <value tag="minput_electricfield" value="3|1,'0'|1,'0'|1,'0'"/>
+              </param>
+              <param key="minput_magneticfield_src">
+                <value tag="minput_magneticfield_src" value="1|1,'userdef'"/>
+              </param>
+              <param key="minput_magneticfield">
+                <value tag="minput_magneticfield" value="3|1,'0'|1,'0'|1,'0'"/>
+              </param>
+              <param key="minput_magneticfluxdensity_src">
+                <value tag="minput_magneticfluxdensity_src" value="1|1,'userdef'"/>
+              </param>
+              <param key="minput_magneticfluxdensity">
+                <value tag="minput_magneticfluxdensity" value="3|1,'0'|1,'0'|1,'0'"/>
+              </param>
+              <param key="minput_velocity_src">
+                <value tag="minput_velocity_src" value="1|1,'userdef'"/>
+              </param>
+              <param key="minput_velocity">
+                <value tag="minput_velocity" value="3|1,'0'|1,'0'|1,'0'"/>
+              </param>
+              <param key="minput_frequency_src">
+                <value tag="minput_frequency_src" value="1|1,'userdef'"/>
+              </param>
+              <param key="minput_frequency">
+                <value tag="minput_frequency" value="1|1,'root.freq'"/>
+              </param>
+              <param key="minput_stress_src">
+                <value tag="minput_stress_src" value="1|1,'userdef'"/>
+              </param>
+              <param key="minput_stress">
+                <value tag="minput_stress" value="9|1,'0'|1,'0'|1,'0'|1,'0'|1,'0'|1,'0'|1,'0'|1,'0'|1,'0'"/>
+              </param>
+              <param key="minput_effectiveplasticstrain_src">
+                <value tag="minput_effectiveplasticstrain_src" value="1|1,'userdef'"/>
+              </param>
+              <param key="minput_effectiveplasticstrain">
+                <value tag="minput_effectiveplasticstrain" value="1|1,'0'"/>
+              </param>
+              <param key="minput_strainreferencetemperature_src">
+                <value tag="minput_strainreferencetemperature_src" value="1|1,'userdef'"/>
+              </param>
+              <param key="minput_strainreferencetemperature">
+                <value tag="minput_strainreferencetemperature" value="1|1,'293.15[K]'"/>
+              </param>
+              <param key="minput_concentration_src">
+                <value tag="minput_concentration_src" value="1|1,'userdef'"/>
+              </param>
+              <param key="minput_concentration">
+                <value tag="minput_concentration" value="1|1,'0'"/>
+              </param>
+              <param key="minput_numberdensity_src">
+                <value tag="minput_numberdensity_src" value="1|1,'userdef'"/>
+              </param>
+              <param key="minput_numberdensity">
+                <value tag="minput_numberdensity" value="1|1,'0'"/>
+              </param>
+              <param key="minput_currentdensity_src">
+                <value tag="minput_currentdensity_src" value="1|1,'userdef'"/>
+              </param>
+              <param key="minput_currentdensity">
+                <value tag="minput_currentdensity" value="3|1,'0'|1,'0'|1,'0'"/>
+              </param>
+              <param key="editModelInputs">
+                <value tag="editModelInputs" value="1|1,'0'"/>
+              </param>
+              <param key="StudyStep">
+                <value tag="StudyStep" value="1|1,'0'"/>
+              </param>
+              <feature model="/" appl="//@physics/@physints[key='ht']/@value"/>
+              <featureInfo model="/">
+                <objects key="info">
+                  <value tag="info" entityName="Equation View" entityComments="" entityAuthor="" entityCreationTime="1475716271107">
+                    <entityFlags>noremove</entityFlags>
+                    <entityFlags>nodeactivate</entityFlags>
+                  </value>
+                </objects>
+              </featureInfo>
+            </value>
+          </features>
+          <features key="cib1">
+            <value tag="cib1" activeFlag="false" entityName="Continuity on Interior Boundary 1" entityComments="" entityAuthor="" entityCreationTime="1475716271117" applfeatureID="ContinuityOnInteriorBoundary" applmode="//@physics/@physints[key='ht']/@value" edim="1" default="true">
+              <tags tag="DomainType" values="1,'INTERIOR'"/>
+              <entityFlags>autodeactivate</entityFlags>
+              <entityFlags>noremove</entityFlags>
+              <entityFlags>nodeactivate</entityFlags>
+              <selection xsi:type="com.comsol.mph-v15:XDLocalSelection" entityName="Selection" entityComments="" entityAuthor="" entityCreationTime="1475716271117" selType="geomdim" locked="true" geom="//@geom/@geoms[key='geom1']/@value" allgeom="true" dim="1" hDim="1"/>
+              <param key="StudyStep">
+                <value tag="StudyStep" value="1|1,'0'"/>
+              </param>
+              <feature model="/" appl="//@physics/@physints[key='ht']/@value"/>
+              <featureInfo model="/">
+                <objects key="info">
+                  <value tag="info" entityName="Equation View" entityComments="" entityAuthor="" entityCreationTime="1475716271117">
+                    <entityFlags>noremove</entityFlags>
+                    <entityFlags>nodeactivate</entityFlags>
+                  </value>
+                </objects>
+              </featureInfo>
+            </value>
+          </features>
+          <features key="hs1">
+            <value tag="hs1" entityName="Heat Source 1" entityComments="" entityAuthor="" entityCreationTime="1475716941785" applfeatureID="HeatSource" applmode="//@physics/@physints[key='ht']/@value" edim="2">
+              <tags tag="DomainType" values="1,'ACTIVE'"/>
+              <selection xsi:type="com.comsol.mph-v15:XDLocalSelection" entityName="Selection" entityComments="" entityAuthor="" entityCreationTime="1475716941794" selType="geomdim" geom="//@geom/@geoms[key='geom1']/@value" domains="4,3" dim="2" hDim="2"/>
+              <param key="heatSourceType">
+                <value tag="heatSourceType" value="1|1,'GeneralSource'"/>
+              </param>
+              <param key="qs">
+                <value tag="qs" value="1|1,'0'"/>
+              </param>
+              <param key="P0">
+                <value tag="P0" value="1|1,'0'"/>
+              </param>
+              <param key="Q0_src">
+                <value tag="Q0_src" value="1|1,'userdef'"/>
+              </param>
+              <param key="Q0">
+                <value tag="Q0" value="1|1,'1.45e8*.82'"/>
+              </param>
+              <param key="FrameType">
+                <value tag="FrameType" value="1|1,'materialFrame'"/>
+              </param>
+              <param key="loadGroup">
+                <value tag="loadGroup" value="1|1,'default'"/>
+              </param>
+              <param key="StudyStep">
+                <value tag="StudyStep" value="1|1,'std1/stat'"/>
+              </param>
+              <feature model="/" appl="//@physics/@physints[key='ht']/@value"/>
+              <featureInfo model="/">
+                <objects key="info">
+                  <value tag="info" entityName="Equation View" entityComments="" entityAuthor="" entityCreationTime="1475716941790" touched="true" studyType="/StudyList/std1/StudyFeatureList/stat">
+                    <entityFlags>noremove</entityFlags>
+                    <entityFlags>nodeactivate</entityFlags>
+                  </value>
+                </objects>
+              </featureInfo>
+            </value>
+          </features>
+          <features key="temp1">
+            <value tag="temp1" entityName="Temperature 1" entityComments="" entityAuthor="" entityCreationTime="1475717033353" applfeatureID="TemperatureBoundary" applmode="//@physics/@physints[key='ht']/@value" edim="1">
+              <tags tag="DomainType" values="3,'EXTERIOR','INTERIOR','PAIR'"/>
+              <selection xsi:type="com.comsol.mph-v15:XDLocalSelection" entityName="Selection" entityComments="" entityAuthor="" entityCreationTime="1475717033365" selType="geomdim" geom="//@geom/@geoms[key='geom1']/@value" domains="17,3,8,9,14,15,16" dim="1" hDim="1"/>
+              <param key="ConstraintSettingsType">
+                <value tag="ConstraintSettingsType" value="1|1,'ClassicConstraints'"/>
+              </param>
+              <param key="constraintType">
+                <value tag="constraintType" value="1|1,'symmetricConstraint'"/>
+              </param>
+              <param key="constraintMethod">
+                <value tag="constraintMethod" value="1|1,'elemental'"/>
+              </param>
+              <param key="weakConstraints">
+                <value tag="weakConstraints" value="1|1,'0'"/>
+              </param>
+              <param key="T0">
+                <value tag="T0" value="1|1,'600'"/>
+              </param>
+              <param key="constraintGroup">
+                <value tag="constraintGroup" value="1|1,'default'"/>
+              </param>
+              <param key="StudyStep">
+                <value tag="StudyStep" value="1|1,'std1/stat'"/>
+              </param>
+              <feature model="/" appl="//@physics/@physints[key='ht']/@value"/>
+              <featureInfo model="/">
+                <objects key="info">
+                  <value tag="info" entityName="Equation View" entityComments="" entityAuthor="" entityCreationTime="1475717033353" touched="true" studyType="/StudyList/std1/StudyFeatureList/stat">
+                    <entityFlags>noremove</entityFlags>
+                    <entityFlags>nodeactivate</entityFlags>
+                  </value>
+                </objects>
+              </featureInfo>
+            </value>
+          </features>
+        </feature>
+        <featureInfo model="/">
+          <objects key="info">
+            <value tag="info" entityName="Equation View" entityComments="" entityAuthor="" entityCreationTime="1475716271427" touched="true" studyType="/StudyList/std1/StudyFeatureList/stat">
+              <entityFlags>noremove</entityFlags>
+              <entityFlags>nodeactivate</entityFlags>
+            </value>
+          </objects>
+        </featureInfo>
+      </value>
+    </physints>
+  </physics>
+  <opt tag="optsequence">
+    <objective model="/" sequence="//@opt" optListType="objective"/>
+    <constr model="/"/>
+  </opt>
+  <intrule entityName="List" entityComments="" entityAuthor="" entityCreationTime="1475717064418" model="/"/>
+  <elementset entityName="List" entityComments="" entityAuthor="" entityCreationTime="1475717064673" model="/"/>
+  <hist/>
+  <geomManagerNative tag="/geommanager1.mphbin" lastID="5"/>
+  <unitsystem model="/"/>
+  <coordsys entityName="List" entityComments="" entityAuthor="" entityCreationTime="1475716270717" model="/">
+    <features key="sys1">
+      <value xsi:type="com.comsol.mph-v15:Coordsys" tag="sys1" entityName="Boundary System 1" entityComments="" entityAuthor="" entityCreationTime="1475716270747" operationID="Boundary" geom="//@geom/@geoms[key='geom1']/@value">
+        <entityFlags>nodeactivate</entityFlags>
+        <entityFlags>noremove</entityFlags>
+        <properties key="name">
+          <value tag="name" value="sys1"/>
+        </properties>
+        <properties key="coord">
+          <value tag="coord" valueArray="1|3,'t1','n','to'"/>
+        </properties>
+        <properties key="frametype">
+          <value tag="frametype" value="spatial"/>
+        </properties>
+        <properties key="reversenormal">
+          <value tag="reversenormal" value="off"/>
+        </properties>
+        <properties key="mastercoordsystcomp">
+          <value tag="mastercoordsystcomp" value="3"/>
+        </properties>
+        <properties key="tangent">
+          <value tag="tangent" valueArray="1|2,'root.t1x','root.t1y'"/>
+        </properties>
+        <properties key="mastersystem">
+          <value tag="mastersystem" value="globalCartesianSpatial" referenceContainerList="//@coordsys" compositeIndex="0"/>
+        </properties>
+        <feature xsi:type="com.comsol.mph-v15:CoordsysList" model="/"/>
+        <featureInfo model="/">
+          <objects key="info">
+            <value tag="info" entityName="Equation View" entityComments="" entityAuthor="" entityCreationTime="1475716270757">
+              <entityFlags>noremove</entityFlags>
+              <entityFlags>nodeactivate</entityFlags>
+            </value>
+          </objects>
+        </featureInfo>
+      </value>
+    </features>
+  </coordsys>
+  <pair entityName="List" entityComments="" entityAuthor="" entityCreationTime="1475716270717" model="/"/>
+  <capeopen entityName="Thermodynamics Package" entityComments="" entityAuthor="" entityCreationTime="1475716270289">
+    <entityFlags>nodeactivate</entityFlags>
+    <entityFlags>noremove</entityFlags>
+    <feature model="/"/>
+  </capeopen>
+  <probe entityName="List" entityComments="" entityAuthor="" entityCreationTime="1475716270238" model="/"/>
+  <ode entityName="List" entityComments="" entityAuthor="" entityCreationTime="1475716270299" model="/"/>
+  <file model="/"/>
+  <event entityName="List" entityComments="" entityAuthor="" entityCreationTime="1475717066162" model="/"/>
+  <group entityName="Load and Constraint Groups" entityComments="" entityAuthor="" entityCreationTime="1475716270289" model="/"/>
+  <extraDim entityName="List" entityComments="" entityAuthor="" entityCreationTime="1475716271507" model="/"/>
+  <multiphysics entityName="List" entityComments="" entityAuthor="" entityCreationTime="1475716270289" model="/"/>
+  <massProp entityName="List" entityComments="" entityAuthor="" entityCreationTime="1475716270238" model="/"/>
+  <applicationNodeList entityName="List" entityComments="" entityAuthor="" entityCreationTime="1475716270289" model="/"/>
+  <information entityName="Information" entityComments="" entityAuthor="" entityCreationTime="1475716270329" model="/">
+    <objects key="expectedComputationTime">
+      <value tag="expectedComputationTime" title="Expected_computation_time"/>
+    </objects>
+    <objects key="lastComputationTime">
+      <value tag="lastComputationTime" title="Last_computation_time" body="1 s"/>
+    </objects>
+  </information>
+</com.comsol.mph-v15:Model>

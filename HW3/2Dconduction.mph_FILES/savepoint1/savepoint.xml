@@ -1,0 +1,1766 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<savepoint tag="savepoint1" active="true" version="3" geommanagerpath="/savepoint1/geommanager1.mphbin" basesystem="SI">
+  <modelnode tag="comp1" active="true" scope="root.comp1" name="Component 1" usemodelconverter="false" basesystem="SI"/>
+  <frame tag="material1" active="true" coords="3,'x','y','z'" identifier="material" varnamesuffix="" geom="geom1"/>
+  <geom tag="geom1" active="true" binarypath="/geom1.mphbin" sdim="2" axisymmetric="false" parentmodel="comp1" scope="root.comp1" geomid="4351594222077052530" realgeomid="4351594224160757701" ismain="true" isdeformed="false" xmeshindex="1" geomframe="material1" meshframe="material1" materialframe="material1" spatialframe="material1" entities="16,16,3" entitiesmesh="16,16,3" lengthunit="m" angularunit="deg" unitscale="1.0" definedbymesh="false" repairtol="1.0E-6" gscale="0.005749" geomadj="adj#{{{{},{2,5},{1,6},{7,10},{8,9},{1,11},{2,12},{3,14},{4,13},{4,13},{3,14},{5,15},{6,16},{8,9},{7,10},{11,16},{12,15}},{{},{1,2},{1,3},{4,5},{6,7},{2,8},{3,9},{4,10},{6,11},{7,12},{5,13},{8,14},{9,15},{11,12},{10,13},{14,16},{15,16}},{{},{1},{1},{1,2},{2,3},{1},{1},{1,2},{2,3},{2,3},{1,2},{1},{1},{2,3},{1,2},{1},{1}},null},{{{},{1,2},{1,5},{2,6},{3,7},{3,10},{4,8},{4,9},{5,11},{6,12},{7,14},{8,13},{9,13},{10,14},{11,15},{12,16},{15,16}},{{},{2,3},{1,8},{1,9},{5,10},{4,13},{7,11},{6,12},{2,14},{3,15},{4,13},{6,12},{7,11},{5,10},{8,16},{9,16},{14,15}},{{},{1},{1},{1},{1,2},{1,2},{2,3},{2,3},{1},{1},{1,2},{2,3},{2,3},{1,2},{1},{1},{1}},null},{{{1,2,5,6,11,12,15,16},{1,2,3,5,6,7,10,11,12,14,15,16},{3,4,7,8,9,10,13,14},{4,8,9,13}},{{1,2,3,8,9,14,15,16},{1,2,3,4,5,8,9,10,13,14,15,16},{4,5,6,7,10,11,12,13},{6,7,11,12}},{{1},{2},{1,3},{2}},null},{null,null,null,null}}#orientation#{{{{},{1,1},{1,1},{1,1},{1,1},{1,1},{1,1},{1,1},{1,1},{1,1},{1,1},{1,1},{1,1},{1,1},{1,1},{1,1},{1,1}},{{},{-1,1},{1,-1},{-1,1},{-1,1},{-1,1},{1,-1},{1,-1},{1,-1},{-1,1},{-1,1},{-1,1},{1,-1},{1,-1},{1,-1},{-1,1},{1,-1}},{{},{1},{1},{1,1},{1,1},{1},{1},{1,1},{1,1},{1,1},{1,1},{1},{1},{1,1},{1,1},{1},{1}},null},{{{},{-1,1},{1,-1},{-1,1},{-1,1},{1,-1},{-1,1},{1,-1},{1,-1},{-1,1},{-1,1},{-1,1},{1,-1},{1,-1},{1,-1},{-1,1},{1,-1}},{{},{1,1},{1,1},{1,1},{1,1},{1,1},{1,1},{1,1},{1,1},{1,1},{1,1},{1,1},{1,1},{1,1},{1,1},{1,1},{1,1}},{{},{-1},{-1},{-1},{1,-1},{1,-1},{1,-1},{1,-1},{-1},{-1},{1,-1},{1,-1},{1,-1},{1,-1},{-1},{-1},{-1}},null},{{{1,1,1,1,1,1,1,1},{1,1,1,1,1,1,1,1,1,1,1,1},{1,1,1,1,1,1,1,1},{1,1,1,1}},{{1,1,1,1,1,1,1,1},{-1,-1,-1,1,1,-1,-1,1,1,-1,-1,-1},{-1,-1,1,1,-1,1,1,-1},{-1,-1,-1,-1}},{{1},{1},{1,1},{1}},null},{null,null,null,null}}#ndom#{16,16,3}" edgeangles="{7,4,10,0.0},{3,4,5,0.0},{5,2,8,0.0},{16,15,16,0.0},{15,14,16,0.0},{4,6,7,0.0},{6,3,9,0.0},{8,6,11,0.0},{9,7,12,0.0},{2,1,3,0.0},{1,1,2,0.0},{11,8,14,0.0},{13,11,12,0.0},{12,9,15,0.0},{14,10,13,0.0},{10,5,13,0.0}," inverseassocmaps="{0,1,3,4,6,7,8,9,10,11,13,14,16},{0,1,2,4,5,6,7,9,10,11,12,13,14},{0,1,2,3}"/>
+  <mesh tag="mesh1" active="true" binarypath="/mesh1.mphbin" geom="geom1"/>
+  <physics tag="ht" active="true" geom="geom1" descr="Heat_transfer_in_solids">
+    <postinfo>
+      <scalar edim="0" default="2,'root.comp1.T','Temperature'"/>
+      <scalar edim="1" default="2,'root.comp1.T','Temperature'"/>
+      <scalar edim="2" default="2,'root.comp1.T','Temperature'"/>
+      <scalar edim="3" default="2,'root.comp1.T','Temperature'"/>
+      <multiscalar edim="-1" default="0"/>
+      <multiscalar edim="0" default="0"/>
+      <multiscalar edim="1" default="0"/>
+      <multiscalar edim="2" default="0"/>
+      <multiscalar edim="3" default="0"/>
+      <vector edim="0" default="root.comp1.ht.[tfluxx,tfluxy,tfluxz]"/>
+      <vector edim="1" default="root.comp1.ht.[tfluxx,tfluxy,tfluxz]"/>
+      <vector edim="2" default="root.comp1.ht.[tfluxx,tfluxy,tfluxz]"/>
+      <vector edim="3" default="root.comp1.ht.[tfluxx,tfluxy,tfluxz]"/>
+      <params edim="-1" params="0"/>
+      <params edim="0" params="0"/>
+      <params edim="1" params="0"/>
+      <params edim="2" params="0"/>
+      <params edim="3" params="0"/>
+      <pdofnames edim="2" names="0"/>
+      <pdofnames edim="3" names="0"/>
+    </postinfo>
+  </physics>
+  <vardata name="root">
+    <scalar name="root.freq" description="Frequency" plot="false" summation="false" unit="Hz" edims="-1"/>
+    <scalar name="root.lambda0" description="Wavelength_in_free_space" plot="false" summation="false" unit="m" edims="-1"/>
+    <scalar name="root.isRHS" description="" plot="false" summation="false" edims="-1"/>
+    <scalar name="root.segiter" description="" plot="false" summation="false" unit="1" edims="-1"/>
+    <scalar name="root.comp1.isScalingSystemDomain" description="Is_scaling_system_domain" plot="false" summation="false" unit="1" edims="2"/>
+    <scalar name="root.comp1.isPML" description="Is_PML" plot="false" summation="false" unit="1" edims="2"/>
+    <scalar name="root.comp1.mat1.def.density" description="" plot="false" summation="false" unit="kg/m^3" edims="-1"/>
+    <scalar name="root.comp1.mat1.def.rho" description="" plot="false" summation="false" unit="kg/m^3" edims="-1"/>
+    <scalar name="root.material.def.rho" description="" plot="false" summation="false" unit="kg/m^3" edims="2"/>
+    <scalar name="root.material.rho" description="" plot="false" summation="false" unit="kg/m^3" edims="2"/>
+    <scalar name="root.comp1.mat1.def.heatcapacity" description="" plot="false" summation="false" unit="J/(kg*K)" edims="-1"/>
+    <scalar name="root.comp1.mat1.def.Cp" description="" plot="false" summation="false" unit="J/(kg*K)" edims="-1"/>
+    <scalar name="root.material.def.Cp" description="" plot="false" summation="false" unit="J/(kg*K)" edims="2"/>
+    <scalar name="root.material.Cp" description="" plot="false" summation="false" unit="J/(kg*K)" edims="2"/>
+    <scalar name="root.comp1.mat3.def.T" description="" plot="false" summation="false" unit="K" edims="-1"/>
+    <scalar name="root.comp1.mat3.def.pA" description="" plot="false" summation="false" unit="Pa" edims="-1"/>
+    <scalar name="root.comp1.mat3.def.dynamicviscosity" description="" plot="false" summation="false" unit="Pa*s" edims="-1"/>
+    <scalar name="root.comp1.mat3.def.mu" description="" plot="false" summation="false" unit="Pa*s" edims="-1"/>
+    <scalar name="root.material.def.mu" description="" plot="false" summation="false" unit="Pa*s" edims="2"/>
+    <scalar name="root.material.mu" description="" plot="false" summation="false" unit="Pa*s" edims="2"/>
+    <scalar name="root.comp1.mat3.def.ratioofspecificheat" description="" plot="false" summation="false" unit="1" edims="-1"/>
+    <scalar name="root.comp1.mat3.def.gamma" description="" plot="false" summation="false" unit="1" edims="-1"/>
+    <scalar name="root.material.def.gamma" description="" plot="false" summation="false" unit="1" edims="2"/>
+    <scalar name="root.material.gamma" description="" plot="false" summation="false" unit="1" edims="2"/>
+    <scalar name="root.comp1.mat3.def.heatcapacity" description="" plot="false" summation="false" unit="J/(kg*K)" edims="-1"/>
+    <scalar name="root.comp1.mat3.def.Cp" description="" plot="false" summation="false" unit="J/(kg*K)" edims="-1"/>
+    <scalar name="root.comp1.mat3.def.density" description="" plot="false" summation="false" unit="kg/m^3" edims="-1"/>
+    <scalar name="root.comp1.mat3.def.rho" description="" plot="false" summation="false" unit="kg/m^3" edims="-1"/>
+    <scalar name="root.comp1.mat4.def.density" description="" plot="false" summation="false" unit="kg/m^3" edims="-1"/>
+    <scalar name="root.comp1.mat4.def.rho" description="" plot="false" summation="false" unit="kg/m^3" edims="-1"/>
+    <scalar name="root.comp1.mat4.def.heatcapacity" description="" plot="false" summation="false" unit="J/(kg*K)" edims="-1"/>
+    <scalar name="root.comp1.mat4.def.Cp" description="" plot="false" summation="false" unit="J/(kg*K)" edims="-1"/>
+    <tensor name="root.comp1.mat1.def.[thermalconductivity11,thermalconductivity21,thermalconductivity31,thermalconductivity12,thermalconductivity22,thermalconductivity32,thermalconductivity13,thermalconductivity23,thermalconductivity33]" description="" plot="false" summation="false" basename="root.comp1.mat1.def.thermalconductivity" size="3,3" symmetric="false" axisymmetric="false" unit="W/(m*K)" edims="-1">
+      <scalar name="root.comp1.mat1.def.thermalconductivity11" description=""/>
+      <scalar name="root.comp1.mat1.def.thermalconductivity21" description=""/>
+      <scalar name="root.comp1.mat1.def.thermalconductivity31" description=""/>
+      <scalar name="root.comp1.mat1.def.thermalconductivity12" description=""/>
+      <scalar name="root.comp1.mat1.def.thermalconductivity22" description=""/>
+      <scalar name="root.comp1.mat1.def.thermalconductivity32" description=""/>
+      <scalar name="root.comp1.mat1.def.thermalconductivity13" description=""/>
+      <scalar name="root.comp1.mat1.def.thermalconductivity23" description=""/>
+      <scalar name="root.comp1.mat1.def.thermalconductivity33" description=""/>
+    </tensor>
+    <tensor name="root.comp1.mat1.def.[k11,k21,k31,k12,k22,k32,k13,k23,k33]" description="" plot="false" summation="false" basename="root.comp1.mat1.def.k" size="3,3" symmetric="false" axisymmetric="false" unit="W/(m*K)" edims="-1">
+      <scalar name="root.comp1.mat1.def.k11" description=""/>
+      <scalar name="root.comp1.mat1.def.k21" description=""/>
+      <scalar name="root.comp1.mat1.def.k31" description=""/>
+      <scalar name="root.comp1.mat1.def.k12" description=""/>
+      <scalar name="root.comp1.mat1.def.k22" description=""/>
+      <scalar name="root.comp1.mat1.def.k32" description=""/>
+      <scalar name="root.comp1.mat1.def.k13" description=""/>
+      <scalar name="root.comp1.mat1.def.k23" description=""/>
+      <scalar name="root.comp1.mat1.def.k33" description=""/>
+    </tensor>
+    <tensor name="root.material.def.[k11,k21,k31,k12,k22,k32,k13,k23,k33]" description="" plot="false" summation="false" basename="root.material.def.k" size="3,3" symmetric="false" axisymmetric="false" unit="W/(m*K)" edims="2">
+      <scalar name="root.material.def.k11" description=""/>
+      <scalar name="root.material.def.k21" description=""/>
+      <scalar name="root.material.def.k31" description=""/>
+      <scalar name="root.material.def.k12" description=""/>
+      <scalar name="root.material.def.k22" description=""/>
+      <scalar name="root.material.def.k32" description=""/>
+      <scalar name="root.material.def.k13" description=""/>
+      <scalar name="root.material.def.k23" description=""/>
+      <scalar name="root.material.def.k33" description=""/>
+    </tensor>
+    <tensor name="root.material.[k11,k21,k31,k12,k22,k32,k13,k23,k33]" description="" plot="false" summation="false" basename="root.material.k" size="3,3" symmetric="false" axisymmetric="false" unit="W/(m*K)" edims="2">
+      <scalar name="root.material.k11" description=""/>
+      <scalar name="root.material.k21" description=""/>
+      <scalar name="root.material.k31" description=""/>
+      <scalar name="root.material.k12" description=""/>
+      <scalar name="root.material.k22" description=""/>
+      <scalar name="root.material.k32" description=""/>
+      <scalar name="root.material.k13" description=""/>
+      <scalar name="root.material.k23" description=""/>
+      <scalar name="root.material.k33" description=""/>
+    </tensor>
+    <tensor name="root.comp1.mat3.def.[thermalconductivity11,thermalconductivity21,thermalconductivity31,thermalconductivity12,thermalconductivity22,thermalconductivity32,thermalconductivity13,thermalconductivity23,thermalconductivity33]" description="" plot="false" summation="false" basename="root.comp1.mat3.def.thermalconductivity" size="3,3" symmetric="false" axisymmetric="false" unit="W/(m*K)" edims="-1">
+      <scalar name="root.comp1.mat3.def.thermalconductivity11" description=""/>
+      <scalar name="root.comp1.mat3.def.thermalconductivity21" description=""/>
+      <scalar name="root.comp1.mat3.def.thermalconductivity31" description=""/>
+      <scalar name="root.comp1.mat3.def.thermalconductivity12" description=""/>
+      <scalar name="root.comp1.mat3.def.thermalconductivity22" description=""/>
+      <scalar name="root.comp1.mat3.def.thermalconductivity32" description=""/>
+      <scalar name="root.comp1.mat3.def.thermalconductivity13" description=""/>
+      <scalar name="root.comp1.mat3.def.thermalconductivity23" description=""/>
+      <scalar name="root.comp1.mat3.def.thermalconductivity33" description=""/>
+    </tensor>
+    <tensor name="root.comp1.mat3.def.[k11,k21,k31,k12,k22,k32,k13,k23,k33]" description="" plot="false" summation="false" basename="root.comp1.mat3.def.k" size="3,3" symmetric="false" axisymmetric="false" unit="W/(m*K)" edims="-1">
+      <scalar name="root.comp1.mat3.def.k11" description=""/>
+      <scalar name="root.comp1.mat3.def.k21" description=""/>
+      <scalar name="root.comp1.mat3.def.k31" description=""/>
+      <scalar name="root.comp1.mat3.def.k12" description=""/>
+      <scalar name="root.comp1.mat3.def.k22" description=""/>
+      <scalar name="root.comp1.mat3.def.k32" description=""/>
+      <scalar name="root.comp1.mat3.def.k13" description=""/>
+      <scalar name="root.comp1.mat3.def.k23" description=""/>
+      <scalar name="root.comp1.mat3.def.k33" description=""/>
+    </tensor>
+    <tensor name="root.comp1.mat4.def.[thermalconductivity11,thermalconductivity21,thermalconductivity31,thermalconductivity12,thermalconductivity22,thermalconductivity32,thermalconductivity13,thermalconductivity23,thermalconductivity33]" description="" plot="false" summation="false" basename="root.comp1.mat4.def.thermalconductivity" size="3,3" symmetric="false" axisymmetric="false" unit="W/(m*K)" edims="-1">
+      <scalar name="root.comp1.mat4.def.thermalconductivity11" description=""/>
+      <scalar name="root.comp1.mat4.def.thermalconductivity21" description=""/>
+      <scalar name="root.comp1.mat4.def.thermalconductivity31" description=""/>
+      <scalar name="root.comp1.mat4.def.thermalconductivity12" description=""/>
+      <scalar name="root.comp1.mat4.def.thermalconductivity22" description=""/>
+      <scalar name="root.comp1.mat4.def.thermalconductivity32" description=""/>
+      <scalar name="root.comp1.mat4.def.thermalconductivity13" description=""/>
+      <scalar name="root.comp1.mat4.def.thermalconductivity23" description=""/>
+      <scalar name="root.comp1.mat4.def.thermalconductivity33" description=""/>
+    </tensor>
+    <tensor name="root.comp1.mat4.def.[k11,k21,k31,k12,k22,k32,k13,k23,k33]" description="" plot="false" summation="false" basename="root.comp1.mat4.def.k" size="3,3" symmetric="false" axisymmetric="false" unit="W/(m*K)" edims="-1">
+      <scalar name="root.comp1.mat4.def.k11" description=""/>
+      <scalar name="root.comp1.mat4.def.k21" description=""/>
+      <scalar name="root.comp1.mat4.def.k31" description=""/>
+      <scalar name="root.comp1.mat4.def.k12" description=""/>
+      <scalar name="root.comp1.mat4.def.k22" description=""/>
+      <scalar name="root.comp1.mat4.def.k32" description=""/>
+      <scalar name="root.comp1.mat4.def.k13" description=""/>
+      <scalar name="root.comp1.mat4.def.k23" description=""/>
+      <scalar name="root.comp1.mat4.def.k33" description=""/>
+    </tensor>
+    <group name="Built_in" description="Built_in" sort="1">
+      <group name="Physical_constants" description="Physical_constants">
+        <scalar name="root.g_const" description="Acceleration_of_gravity" plot="true" summation="false" unit="m/s^2" edims="-1"/>
+        <scalar name="root.N_A_const" description="Avogadro_constant" plot="true" summation="false" unit="1/mol" edims="-1"/>
+        <scalar name="root.k_B_const" description="Boltzmann_constant" plot="true" summation="false" unit="J/K" edims="-1"/>
+        <scalar name="root.Z0_const" description="Characteristic_impedance_of_vacuum" plot="true" summation="false" unit="&#x3a9;" edims="-1"/>
+        <scalar name="root.me_const" description="Electron_mass" plot="true" summation="false" unit="kg" edims="-1"/>
+        <scalar name="root.e_const" description="Elementary_charge" plot="true" summation="false" unit="C" edims="-1"/>
+        <scalar name="root.F_const" description="Faraday_constant" plot="true" summation="false" unit="C/mol" edims="-1"/>
+        <scalar name="root.alpha_const" description="Fine_structure_constant" plot="true" summation="false" edims="-1"/>
+        <scalar name="root.G_const" description="Gravitational_constant" plot="true" summation="false" unit="m^3/(kg*s^2)" edims="-1"/>
+        <scalar name="root.hbar_const" description="Reduced_Planck's_constant" plot="true" summation="false" unit="J*s/rad" edims="-1"/>
+        <scalar name="root.V_m_const" description="Molar_volume_of_ideal_gas" plot="true" summation="false" unit="m^3/mol" edims="-1"/>
+        <scalar name="root.mn_const" description="Neutron_mass" plot="true" summation="false" unit="kg" edims="-1"/>
+        <scalar name="root.epsilon0_const" description="Permittivity_of_vacuum" plot="true" summation="false" unit="F/m" edims="-1"/>
+        <scalar name="root.mu0_const" description="Permeability_of_vacuum" plot="true" summation="false" unit="H/m" edims="-1"/>
+        <scalar name="root.h_const" description="Planck's_constant" plot="true" summation="false" unit="J*s" edims="-1"/>
+        <scalar name="root.mp_const" description="Proton_mass" plot="true" summation="false" unit="kg" edims="-1"/>
+        <scalar name="root.c_const" description="Speed_of_light_in_vacuum" plot="true" summation="false" unit="m/s" edims="-1"/>
+        <scalar name="root.sigma_const" description="Stefan-Boltzmann_constant" plot="true" summation="false" unit="kg/(s^3*K^4)" edims="-1"/>
+        <scalar name="root.R_const" description="Universal_gas_constant" plot="true" summation="false" unit="J/(mol*K)" edims="-1"/>
+        <scalar name="root.b_const" description="Wien_displacement_law_constant" plot="true" summation="false" unit="m*K" edims="-1"/>
+      </group>
+      <group name="Mathematical_constants" description="Mathematical_constants">
+        <scalar name="root.eps" description="Machine_epsilon" plot="true" summation="false" edims="-1"/>
+        <scalar name="root.NaN" description="Not_a_number" plot="true" summation="false" edims="-1"/>
+        <scalar name="root.Inf" description="Infinity" plot="true" summation="false" edims="-1"/>
+        <scalar name="root.i" description="Imaginary_unit" plot="true" summation="false" edims="-1"/>
+        <scalar name="root.j" description="Imaginary_unit" plot="true" summation="false" edims="-1"/>
+        <scalar name="root.pi" description="Pi_pi" plot="true" summation="false" edims="-1"/>
+      </group>
+    </group>
+    <group name="Global_definitions" description="Global_definitions">
+      <scalar name="root.numberofdofs" description="Number_of_degrees_of_freedom" plot="true" summation="false" unit="1" edims="-1"/>
+    </group>
+    <group name="Geometry" description="Geometry">
+      <scalar name="root.s" description="Boundary_parameter" plot="false" summation="false" edims="1" modelcomp="1,'comp1'"/>
+      <scalar name="root.dom" description="Entity_index" plot="true" summation="false" edims="0,1,2" modelcomp="1,'comp1'"/>
+      <scalar name="root.comp1.dGeomChar" description="Characteristic_distance_for_geometry" plot="false" summation="false" unit="m" edims="0,1,2"/>
+      <tensor name="root.comp1.geometry.[nx,ny,0]" description="Normal" plot="true" summation="false" basename="root.comp1.geometry.n" size="3,1" symmetric="false" axisymmetric="false" edims="1">
+        <scalar name="root.nx" description="Normal@,_x_component#x"/>
+        <scalar name="root.ny" description="Normal@,_x_component#y"/>
+        <scalar name="0" description="Normal@,_x_component#z"/>
+      </tensor>
+      <tensor name="root.comp1.geometry.[unx,uny,0]" description="Normal_up" plot="false" summation="false" basename="root.comp1.geometry.un" size="3,1" symmetric="false" axisymmetric="false" edims="1">
+        <scalar name="root.unx" description="Normal_up@,_x_component#x"/>
+        <scalar name="root.uny" description="Normal_up@,_x_component#y"/>
+        <scalar name="0" description="Normal_up@,_x_component#z"/>
+      </tensor>
+      <tensor name="root.comp1.geometry.[dnx,dny,0]" description="Normal_down" plot="false" summation="false" basename="root.comp1.geometry.dn" size="3,1" symmetric="false" axisymmetric="false" edims="1">
+        <scalar name="root.dnx" description="Normal_down@,_x_component#x"/>
+        <scalar name="root.dny" description="Normal_down@,_x_component#y"/>
+        <scalar name="0" description="Normal_down@,_x_component#z"/>
+      </tensor>
+      <tensor name="root.comp1.geometry.[unxmesh,unymesh,0]" description="Mesh_normal_upside" plot="false" summation="false" basename="root.comp1.geometry.un" size="3,1" symmetric="false" axisymmetric="false" edims="1">
+        <scalar name="root.unxmesh" description="Mesh_normal_upside@,_x_component#x"/>
+        <scalar name="root.unymesh" description="Mesh_normal_upside@,_x_component#y"/>
+        <scalar name="0" description="Mesh_normal_upside@,_x_component#z"/>
+      </tensor>
+      <tensor name="root.comp1.geometry.[dnxmesh,dnymesh,0]" description="Mesh_normal_downside" plot="false" summation="false" basename="root.comp1.geometry.dn" size="3,1" symmetric="false" axisymmetric="false" edims="1">
+        <scalar name="root.dnxmesh" description="Mesh_normal_downside@,_x_component#x"/>
+        <scalar name="root.dnymesh" description="Mesh_normal_downside@,_x_component#y"/>
+        <scalar name="0" description="Mesh_normal_downside@,_x_component#z"/>
+      </tensor>
+      <tensor name="root.comp1.geometry.[t1x,t1y,0]" description="Tangent_1" plot="false" summation="false" basename="root.comp1.geometry.t1" size="3,1" symmetric="false" axisymmetric="false" edims="1">
+        <scalar name="root.t1x" description="Tangent_1@,_x_component#x"/>
+        <scalar name="root.t1y" description="Tangent_1@,_x_component#y"/>
+        <scalar name="0" description="Tangent_1@,_x_component#z"/>
+      </tensor>
+      <tensor name="root.comp1.geometry.[tx,ty,0]" description="Tangent" plot="true" summation="false" basename="root.comp1.geometry.t" size="3,1" symmetric="false" axisymmetric="false" edims="1">
+        <scalar name="root.tx" description="Tangent@,_x_component#x"/>
+        <scalar name="root.ty" description="Tangent@,_x_component#y"/>
+        <scalar name="0" description="Tangent@,_x_component#z"/>
+      </tensor>
+      <group name="Curvature" description="Curvature">
+        <scalar name="root.curv" description="Curvature" plot="true" summation="false" unit="1/m" edims="1"/>
+        <tensor name="root.comp1.geometry.[tcurvx,tcurvy,0]" description="Principal_curvature_direction" plot="true" summation="false" basename="root.comp1.geometry.tcurv" size="3,1" symmetric="false" axisymmetric="false" edims="1">
+          <scalar name="root.tcurvx" description="Principal_curvature_direction@,_x_component#x"/>
+          <scalar name="root.tcurvy" description="Principal_curvature_direction@,_x_component#y"/>
+          <scalar name="0" description="Principal_curvature_direction@,_x_component#z"/>
+        </tensor>
+      </group>
+      <group name="root.[x,y,z]" description="Coordinate">
+        <scalar name="root.x" description="Coordinate_x#x" plot="true" summation="false" unit="m" edims="0,1,2" modelcomp="1,'comp1'"/>
+        <scalar name="root.y" description="Coordinate_x#y" plot="true" summation="false" unit="m" edims="0,1,2" modelcomp="1,'comp1'"/>
+        <scalar name="root.z" description="Coordinate_x#z" plot="false" summation="false" unit="m" edims="0,1,2" modelcomp="1,'comp1'"/>
+      </group>
+    </group>
+    <group name="Mesh" description="Mesh">
+      <scalar name="root.h" description="Element_size" plot="true" summation="false" unit="m" edims="0,1,2" modelcomp="1,'comp1'"/>
+      <scalar name="root.qual" description="Element_quality" plot="true" summation="false" edims="0,1,2" modelcomp="1,'comp1'"/>
+      <scalar name="root.dvol" description="Element_volume_scale_factor" plot="true" summation="false" unit="m^edim" edims="0,1,2" modelcomp="1,'comp1'"/>
+      <scalar name="root.emetric2" description="Inner_product_of_covariant_element_metric_tensor" plot="false" summation="false" unit="1/m^4" edims="0,1,2" modelcomp="1,'comp1'"/>
+      <scalar name="root.tremetric" description="Trace_of_covariant_element_metric_tensor" plot="false" summation="false" unit="1/m^2" edims="0,1,2" modelcomp="1,'comp1'"/>
+      <scalar name="root.meshvol" description="Element_volume" plot="true" summation="false" unit="m^edim" edims="0,1,2" modelcomp="1,'comp1'"/>
+      <scalar name="root.linearizedelem" description="True_if_the_element_has_been_linearized" plot="true" summation="false" edims="0,1,2" modelcomp="1,'comp1'"/>
+    </group>
+    <group name="ht" description="#Heat Transfer in Solids">
+      <scalar name="root.comp1.T_fld_act" description="Temperature" plot="false" summation="false" edims="0,1,2"/>
+      <scalar name="root.comp1.domflux.Tx" description="Domain_flux_x#x" plot="false" summation="false" unit="W/m" edims="2"/>
+      <scalar name="root.comp1.domflux.Ty" description="Domain_flux_x#y" plot="false" summation="false" unit="W/m" edims="2"/>
+      <scalar name="root.comp1.ht.q0" description="Inward_heat_flux" plot="false" summation="false" unit="W/m^2" edims="1"/>
+      <scalar name="root.comp1.ht.Tu" description="Temperature" plot="false" summation="false" unit="K" edims="1"/>
+      <scalar name="root.comp1.ht.Td" description="Temperature" plot="false" summation="false" unit="K" edims="1"/>
+      <scalar name="root.comp1.ht.opaqueLayer" description="Thin_layer_opacity" plot="false" summation="false" edims="1"/>
+      <scalar name="root.comp1.ht.Tvar" description="Temperature" plot="false" summation="false" unit="K" edims="0,1,2"/>
+      <scalar name="root.comp1.ht.addContinuityWeak" description="Boolean" plot="false" summation="false" edims="1"/>
+      <scalar name="root.comp1.ht.isConductiveLayer" description="Boolean" plot="false" summation="false" edims="2"/>
+      <scalar name="root.comp1.ht.d" description="Thickness" plot="false" summation="false" unit="m" edims="2"/>
+      <scalar name="root.comp1.ht.Pc" description="Cross_sectional_perimeter" plot="false" summation="false" unit="1" edims="2"/>
+      <scalar name="root.comp1.ht.solvesFrameSplitting" description="" plot="false" summation="false" edims="2"/>
+      <scalar name="root.comp1.ht.w1_3d" description="Discrete_weight" plot="false" summation="false" unit="sr" edims=""/>
+      <scalar name="root.comp1.ht.w2_3d" description="Discrete_weight" plot="false" summation="false" unit="sr" edims=""/>
+      <scalar name="root.comp1.ht.w3_3d" description="Discrete_weight" plot="false" summation="false" unit="sr" edims=""/>
+      <scalar name="root.comp1.ht.w4_3d" description="Discrete_weight" plot="false" summation="false" unit="sr" edims=""/>
+      <scalar name="root.comp1.ht.w5_3d" description="Discrete_weight" plot="false" summation="false" unit="sr" edims=""/>
+      <scalar name="root.comp1.ht.w6_3d" description="Discrete_weight" plot="false" summation="false" unit="sr" edims=""/>
+      <scalar name="root.comp1.ht.w7_3d" description="Discrete_weight" plot="false" summation="false" unit="sr" edims=""/>
+      <scalar name="root.comp1.ht.w8_3d" description="Discrete_weight" plot="false" summation="false" unit="sr" edims=""/>
+      <scalar name="root.comp1.ht.w9_3d" description="Discrete_weight" plot="false" summation="false" unit="sr" edims=""/>
+      <scalar name="root.comp1.ht.w10_3d" description="Discrete_weight" plot="false" summation="false" unit="sr" edims=""/>
+      <scalar name="root.comp1.ht.w11_3d" description="Discrete_weight" plot="false" summation="false" unit="sr" edims=""/>
+      <scalar name="root.comp1.ht.w12_3d" description="Discrete_weight" plot="false" summation="false" unit="sr" edims=""/>
+      <scalar name="root.comp1.ht.w13_3d" description="Discrete_weight" plot="false" summation="false" unit="sr" edims=""/>
+      <scalar name="root.comp1.ht.w14_3d" description="Discrete_weight" plot="false" summation="false" unit="sr" edims=""/>
+      <scalar name="root.comp1.ht.w15_3d" description="Discrete_weight" plot="false" summation="false" unit="sr" edims=""/>
+      <scalar name="root.comp1.ht.w16_3d" description="Discrete_weight" plot="false" summation="false" unit="sr" edims=""/>
+      <scalar name="root.comp1.ht.w17_3d" description="Discrete_weight" plot="false" summation="false" unit="sr" edims=""/>
+      <scalar name="root.comp1.ht.w18_3d" description="Discrete_weight" plot="false" summation="false" unit="sr" edims=""/>
+      <scalar name="root.comp1.ht.w19_3d" description="Discrete_weight" plot="false" summation="false" unit="sr" edims=""/>
+      <scalar name="root.comp1.ht.w20_3d" description="Discrete_weight" plot="false" summation="false" unit="sr" edims=""/>
+      <scalar name="root.comp1.ht.w21_3d" description="Discrete_weight" plot="false" summation="false" unit="sr" edims=""/>
+      <scalar name="root.comp1.ht.w22_3d" description="Discrete_weight" plot="false" summation="false" unit="sr" edims=""/>
+      <scalar name="root.comp1.ht.w23_3d" description="Discrete_weight" plot="false" summation="false" unit="sr" edims=""/>
+      <scalar name="root.comp1.ht.w24_3d" description="Discrete_weight" plot="false" summation="false" unit="sr" edims=""/>
+      <scalar name="root.comp1.ht.w25_3d" description="Discrete_weight" plot="false" summation="false" unit="sr" edims=""/>
+      <scalar name="root.comp1.ht.w26_3d" description="Discrete_weight" plot="false" summation="false" unit="sr" edims=""/>
+      <scalar name="root.comp1.ht.w27_3d" description="Discrete_weight" plot="false" summation="false" unit="sr" edims=""/>
+      <scalar name="root.comp1.ht.w28_3d" description="Discrete_weight" plot="false" summation="false" unit="sr" edims=""/>
+      <scalar name="root.comp1.ht.w29_3d" description="Discrete_weight" plot="false" summation="false" unit="sr" edims=""/>
+      <scalar name="root.comp1.ht.w30_3d" description="Discrete_weight" plot="false" summation="false" unit="sr" edims=""/>
+      <scalar name="root.comp1.ht.w31_3d" description="Discrete_weight" plot="false" summation="false" unit="sr" edims=""/>
+      <scalar name="root.comp1.ht.w32_3d" description="Discrete_weight" plot="false" summation="false" unit="sr" edims=""/>
+      <scalar name="root.comp1.ht.w33_3d" description="Discrete_weight" plot="false" summation="false" unit="sr" edims=""/>
+      <scalar name="root.comp1.ht.w34_3d" description="Discrete_weight" plot="false" summation="false" unit="sr" edims=""/>
+      <scalar name="root.comp1.ht.w35_3d" description="Discrete_weight" plot="false" summation="false" unit="sr" edims=""/>
+      <scalar name="root.comp1.ht.w36_3d" description="Discrete_weight" plot="false" summation="false" unit="sr" edims=""/>
+      <scalar name="root.comp1.ht.w37_3d" description="Discrete_weight" plot="false" summation="false" unit="sr" edims=""/>
+      <scalar name="root.comp1.ht.w38_3d" description="Discrete_weight" plot="false" summation="false" unit="sr" edims=""/>
+      <scalar name="root.comp1.ht.w39_3d" description="Discrete_weight" plot="false" summation="false" unit="sr" edims=""/>
+      <scalar name="root.comp1.ht.w40_3d" description="Discrete_weight" plot="false" summation="false" unit="sr" edims=""/>
+      <scalar name="root.comp1.ht.w41_3d" description="Discrete_weight" plot="false" summation="false" unit="sr" edims=""/>
+      <scalar name="root.comp1.ht.w42_3d" description="Discrete_weight" plot="false" summation="false" unit="sr" edims=""/>
+      <scalar name="root.comp1.ht.w43_3d" description="Discrete_weight" plot="false" summation="false" unit="sr" edims=""/>
+      <scalar name="root.comp1.ht.w44_3d" description="Discrete_weight" plot="false" summation="false" unit="sr" edims=""/>
+      <scalar name="root.comp1.ht.w45_3d" description="Discrete_weight" plot="false" summation="false" unit="sr" edims=""/>
+      <scalar name="root.comp1.ht.w46_3d" description="Discrete_weight" plot="false" summation="false" unit="sr" edims=""/>
+      <scalar name="root.comp1.ht.w47_3d" description="Discrete_weight" plot="false" summation="false" unit="sr" edims=""/>
+      <scalar name="root.comp1.ht.w48_3d" description="Discrete_weight" plot="false" summation="false" unit="sr" edims=""/>
+      <scalar name="root.comp1.ht.w49_3d" description="Discrete_weight" plot="false" summation="false" unit="sr" edims=""/>
+      <scalar name="root.comp1.ht.w50_3d" description="Discrete_weight" plot="false" summation="false" unit="sr" edims=""/>
+      <scalar name="root.comp1.ht.w51_3d" description="Discrete_weight" plot="false" summation="false" unit="sr" edims=""/>
+      <scalar name="root.comp1.ht.w52_3d" description="Discrete_weight" plot="false" summation="false" unit="sr" edims=""/>
+      <scalar name="root.comp1.ht.w53_3d" description="Discrete_weight" plot="false" summation="false" unit="sr" edims=""/>
+      <scalar name="root.comp1.ht.w54_3d" description="Discrete_weight" plot="false" summation="false" unit="sr" edims=""/>
+      <scalar name="root.comp1.ht.w55_3d" description="Discrete_weight" plot="false" summation="false" unit="sr" edims=""/>
+      <scalar name="root.comp1.ht.w56_3d" description="Discrete_weight" plot="false" summation="false" unit="sr" edims=""/>
+      <scalar name="root.comp1.ht.w57_3d" description="Discrete_weight" plot="false" summation="false" unit="sr" edims=""/>
+      <scalar name="root.comp1.ht.w58_3d" description="Discrete_weight" plot="false" summation="false" unit="sr" edims=""/>
+      <scalar name="root.comp1.ht.w59_3d" description="Discrete_weight" plot="false" summation="false" unit="sr" edims=""/>
+      <scalar name="root.comp1.ht.w60_3d" description="Discrete_weight" plot="false" summation="false" unit="sr" edims=""/>
+      <scalar name="root.comp1.ht.w61_3d" description="Discrete_weight" plot="false" summation="false" unit="sr" edims=""/>
+      <scalar name="root.comp1.ht.w62_3d" description="Discrete_weight" plot="false" summation="false" unit="sr" edims=""/>
+      <scalar name="root.comp1.ht.w63_3d" description="Discrete_weight" plot="false" summation="false" unit="sr" edims=""/>
+      <scalar name="root.comp1.ht.w64_3d" description="Discrete_weight" plot="false" summation="false" unit="sr" edims=""/>
+      <scalar name="root.comp1.ht.w65_3d" description="Discrete_weight" plot="false" summation="false" unit="sr" edims=""/>
+      <scalar name="root.comp1.ht.w66_3d" description="Discrete_weight" plot="false" summation="false" unit="sr" edims=""/>
+      <scalar name="root.comp1.ht.w67_3d" description="Discrete_weight" plot="false" summation="false" unit="sr" edims=""/>
+      <scalar name="root.comp1.ht.w68_3d" description="Discrete_weight" plot="false" summation="false" unit="sr" edims=""/>
+      <scalar name="root.comp1.ht.w69_3d" description="Discrete_weight" plot="false" summation="false" unit="sr" edims=""/>
+      <scalar name="root.comp1.ht.w70_3d" description="Discrete_weight" plot="false" summation="false" unit="sr" edims=""/>
+      <scalar name="root.comp1.ht.w71_3d" description="Discrete_weight" plot="false" summation="false" unit="sr" edims=""/>
+      <scalar name="root.comp1.ht.w72_3d" description="Discrete_weight" plot="false" summation="false" unit="sr" edims=""/>
+      <scalar name="root.comp1.ht.w73_3d" description="Discrete_weight" plot="false" summation="false" unit="sr" edims=""/>
+      <scalar name="root.comp1.ht.w74_3d" description="Discrete_weight" plot="false" summation="false" unit="sr" edims=""/>
+      <scalar name="root.comp1.ht.w75_3d" description="Discrete_weight" plot="false" summation="false" unit="sr" edims=""/>
+      <scalar name="root.comp1.ht.w76_3d" description="Discrete_weight" plot="false" summation="false" unit="sr" edims=""/>
+      <scalar name="root.comp1.ht.w77_3d" description="Discrete_weight" plot="false" summation="false" unit="sr" edims=""/>
+      <scalar name="root.comp1.ht.w78_3d" description="Discrete_weight" plot="false" summation="false" unit="sr" edims=""/>
+      <scalar name="root.comp1.ht.w79_3d" description="Discrete_weight" plot="false" summation="false" unit="sr" edims=""/>
+      <scalar name="root.comp1.ht.w80_3d" description="Discrete_weight" plot="false" summation="false" unit="sr" edims=""/>
+      <scalar name="root.comp1.ht.varIntSpa" description="Intermediate_variable" plot="false" summation="false" unit="m" edims="2"/>
+      <scalar name="root.comp1.uflux.T" description="Boundary_flux_up_direction" plot="false" summation="false" edims="1"/>
+      <scalar name="root.comp1.dflux.T" description="Boundary_flux_down_direction" plot="false" summation="false" edims="1"/>
+      <scalar name="root.comp1.Tt" description="Temperature@,_first_time_derivative" plot="false" summation="false" unit="K/s" edims="2"/>
+      <scalar name="root.comp1.Ttt" description="Temperature@,_second_time_derivative" plot="false" summation="false" unit="K/s^2" edims="2"/>
+      <scalar name="root.comp1.ht.solid1.pRef" description="Reference_pressure_level" plot="false" summation="false" unit="Pa" edims="2"/>
+      <scalar name="root.comp1.ht.alphap" description="Isobaric_compressibility_coefficient" plot="false" summation="false" unit="1/K" edims="2"/>
+      <scalar name="root.comp1.ht.Q" description="Heat_source" plot="false" summation="false" unit="W/m^3" edims="2"/>
+      <scalar name="root.comp1.ht.qs" description="Production/absorption_coefficient" plot="false" summation="false" unit="W/(m^3*K)" edims="2"/>
+      <scalar name="root.comp1.ht.Qmet" description="Metabolic_heat_source" plot="false" summation="false" unit="W/m^3" edims="2"/>
+      <scalar name="root.comp1.ht.qs_oop" description="Out-of-plane_production/absorption_coefficient" plot="false" summation="false" unit="W/(m^3*K)" edims="2"/>
+      <scalar name="root.comp1.ht.Qoop" description="Out-of-plane_heat_source" plot="false" summation="false" unit="W/m^3" edims="2"/>
+      <scalar name="root.comp1.ht.rhoInt" description="Density_for_integration" plot="false" summation="false" unit="kg/m^3" edims="2"/>
+      <scalar name="root.comp1.ht.CpInt" description="Specific_heat_capacity_for_integration" plot="false" summation="false" unit="J/(kg*K)" edims="2"/>
+      <scalar name="root.comp1.ht.gammaInt" description="Ratio_of_specific_heats_for_integration" plot="false" summation="false" unit="1" edims="2"/>
+      <scalar name="root.comp1.ht.TRef" description="Reference_temperature" plot="false" summation="false" unit="K" edims="2"/>
+      <scalar name="root.comp1.ht.pRef" description="Reference_pressure_level" plot="false" summation="false" unit="Pa" edims="2"/>
+      <scalar name="root.comp1.ht.Qltot" description="Total_line_heat_source" plot="false" summation="false" unit="W/m" edims="0"/>
+      <scalar name="root.comp1.ht.hfPW" description="Full_pressure_work_indicator" plot="false" summation="false" unit="1" edims="2"/>
+      <scalar name="root.comp1.ht.solid1.varIntSpa" description="Intermediate_variable" plot="false" summation="false" unit="m" edims="2"/>
+      <scalar name="root.comp1.ht.isSolid" description="Solid_boolean" plot="false" summation="false" unit="1" edims="2"/>
+      <scalar name="root.comp1.ht.Tinit" description="Temperature" plot="false" summation="false" unit="K" edims="2"/>
+      <scalar name="root.comp1.ht.ins1.varIntSpa" description="Intermediate_variable" plot="false" summation="false" unit="m" edims="1"/>
+      <scalar name="root.comp1.ht.hs1.Q" description="Heat_source" plot="false" summation="false" unit="W/m^3" edims="2"/>
+      <scalar name="root.comp1.ht.T0" description="Temperature" plot="false" summation="false" unit="K" edims="1"/>
+      <scalar name="root.comp1.ht.temp1.varIntSpa" description="Intermediate_variable" plot="false" summation="false" unit="m" edims="1"/>
+      <scalar name="root.comp1.ht.omega" description="Angular_frequency" plot="false" summation="false" unit="rad/s" edims="-1"/>
+      <scalar name="root.comp1.ht.solid1.minput_temperature" description="Temperature" plot="false" summation="false" unit="K" edims="2"/>
+      <scalar name="root.comp1.ht.solid1.minput_pressure" description="Absolute_pressure" plot="false" summation="false" unit="Pa" edims="2"/>
+      <scalar name="root.comp1.ht.tau_prime" description="GLS_time_scale" plot="false" summation="false" unit="m^3*s/kg" edims="2"/>
+      <scalar name="root.comp1.ht.res_prime" description="Additional_conservative_advective_contribution" plot="false" summation="false" unit="W/m^3" edims="2"/>
+      <scalar name="root.comp1.ht.testOp_T" description="" plot="false" summation="false" unit="W/m^2" edims="2"/>
+      <scalar name="root.comp1.ht.tauScStr_T" description="" plot="false" summation="false" unit="K*m^2/W" edims="2"/>
+      <scalar name="root.comp1.ht.streamline" description="Streamline_diffusion" plot="false" summation="false" unit="kg*K/(m*s^3)" edims="2"/>
+      <scalar name="root.comp1.ht.helem" description="Element_size" plot="false" summation="false" unit="m" edims="2"/>
+      <scalar name="root.comp1.ht.res_T" description="Equation_residual" plot="false" summation="false" unit="W/m^3" edims="2"/>
+      <scalar name="root.comp1.ht.tau_e" description="GLS_time_scale" plot="false" summation="false" unit="m*s^3*K/kg" edims="2"/>
+      <scalar name="root.comp1.ht.tau_eCross" description="" plot="false" summation="false" unit="K*m^2/W" edims="2"/>
+      <scalar name="root.comp1.ht.gTgijgT" description="" plot="false" summation="false" unit="K^2" edims="2"/>
+      <scalar name="root.comp1.ht.h2GT" description="" plot="false" summation="false" unit="m^2" edims="2"/>
+      <scalar name="root.comp1.ht.xiT" description="Stabilization_switch_variable" plot="false" summation="false" unit="1" edims="2"/>
+      <scalar name="root.comp1.ht.xiTt" description="" plot="false" summation="false" unit="1" edims="2"/>
+      <scalar name="root.comp1.ht.gijij" description="" plot="false" summation="false" unit="m^4" edims="2"/>
+      <tensor name="root.comp1.ht.[F_mat11,F_mat21,F_mat31,F_mat12,F_mat22,F_mat32,F_mat13,F_mat23,F_mat33]" description="Coordinate_transform_from_X_frame_to_Y_frame#Material#Spatial" plot="false" summation="false" basename="root.comp1.ht.F_mat" size="3,3" symmetric="false" axisymmetric="false" edims="">
+        <scalar name="root.comp1.ht.F_mat11" description="Coordinate_transform_from_X_frame_to_Y_frame#Material#Spatial@,_x_component#xx"/>
+        <scalar name="root.comp1.ht.F_mat21" description="Coordinate_transform_from_X_frame_to_Y_frame#Material#Spatial@,_x_component#yx"/>
+        <scalar name="root.comp1.ht.F_mat31" description="Coordinate_transform_from_X_frame_to_Y_frame#Material#Spatial@,_x_component#zx"/>
+        <scalar name="root.comp1.ht.F_mat12" description="Coordinate_transform_from_X_frame_to_Y_frame#Material#Spatial@,_x_component#xy"/>
+        <scalar name="root.comp1.ht.F_mat22" description="Coordinate_transform_from_X_frame_to_Y_frame#Material#Spatial@,_x_component#yy"/>
+        <scalar name="root.comp1.ht.F_mat32" description="Coordinate_transform_from_X_frame_to_Y_frame#Material#Spatial@,_x_component#zy"/>
+        <scalar name="root.comp1.ht.F_mat13" description="Coordinate_transform_from_X_frame_to_Y_frame#Material#Spatial@,_x_component#xz"/>
+        <scalar name="root.comp1.ht.F_mat23" description="Coordinate_transform_from_X_frame_to_Y_frame#Material#Spatial@,_x_component#yz"/>
+        <scalar name="root.comp1.ht.F_mat33" description="Coordinate_transform_from_X_frame_to_Y_frame#Material#Spatial@,_x_component#zz"/>
+      </tensor>
+      <tensor name="root.comp1.ht.[invF_mat11,invF_mat21,invF_mat31,invF_mat12,invF_mat22,invF_mat32,invF_mat13,invF_mat23,invF_mat33]" description="Coordinate_transform_from_X_frame_to_Y_frame#Spatial#Material" plot="false" summation="false" basename="root.comp1.ht.invF_mat" size="3,3" symmetric="false" axisymmetric="false" edims="">
+        <scalar name="root.comp1.ht.invF_mat11" description="Coordinate_transform_from_X_frame_to_Y_frame#Spatial#Material@,_x_component#xx"/>
+        <scalar name="root.comp1.ht.invF_mat21" description="Coordinate_transform_from_X_frame_to_Y_frame#Spatial#Material@,_x_component#yx"/>
+        <scalar name="root.comp1.ht.invF_mat31" description="Coordinate_transform_from_X_frame_to_Y_frame#Spatial#Material@,_x_component#zx"/>
+        <scalar name="root.comp1.ht.invF_mat12" description="Coordinate_transform_from_X_frame_to_Y_frame#Spatial#Material@,_x_component#xy"/>
+        <scalar name="root.comp1.ht.invF_mat22" description="Coordinate_transform_from_X_frame_to_Y_frame#Spatial#Material@,_x_component#yy"/>
+        <scalar name="root.comp1.ht.invF_mat32" description="Coordinate_transform_from_X_frame_to_Y_frame#Spatial#Material@,_x_component#zy"/>
+        <scalar name="root.comp1.ht.invF_mat13" description="Coordinate_transform_from_X_frame_to_Y_frame#Spatial#Material@,_x_component#xz"/>
+        <scalar name="root.comp1.ht.invF_mat23" description="Coordinate_transform_from_X_frame_to_Y_frame#Spatial#Material@,_x_component#yz"/>
+        <scalar name="root.comp1.ht.invF_mat33" description="Coordinate_transform_from_X_frame_to_Y_frame#Spatial#Material@,_x_component#zz"/>
+      </tensor>
+      <tensor name="root.comp1.ht.[Ftang_mat11,Ftang_mat21,Ftang_mat31,Ftang_mat12,Ftang_mat22,Ftang_mat32,Ftang_mat13,Ftang_mat23,Ftang_mat33]" description="Coordinate_transform_from_X_frame_to_Y_frame#Material#Spatial" plot="false" summation="false" basename="root.comp1.ht.Ftang_mat" size="3,3" symmetric="false" axisymmetric="false" edims="">
+        <scalar name="root.comp1.ht.Ftang_mat11" description="Coordinate_transform_from_X_frame_to_Y_frame#Material#Spatial@,_x_component#xx"/>
+        <scalar name="root.comp1.ht.Ftang_mat21" description="Coordinate_transform_from_X_frame_to_Y_frame#Material#Spatial@,_x_component#yx"/>
+        <scalar name="root.comp1.ht.Ftang_mat31" description="Coordinate_transform_from_X_frame_to_Y_frame#Material#Spatial@,_x_component#zx"/>
+        <scalar name="root.comp1.ht.Ftang_mat12" description="Coordinate_transform_from_X_frame_to_Y_frame#Material#Spatial@,_x_component#xy"/>
+        <scalar name="root.comp1.ht.Ftang_mat22" description="Coordinate_transform_from_X_frame_to_Y_frame#Material#Spatial@,_x_component#yy"/>
+        <scalar name="root.comp1.ht.Ftang_mat32" description="Coordinate_transform_from_X_frame_to_Y_frame#Material#Spatial@,_x_component#zy"/>
+        <scalar name="root.comp1.ht.Ftang_mat13" description="Coordinate_transform_from_X_frame_to_Y_frame#Material#Spatial@,_x_component#xz"/>
+        <scalar name="root.comp1.ht.Ftang_mat23" description="Coordinate_transform_from_X_frame_to_Y_frame#Material#Spatial@,_x_component#yz"/>
+        <scalar name="root.comp1.ht.Ftang_mat33" description="Coordinate_transform_from_X_frame_to_Y_frame#Material#Spatial@,_x_component#zz"/>
+      </tensor>
+      <tensor name="root.comp1.ht.[Fxdim_mat11,Fxdim_mat21,Fxdim_mat31,Fxdim_mat12,Fxdim_mat22,Fxdim_mat32,Fxdim_mat13,Fxdim_mat23,Fxdim_mat33]" description="Coordinate_transform_from_X_frame_to_Y_frame#Material#Spatial" plot="false" summation="false" basename="root.comp1.ht.Fxdim_mat" size="3,3" symmetric="false" axisymmetric="false" edims="">
+        <scalar name="root.comp1.ht.Fxdim_mat11" description="Coordinate_transform_from_X_frame_to_Y_frame#Material#Spatial@,_x_component#xx"/>
+        <scalar name="root.comp1.ht.Fxdim_mat21" description="Coordinate_transform_from_X_frame_to_Y_frame#Material#Spatial@,_x_component#yx"/>
+        <scalar name="root.comp1.ht.Fxdim_mat31" description="Coordinate_transform_from_X_frame_to_Y_frame#Material#Spatial@,_x_component#zx"/>
+        <scalar name="root.comp1.ht.Fxdim_mat12" description="Coordinate_transform_from_X_frame_to_Y_frame#Material#Spatial@,_x_component#xy"/>
+        <scalar name="root.comp1.ht.Fxdim_mat22" description="Coordinate_transform_from_X_frame_to_Y_frame#Material#Spatial@,_x_component#yy"/>
+        <scalar name="root.comp1.ht.Fxdim_mat32" description="Coordinate_transform_from_X_frame_to_Y_frame#Material#Spatial@,_x_component#zy"/>
+        <scalar name="root.comp1.ht.Fxdim_mat13" description="Coordinate_transform_from_X_frame_to_Y_frame#Material#Spatial@,_x_component#xz"/>
+        <scalar name="root.comp1.ht.Fxdim_mat23" description="Coordinate_transform_from_X_frame_to_Y_frame#Material#Spatial@,_x_component#yz"/>
+        <scalar name="root.comp1.ht.Fxdim_mat33" description="Coordinate_transform_from_X_frame_to_Y_frame#Material#Spatial@,_x_component#zz"/>
+      </tensor>
+      <tensor name="root.comp1.ht.[s1_3dx,s1_3dy,s1_3dz]" description="Discrete_ordinate" plot="false" summation="false" basename="root.comp1.ht.s1_3d" size="3,1" symmetric="false" axisymmetric="false" edims="">
+        <scalar name="root.comp1.ht.s1_3dx" description="Discrete_ordinate@,_x_component#x"/>
+        <scalar name="root.comp1.ht.s1_3dy" description="Discrete_ordinate@,_x_component#y"/>
+        <scalar name="root.comp1.ht.s1_3dz" description="Discrete_ordinate@,_x_component#z"/>
+      </tensor>
+      <tensor name="root.comp1.ht.[s2_3dx,s2_3dy,s2_3dz]" description="Discrete_ordinate" plot="false" summation="false" basename="root.comp1.ht.s2_3d" size="3,1" symmetric="false" axisymmetric="false" edims="">
+        <scalar name="root.comp1.ht.s2_3dx" description="Discrete_ordinate@,_x_component#x"/>
+        <scalar name="root.comp1.ht.s2_3dy" description="Discrete_ordinate@,_x_component#y"/>
+        <scalar name="root.comp1.ht.s2_3dz" description="Discrete_ordinate@,_x_component#z"/>
+      </tensor>
+      <tensor name="root.comp1.ht.[s3_3dx,s3_3dy,s3_3dz]" description="Discrete_ordinate" plot="false" summation="false" basename="root.comp1.ht.s3_3d" size="3,1" symmetric="false" axisymmetric="false" edims="">
+        <scalar name="root.comp1.ht.s3_3dx" description="Discrete_ordinate@,_x_component#x"/>
+        <scalar name="root.comp1.ht.s3_3dy" description="Discrete_ordinate@,_x_component#y"/>
+        <scalar name="root.comp1.ht.s3_3dz" description="Discrete_ordinate@,_x_component#z"/>
+      </tensor>
+      <tensor name="root.comp1.ht.[s4_3dx,s4_3dy,s4_3dz]" description="Discrete_ordinate" plot="false" summation="false" basename="root.comp1.ht.s4_3d" size="3,1" symmetric="false" axisymmetric="false" edims="">
+        <scalar name="root.comp1.ht.s4_3dx" description="Discrete_ordinate@,_x_component#x"/>
+        <scalar name="root.comp1.ht.s4_3dy" description="Discrete_ordinate@,_x_component#y"/>
+        <scalar name="root.comp1.ht.s4_3dz" description="Discrete_ordinate@,_x_component#z"/>
+      </tensor>
+      <tensor name="root.comp1.ht.[s5_3dx,s5_3dy,s5_3dz]" description="Discrete_ordinate" plot="false" summation="false" basename="root.comp1.ht.s5_3d" size="3,1" symmetric="false" axisymmetric="false" edims="">
+        <scalar name="root.comp1.ht.s5_3dx" description="Discrete_ordinate@,_x_component#x"/>
+        <scalar name="root.comp1.ht.s5_3dy" description="Discrete_ordinate@,_x_component#y"/>
+        <scalar name="root.comp1.ht.s5_3dz" description="Discrete_ordinate@,_x_component#z"/>
+      </tensor>
+      <tensor name="root.comp1.ht.[s6_3dx,s6_3dy,s6_3dz]" description="Discrete_ordinate" plot="false" summation="false" basename="root.comp1.ht.s6_3d" size="3,1" symmetric="false" axisymmetric="false" edims="">
+        <scalar name="root.comp1.ht.s6_3dx" description="Discrete_ordinate@,_x_component#x"/>
+        <scalar name="root.comp1.ht.s6_3dy" description="Discrete_ordinate@,_x_component#y"/>
+        <scalar name="root.comp1.ht.s6_3dz" description="Discrete_ordinate@,_x_component#z"/>
+      </tensor>
+      <tensor name="root.comp1.ht.[s7_3dx,s7_3dy,s7_3dz]" description="Discrete_ordinate" plot="false" summation="false" basename="root.comp1.ht.s7_3d" size="3,1" symmetric="false" axisymmetric="false" edims="">
+        <scalar name="root.comp1.ht.s7_3dx" description="Discrete_ordinate@,_x_component#x"/>
+        <scalar name="root.comp1.ht.s7_3dy" description="Discrete_ordinate@,_x_component#y"/>
+        <scalar name="root.comp1.ht.s7_3dz" description="Discrete_ordinate@,_x_component#z"/>
+      </tensor>
+      <tensor name="root.comp1.ht.[s8_3dx,s8_3dy,s8_3dz]" description="Discrete_ordinate" plot="false" summation="false" basename="root.comp1.ht.s8_3d" size="3,1" symmetric="false" axisymmetric="false" edims="">
+        <scalar name="root.comp1.ht.s8_3dx" description="Discrete_ordinate@,_x_component#x"/>
+        <scalar name="root.comp1.ht.s8_3dy" description="Discrete_ordinate@,_x_component#y"/>
+        <scalar name="root.comp1.ht.s8_3dz" description="Discrete_ordinate@,_x_component#z"/>
+      </tensor>
+      <tensor name="root.comp1.ht.[s9_3dx,s9_3dy,s9_3dz]" description="Discrete_ordinate" plot="false" summation="false" basename="root.comp1.ht.s9_3d" size="3,1" symmetric="false" axisymmetric="false" edims="">
+        <scalar name="root.comp1.ht.s9_3dx" description="Discrete_ordinate@,_x_component#x"/>
+        <scalar name="root.comp1.ht.s9_3dy" description="Discrete_ordinate@,_x_component#y"/>
+        <scalar name="root.comp1.ht.s9_3dz" description="Discrete_ordinate@,_x_component#z"/>
+      </tensor>
+      <tensor name="root.comp1.ht.[s10_3dx,s10_3dy,s10_3dz]" description="Discrete_ordinate" plot="false" summation="false" basename="root.comp1.ht.s10_3d" size="3,1" symmetric="false" axisymmetric="false" edims="">
+        <scalar name="root.comp1.ht.s10_3dx" description="Discrete_ordinate@,_x_component#x"/>
+        <scalar name="root.comp1.ht.s10_3dy" description="Discrete_ordinate@,_x_component#y"/>
+        <scalar name="root.comp1.ht.s10_3dz" description="Discrete_ordinate@,_x_component#z"/>
+      </tensor>
+      <tensor name="root.comp1.ht.[s11_3dx,s11_3dy,s11_3dz]" description="Discrete_ordinate" plot="false" summation="false" basename="root.comp1.ht.s11_3d" size="3,1" symmetric="false" axisymmetric="false" edims="">
+        <scalar name="root.comp1.ht.s11_3dx" description="Discrete_ordinate@,_x_component#x"/>
+        <scalar name="root.comp1.ht.s11_3dy" description="Discrete_ordinate@,_x_component#y"/>
+        <scalar name="root.comp1.ht.s11_3dz" description="Discrete_ordinate@,_x_component#z"/>
+      </tensor>
+      <tensor name="root.comp1.ht.[s12_3dx,s12_3dy,s12_3dz]" description="Discrete_ordinate" plot="false" summation="false" basename="root.comp1.ht.s12_3d" size="3,1" symmetric="false" axisymmetric="false" edims="">
+        <scalar name="root.comp1.ht.s12_3dx" description="Discrete_ordinate@,_x_component#x"/>
+        <scalar name="root.comp1.ht.s12_3dy" description="Discrete_ordinate@,_x_component#y"/>
+        <scalar name="root.comp1.ht.s12_3dz" description="Discrete_ordinate@,_x_component#z"/>
+      </tensor>
+      <tensor name="root.comp1.ht.[s13_3dx,s13_3dy,s13_3dz]" description="Discrete_ordinate" plot="false" summation="false" basename="root.comp1.ht.s13_3d" size="3,1" symmetric="false" axisymmetric="false" edims="">
+        <scalar name="root.comp1.ht.s13_3dx" description="Discrete_ordinate@,_x_component#x"/>
+        <scalar name="root.comp1.ht.s13_3dy" description="Discrete_ordinate@,_x_component#y"/>
+        <scalar name="root.comp1.ht.s13_3dz" description="Discrete_ordinate@,_x_component#z"/>
+      </tensor>
+      <tensor name="root.comp1.ht.[s14_3dx,s14_3dy,s14_3dz]" description="Discrete_ordinate" plot="false" summation="false" basename="root.comp1.ht.s14_3d" size="3,1" symmetric="false" axisymmetric="false" edims="">
+        <scalar name="root.comp1.ht.s14_3dx" description="Discrete_ordinate@,_x_component#x"/>
+        <scalar name="root.comp1.ht.s14_3dy" description="Discrete_ordinate@,_x_component#y"/>
+        <scalar name="root.comp1.ht.s14_3dz" description="Discrete_ordinate@,_x_component#z"/>
+      </tensor>
+      <tensor name="root.comp1.ht.[s15_3dx,s15_3dy,s15_3dz]" description="Discrete_ordinate" plot="false" summation="false" basename="root.comp1.ht.s15_3d" size="3,1" symmetric="false" axisymmetric="false" edims="">
+        <scalar name="root.comp1.ht.s15_3dx" description="Discrete_ordinate@,_x_component#x"/>
+        <scalar name="root.comp1.ht.s15_3dy" description="Discrete_ordinate@,_x_component#y"/>
+        <scalar name="root.comp1.ht.s15_3dz" description="Discrete_ordinate@,_x_component#z"/>
+      </tensor>
+      <tensor name="root.comp1.ht.[s16_3dx,s16_3dy,s16_3dz]" description="Discrete_ordinate" plot="false" summation="false" basename="root.comp1.ht.s16_3d" size="3,1" symmetric="false" axisymmetric="false" edims="">
+        <scalar name="root.comp1.ht.s16_3dx" description="Discrete_ordinate@,_x_component#x"/>
+        <scalar name="root.comp1.ht.s16_3dy" description="Discrete_ordinate@,_x_component#y"/>
+        <scalar name="root.comp1.ht.s16_3dz" description="Discrete_ordinate@,_x_component#z"/>
+      </tensor>
+      <tensor name="root.comp1.ht.[s17_3dx,s17_3dy,s17_3dz]" description="Discrete_ordinate" plot="false" summation="false" basename="root.comp1.ht.s17_3d" size="3,1" symmetric="false" axisymmetric="false" edims="">
+        <scalar name="root.comp1.ht.s17_3dx" description="Discrete_ordinate@,_x_component#x"/>
+        <scalar name="root.comp1.ht.s17_3dy" description="Discrete_ordinate@,_x_component#y"/>
+        <scalar name="root.comp1.ht.s17_3dz" description="Discrete_ordinate@,_x_component#z"/>
+      </tensor>
+      <tensor name="root.comp1.ht.[s18_3dx,s18_3dy,s18_3dz]" description="Discrete_ordinate" plot="false" summation="false" basename="root.comp1.ht.s18_3d" size="3,1" symmetric="false" axisymmetric="false" edims="">
+        <scalar name="root.comp1.ht.s18_3dx" description="Discrete_ordinate@,_x_component#x"/>
+        <scalar name="root.comp1.ht.s18_3dy" description="Discrete_ordinate@,_x_component#y"/>
+        <scalar name="root.comp1.ht.s18_3dz" description="Discrete_ordinate@,_x_component#z"/>
+      </tensor>
+      <tensor name="root.comp1.ht.[s19_3dx,s19_3dy,s19_3dz]" description="Discrete_ordinate" plot="false" summation="false" basename="root.comp1.ht.s19_3d" size="3,1" symmetric="false" axisymmetric="false" edims="">
+        <scalar name="root.comp1.ht.s19_3dx" description="Discrete_ordinate@,_x_component#x"/>
+        <scalar name="root.comp1.ht.s19_3dy" description="Discrete_ordinate@,_x_component#y"/>
+        <scalar name="root.comp1.ht.s19_3dz" description="Discrete_ordinate@,_x_component#z"/>
+      </tensor>
+      <tensor name="root.comp1.ht.[s20_3dx,s20_3dy,s20_3dz]" description="Discrete_ordinate" plot="false" summation="false" basename="root.comp1.ht.s20_3d" size="3,1" symmetric="false" axisymmetric="false" edims="">
+        <scalar name="root.comp1.ht.s20_3dx" description="Discrete_ordinate@,_x_component#x"/>
+        <scalar name="root.comp1.ht.s20_3dy" description="Discrete_ordinate@,_x_component#y"/>
+        <scalar name="root.comp1.ht.s20_3dz" description="Discrete_ordinate@,_x_component#z"/>
+      </tensor>
+      <tensor name="root.comp1.ht.[s21_3dx,s21_3dy,s21_3dz]" description="Discrete_ordinate" plot="false" summation="false" basename="root.comp1.ht.s21_3d" size="3,1" symmetric="false" axisymmetric="false" edims="">
+        <scalar name="root.comp1.ht.s21_3dx" description="Discrete_ordinate@,_x_component#x"/>
+        <scalar name="root.comp1.ht.s21_3dy" description="Discrete_ordinate@,_x_component#y"/>
+        <scalar name="root.comp1.ht.s21_3dz" description="Discrete_ordinate@,_x_component#z"/>
+      </tensor>
+      <tensor name="root.comp1.ht.[s22_3dx,s22_3dy,s22_3dz]" description="Discrete_ordinate" plot="false" summation="false" basename="root.comp1.ht.s22_3d" size="3,1" symmetric="false" axisymmetric="false" edims="">
+        <scalar name="root.comp1.ht.s22_3dx" description="Discrete_ordinate@,_x_component#x"/>
+        <scalar name="root.comp1.ht.s22_3dy" description="Discrete_ordinate@,_x_component#y"/>
+        <scalar name="root.comp1.ht.s22_3dz" description="Discrete_ordinate@,_x_component#z"/>
+      </tensor>
+      <tensor name="root.comp1.ht.[s23_3dx,s23_3dy,s23_3dz]" description="Discrete_ordinate" plot="false" summation="false" basename="root.comp1.ht.s23_3d" size="3,1" symmetric="false" axisymmetric="false" edims="">
+        <scalar name="root.comp1.ht.s23_3dx" description="Discrete_ordinate@,_x_component#x"/>
+        <scalar name="root.comp1.ht.s23_3dy" description="Discrete_ordinate@,_x_component#y"/>
+        <scalar name="root.comp1.ht.s23_3dz" description="Discrete_ordinate@,_x_component#z"/>
+      </tensor>
+      <tensor name="root.comp1.ht.[s24_3dx,s24_3dy,s24_3dz]" description="Discrete_ordinate" plot="false" summation="false" basename="root.comp1.ht.s24_3d" size="3,1" symmetric="false" axisymmetric="false" edims="">
+        <scalar name="root.comp1.ht.s24_3dx" description="Discrete_ordinate@,_x_component#x"/>
+        <scalar name="root.comp1.ht.s24_3dy" description="Discrete_ordinate@,_x_component#y"/>
+        <scalar name="root.comp1.ht.s24_3dz" description="Discrete_ordinate@,_x_component#z"/>
+      </tensor>
+      <tensor name="root.comp1.ht.[s25_3dx,s25_3dy,s25_3dz]" description="Discrete_ordinate" plot="false" summation="false" basename="root.comp1.ht.s25_3d" size="3,1" symmetric="false" axisymmetric="false" edims="">
+        <scalar name="root.comp1.ht.s25_3dx" description="Discrete_ordinate@,_x_component#x"/>
+        <scalar name="root.comp1.ht.s25_3dy" description="Discrete_ordinate@,_x_component#y"/>
+        <scalar name="root.comp1.ht.s25_3dz" description="Discrete_ordinate@,_x_component#z"/>
+      </tensor>
+      <tensor name="root.comp1.ht.[s26_3dx,s26_3dy,s26_3dz]" description="Discrete_ordinate" plot="false" summation="false" basename="root.comp1.ht.s26_3d" size="3,1" symmetric="false" axisymmetric="false" edims="">
+        <scalar name="root.comp1.ht.s26_3dx" description="Discrete_ordinate@,_x_component#x"/>
+        <scalar name="root.comp1.ht.s26_3dy" description="Discrete_ordinate@,_x_component#y"/>
+        <scalar name="root.comp1.ht.s26_3dz" description="Discrete_ordinate@,_x_component#z"/>
+      </tensor>
+      <tensor name="root.comp1.ht.[s27_3dx,s27_3dy,s27_3dz]" description="Discrete_ordinate" plot="false" summation="false" basename="root.comp1.ht.s27_3d" size="3,1" symmetric="false" axisymmetric="false" edims="">
+        <scalar name="root.comp1.ht.s27_3dx" description="Discrete_ordinate@,_x_component#x"/>
+        <scalar name="root.comp1.ht.s27_3dy" description="Discrete_ordinate@,_x_component#y"/>
+        <scalar name="root.comp1.ht.s27_3dz" description="Discrete_ordinate@,_x_component#z"/>
+      </tensor>
+      <tensor name="root.comp1.ht.[s28_3dx,s28_3dy,s28_3dz]" description="Discrete_ordinate" plot="false" summation="false" basename="root.comp1.ht.s28_3d" size="3,1" symmetric="false" axisymmetric="false" edims="">
+        <scalar name="root.comp1.ht.s28_3dx" description="Discrete_ordinate@,_x_component#x"/>
+        <scalar name="root.comp1.ht.s28_3dy" description="Discrete_ordinate@,_x_component#y"/>
+        <scalar name="root.comp1.ht.s28_3dz" description="Discrete_ordinate@,_x_component#z"/>
+      </tensor>
+      <tensor name="root.comp1.ht.[s29_3dx,s29_3dy,s29_3dz]" description="Discrete_ordinate" plot="false" summation="false" basename="root.comp1.ht.s29_3d" size="3,1" symmetric="false" axisymmetric="false" edims="">
+        <scalar name="root.comp1.ht.s29_3dx" description="Discrete_ordinate@,_x_component#x"/>
+        <scalar name="root.comp1.ht.s29_3dy" description="Discrete_ordinate@,_x_component#y"/>
+        <scalar name="root.comp1.ht.s29_3dz" description="Discrete_ordinate@,_x_component#z"/>
+      </tensor>
+      <tensor name="root.comp1.ht.[s30_3dx,s30_3dy,s30_3dz]" description="Discrete_ordinate" plot="false" summation="false" basename="root.comp1.ht.s30_3d" size="3,1" symmetric="false" axisymmetric="false" edims="">
+        <scalar name="root.comp1.ht.s30_3dx" description="Discrete_ordinate@,_x_component#x"/>
+        <scalar name="root.comp1.ht.s30_3dy" description="Discrete_ordinate@,_x_component#y"/>
+        <scalar name="root.comp1.ht.s30_3dz" description="Discrete_ordinate@,_x_component#z"/>
+      </tensor>
+      <tensor name="root.comp1.ht.[s31_3dx,s31_3dy,s31_3dz]" description="Discrete_ordinate" plot="false" summation="false" basename="root.comp1.ht.s31_3d" size="3,1" symmetric="false" axisymmetric="false" edims="">
+        <scalar name="root.comp1.ht.s31_3dx" description="Discrete_ordinate@,_x_component#x"/>
+        <scalar name="root.comp1.ht.s31_3dy" description="Discrete_ordinate@,_x_component#y"/>
+        <scalar name="root.comp1.ht.s31_3dz" description="Discrete_ordinate@,_x_component#z"/>
+      </tensor>
+      <tensor name="root.comp1.ht.[s32_3dx,s32_3dy,s32_3dz]" description="Discrete_ordinate" plot="false" summation="false" basename="root.comp1.ht.s32_3d" size="3,1" symmetric="false" axisymmetric="false" edims="">
+        <scalar name="root.comp1.ht.s32_3dx" description="Discrete_ordinate@,_x_component#x"/>
+        <scalar name="root.comp1.ht.s32_3dy" description="Discrete_ordinate@,_x_component#y"/>
+        <scalar name="root.comp1.ht.s32_3dz" description="Discrete_ordinate@,_x_component#z"/>
+      </tensor>
+      <tensor name="root.comp1.ht.[s33_3dx,s33_3dy,s33_3dz]" description="Discrete_ordinate" plot="false" summation="false" basename="root.comp1.ht.s33_3d" size="3,1" symmetric="false" axisymmetric="false" edims="">
+        <scalar name="root.comp1.ht.s33_3dx" description="Discrete_ordinate@,_x_component#x"/>
+        <scalar name="root.comp1.ht.s33_3dy" description="Discrete_ordinate@,_x_component#y"/>
+        <scalar name="root.comp1.ht.s33_3dz" description="Discrete_ordinate@,_x_component#z"/>
+      </tensor>
+      <tensor name="root.comp1.ht.[s34_3dx,s34_3dy,s34_3dz]" description="Discrete_ordinate" plot="false" summation="false" basename="root.comp1.ht.s34_3d" size="3,1" symmetric="false" axisymmetric="false" edims="">
+        <scalar name="root.comp1.ht.s34_3dx" description="Discrete_ordinate@,_x_component#x"/>
+        <scalar name="root.comp1.ht.s34_3dy" description="Discrete_ordinate@,_x_component#y"/>
+        <scalar name="root.comp1.ht.s34_3dz" description="Discrete_ordinate@,_x_component#z"/>
+      </tensor>
+      <tensor name="root.comp1.ht.[s35_3dx,s35_3dy,s35_3dz]" description="Discrete_ordinate" plot="false" summation="false" basename="root.comp1.ht.s35_3d" size="3,1" symmetric="false" axisymmetric="false" edims="">
+        <scalar name="root.comp1.ht.s35_3dx" description="Discrete_ordinate@,_x_component#x"/>
+        <scalar name="root.comp1.ht.s35_3dy" description="Discrete_ordinate@,_x_component#y"/>
+        <scalar name="root.comp1.ht.s35_3dz" description="Discrete_ordinate@,_x_component#z"/>
+      </tensor>
+      <tensor name="root.comp1.ht.[s36_3dx,s36_3dy,s36_3dz]" description="Discrete_ordinate" plot="false" summation="false" basename="root.comp1.ht.s36_3d" size="3,1" symmetric="false" axisymmetric="false" edims="">
+        <scalar name="root.comp1.ht.s36_3dx" description="Discrete_ordinate@,_x_component#x"/>
+        <scalar name="root.comp1.ht.s36_3dy" description="Discrete_ordinate@,_x_component#y"/>
+        <scalar name="root.comp1.ht.s36_3dz" description="Discrete_ordinate@,_x_component#z"/>
+      </tensor>
+      <tensor name="root.comp1.ht.[s37_3dx,s37_3dy,s37_3dz]" description="Discrete_ordinate" plot="false" summation="false" basename="root.comp1.ht.s37_3d" size="3,1" symmetric="false" axisymmetric="false" edims="">
+        <scalar name="root.comp1.ht.s37_3dx" description="Discrete_ordinate@,_x_component#x"/>
+        <scalar name="root.comp1.ht.s37_3dy" description="Discrete_ordinate@,_x_component#y"/>
+        <scalar name="root.comp1.ht.s37_3dz" description="Discrete_ordinate@,_x_component#z"/>
+      </tensor>
+      <tensor name="root.comp1.ht.[s38_3dx,s38_3dy,s38_3dz]" description="Discrete_ordinate" plot="false" summation="false" basename="root.comp1.ht.s38_3d" size="3,1" symmetric="false" axisymmetric="false" edims="">
+        <scalar name="root.comp1.ht.s38_3dx" description="Discrete_ordinate@,_x_component#x"/>
+        <scalar name="root.comp1.ht.s38_3dy" description="Discrete_ordinate@,_x_component#y"/>
+        <scalar name="root.comp1.ht.s38_3dz" description="Discrete_ordinate@,_x_component#z"/>
+      </tensor>
+      <tensor name="root.comp1.ht.[s39_3dx,s39_3dy,s39_3dz]" description="Discrete_ordinate" plot="false" summation="false" basename="root.comp1.ht.s39_3d" size="3,1" symmetric="false" axisymmetric="false" edims="">
+        <scalar name="root.comp1.ht.s39_3dx" description="Discrete_ordinate@,_x_component#x"/>
+        <scalar name="root.comp1.ht.s39_3dy" description="Discrete_ordinate@,_x_component#y"/>
+        <scalar name="root.comp1.ht.s39_3dz" description="Discrete_ordinate@,_x_component#z"/>
+      </tensor>
+      <tensor name="root.comp1.ht.[s40_3dx,s40_3dy,s40_3dz]" description="Discrete_ordinate" plot="false" summation="false" basename="root.comp1.ht.s40_3d" size="3,1" symmetric="false" axisymmetric="false" edims="">
+        <scalar name="root.comp1.ht.s40_3dx" description="Discrete_ordinate@,_x_component#x"/>
+        <scalar name="root.comp1.ht.s40_3dy" description="Discrete_ordinate@,_x_component#y"/>
+        <scalar name="root.comp1.ht.s40_3dz" description="Discrete_ordinate@,_x_component#z"/>
+      </tensor>
+      <tensor name="root.comp1.ht.[s41_3dx,s41_3dy,s41_3dz]" description="Discrete_ordinate" plot="false" summation="false" basename="root.comp1.ht.s41_3d" size="3,1" symmetric="false" axisymmetric="false" edims="">
+        <scalar name="root.comp1.ht.s41_3dx" description="Discrete_ordinate@,_x_component#x"/>
+        <scalar name="root.comp1.ht.s41_3dy" description="Discrete_ordinate@,_x_component#y"/>
+        <scalar name="root.comp1.ht.s41_3dz" description="Discrete_ordinate@,_x_component#z"/>
+      </tensor>
+      <tensor name="root.comp1.ht.[s42_3dx,s42_3dy,s42_3dz]" description="Discrete_ordinate" plot="false" summation="false" basename="root.comp1.ht.s42_3d" size="3,1" symmetric="false" axisymmetric="false" edims="">
+        <scalar name="root.comp1.ht.s42_3dx" description="Discrete_ordinate@,_x_component#x"/>
+        <scalar name="root.comp1.ht.s42_3dy" description="Discrete_ordinate@,_x_component#y"/>
+        <scalar name="root.comp1.ht.s42_3dz" description="Discrete_ordinate@,_x_component#z"/>
+      </tensor>
+      <tensor name="root.comp1.ht.[s43_3dx,s43_3dy,s43_3dz]" description="Discrete_ordinate" plot="false" summation="false" basename="root.comp1.ht.s43_3d" size="3,1" symmetric="false" axisymmetric="false" edims="">
+        <scalar name="root.comp1.ht.s43_3dx" description="Discrete_ordinate@,_x_component#x"/>
+        <scalar name="root.comp1.ht.s43_3dy" description="Discrete_ordinate@,_x_component#y"/>
+        <scalar name="root.comp1.ht.s43_3dz" description="Discrete_ordinate@,_x_component#z"/>
+      </tensor>
+      <tensor name="root.comp1.ht.[s44_3dx,s44_3dy,s44_3dz]" description="Discrete_ordinate" plot="false" summation="false" basename="root.comp1.ht.s44_3d" size="3,1" symmetric="false" axisymmetric="false" edims="">
+        <scalar name="root.comp1.ht.s44_3dx" description="Discrete_ordinate@,_x_component#x"/>
+        <scalar name="root.comp1.ht.s44_3dy" description="Discrete_ordinate@,_x_component#y"/>
+        <scalar name="root.comp1.ht.s44_3dz" description="Discrete_ordinate@,_x_component#z"/>
+      </tensor>
+      <tensor name="root.comp1.ht.[s45_3dx,s45_3dy,s45_3dz]" description="Discrete_ordinate" plot="false" summation="false" basename="root.comp1.ht.s45_3d" size="3,1" symmetric="false" axisymmetric="false" edims="">
+        <scalar name="root.comp1.ht.s45_3dx" description="Discrete_ordinate@,_x_component#x"/>
+        <scalar name="root.comp1.ht.s45_3dy" description="Discrete_ordinate@,_x_component#y"/>
+        <scalar name="root.comp1.ht.s45_3dz" description="Discrete_ordinate@,_x_component#z"/>
+      </tensor>
+      <tensor name="root.comp1.ht.[s46_3dx,s46_3dy,s46_3dz]" description="Discrete_ordinate" plot="false" summation="false" basename="root.comp1.ht.s46_3d" size="3,1" symmetric="false" axisymmetric="false" edims="">
+        <scalar name="root.comp1.ht.s46_3dx" description="Discrete_ordinate@,_x_component#x"/>
+        <scalar name="root.comp1.ht.s46_3dy" description="Discrete_ordinate@,_x_component#y"/>
+        <scalar name="root.comp1.ht.s46_3dz" description="Discrete_ordinate@,_x_component#z"/>
+      </tensor>
+      <tensor name="root.comp1.ht.[s47_3dx,s47_3dy,s47_3dz]" description="Discrete_ordinate" plot="false" summation="false" basename="root.comp1.ht.s47_3d" size="3,1" symmetric="false" axisymmetric="false" edims="">
+        <scalar name="root.comp1.ht.s47_3dx" description="Discrete_ordinate@,_x_component#x"/>
+        <scalar name="root.comp1.ht.s47_3dy" description="Discrete_ordinate@,_x_component#y"/>
+        <scalar name="root.comp1.ht.s47_3dz" description="Discrete_ordinate@,_x_component#z"/>
+      </tensor>
+      <tensor name="root.comp1.ht.[s48_3dx,s48_3dy,s48_3dz]" description="Discrete_ordinate" plot="false" summation="false" basename="root.comp1.ht.s48_3d" size="3,1" symmetric="false" axisymmetric="false" edims="">
+        <scalar name="root.comp1.ht.s48_3dx" description="Discrete_ordinate@,_x_component#x"/>
+        <scalar name="root.comp1.ht.s48_3dy" description="Discrete_ordinate@,_x_component#y"/>
+        <scalar name="root.comp1.ht.s48_3dz" description="Discrete_ordinate@,_x_component#z"/>
+      </tensor>
+      <tensor name="root.comp1.ht.[s49_3dx,s49_3dy,s49_3dz]" description="Discrete_ordinate" plot="false" summation="false" basename="root.comp1.ht.s49_3d" size="3,1" symmetric="false" axisymmetric="false" edims="">
+        <scalar name="root.comp1.ht.s49_3dx" description="Discrete_ordinate@,_x_component#x"/>
+        <scalar name="root.comp1.ht.s49_3dy" description="Discrete_ordinate@,_x_component#y"/>
+        <scalar name="root.comp1.ht.s49_3dz" description="Discrete_ordinate@,_x_component#z"/>
+      </tensor>
+      <tensor name="root.comp1.ht.[s50_3dx,s50_3dy,s50_3dz]" description="Discrete_ordinate" plot="false" summation="false" basename="root.comp1.ht.s50_3d" size="3,1" symmetric="false" axisymmetric="false" edims="">
+        <scalar name="root.comp1.ht.s50_3dx" description="Discrete_ordinate@,_x_component#x"/>
+        <scalar name="root.comp1.ht.s50_3dy" description="Discrete_ordinate@,_x_component#y"/>
+        <scalar name="root.comp1.ht.s50_3dz" description="Discrete_ordinate@,_x_component#z"/>
+      </tensor>
+      <tensor name="root.comp1.ht.[s51_3dx,s51_3dy,s51_3dz]" description="Discrete_ordinate" plot="false" summation="false" basename="root.comp1.ht.s51_3d" size="3,1" symmetric="false" axisymmetric="false" edims="">
+        <scalar name="root.comp1.ht.s51_3dx" description="Discrete_ordinate@,_x_component#x"/>
+        <scalar name="root.comp1.ht.s51_3dy" description="Discrete_ordinate@,_x_component#y"/>
+        <scalar name="root.comp1.ht.s51_3dz" description="Discrete_ordinate@,_x_component#z"/>
+      </tensor>
+      <tensor name="root.comp1.ht.[s52_3dx,s52_3dy,s52_3dz]" description="Discrete_ordinate" plot="false" summation="false" basename="root.comp1.ht.s52_3d" size="3,1" symmetric="false" axisymmetric="false" edims="">
+        <scalar name="root.comp1.ht.s52_3dx" description="Discrete_ordinate@,_x_component#x"/>
+        <scalar name="root.comp1.ht.s52_3dy" description="Discrete_ordinate@,_x_component#y"/>
+        <scalar name="root.comp1.ht.s52_3dz" description="Discrete_ordinate@,_x_component#z"/>
+      </tensor>
+      <tensor name="root.comp1.ht.[s53_3dx,s53_3dy,s53_3dz]" description="Discrete_ordinate" plot="false" summation="false" basename="root.comp1.ht.s53_3d" size="3,1" symmetric="false" axisymmetric="false" edims="">
+        <scalar name="root.comp1.ht.s53_3dx" description="Discrete_ordinate@,_x_component#x"/>
+        <scalar name="root.comp1.ht.s53_3dy" description="Discrete_ordinate@,_x_component#y"/>
+        <scalar name="root.comp1.ht.s53_3dz" description="Discrete_ordinate@,_x_component#z"/>
+      </tensor>
+      <tensor name="root.comp1.ht.[s54_3dx,s54_3dy,s54_3dz]" description="Discrete_ordinate" plot="false" summation="false" basename="root.comp1.ht.s54_3d" size="3,1" symmetric="false" axisymmetric="false" edims="">
+        <scalar name="root.comp1.ht.s54_3dx" description="Discrete_ordinate@,_x_component#x"/>
+        <scalar name="root.comp1.ht.s54_3dy" description="Discrete_ordinate@,_x_component#y"/>
+        <scalar name="root.comp1.ht.s54_3dz" description="Discrete_ordinate@,_x_component#z"/>
+      </tensor>
+      <tensor name="root.comp1.ht.[s55_3dx,s55_3dy,s55_3dz]" description="Discrete_ordinate" plot="false" summation="false" basename="root.comp1.ht.s55_3d" size="3,1" symmetric="false" axisymmetric="false" edims="">
+        <scalar name="root.comp1.ht.s55_3dx" description="Discrete_ordinate@,_x_component#x"/>
+        <scalar name="root.comp1.ht.s55_3dy" description="Discrete_ordinate@,_x_component#y"/>
+        <scalar name="root.comp1.ht.s55_3dz" description="Discrete_ordinate@,_x_component#z"/>
+      </tensor>
+      <tensor name="root.comp1.ht.[s56_3dx,s56_3dy,s56_3dz]" description="Discrete_ordinate" plot="false" summation="false" basename="root.comp1.ht.s56_3d" size="3,1" symmetric="false" axisymmetric="false" edims="">
+        <scalar name="root.comp1.ht.s56_3dx" description="Discrete_ordinate@,_x_component#x"/>
+        <scalar name="root.comp1.ht.s56_3dy" description="Discrete_ordinate@,_x_component#y"/>
+        <scalar name="root.comp1.ht.s56_3dz" description="Discrete_ordinate@,_x_component#z"/>
+      </tensor>
+      <tensor name="root.comp1.ht.[s57_3dx,s57_3dy,s57_3dz]" description="Discrete_ordinate" plot="false" summation="false" basename="root.comp1.ht.s57_3d" size="3,1" symmetric="false" axisymmetric="false" edims="">
+        <scalar name="root.comp1.ht.s57_3dx" description="Discrete_ordinate@,_x_component#x"/>
+        <scalar name="root.comp1.ht.s57_3dy" description="Discrete_ordinate@,_x_component#y"/>
+        <scalar name="root.comp1.ht.s57_3dz" description="Discrete_ordinate@,_x_component#z"/>
+      </tensor>
+      <tensor name="root.comp1.ht.[s58_3dx,s58_3dy,s58_3dz]" description="Discrete_ordinate" plot="false" summation="false" basename="root.comp1.ht.s58_3d" size="3,1" symmetric="false" axisymmetric="false" edims="">
+        <scalar name="root.comp1.ht.s58_3dx" description="Discrete_ordinate@,_x_component#x"/>
+        <scalar name="root.comp1.ht.s58_3dy" description="Discrete_ordinate@,_x_component#y"/>
+        <scalar name="root.comp1.ht.s58_3dz" description="Discrete_ordinate@,_x_component#z"/>
+      </tensor>
+      <tensor name="root.comp1.ht.[s59_3dx,s59_3dy,s59_3dz]" description="Discrete_ordinate" plot="false" summation="false" basename="root.comp1.ht.s59_3d" size="3,1" symmetric="false" axisymmetric="false" edims="">
+        <scalar name="root.comp1.ht.s59_3dx" description="Discrete_ordinate@,_x_component#x"/>
+        <scalar name="root.comp1.ht.s59_3dy" description="Discrete_ordinate@,_x_component#y"/>
+        <scalar name="root.comp1.ht.s59_3dz" description="Discrete_ordinate@,_x_component#z"/>
+      </tensor>
+      <tensor name="root.comp1.ht.[s60_3dx,s60_3dy,s60_3dz]" description="Discrete_ordinate" plot="false" summation="false" basename="root.comp1.ht.s60_3d" size="3,1" symmetric="false" axisymmetric="false" edims="">
+        <scalar name="root.comp1.ht.s60_3dx" description="Discrete_ordinate@,_x_component#x"/>
+        <scalar name="root.comp1.ht.s60_3dy" description="Discrete_ordinate@,_x_component#y"/>
+        <scalar name="root.comp1.ht.s60_3dz" description="Discrete_ordinate@,_x_component#z"/>
+      </tensor>
+      <tensor name="root.comp1.ht.[s61_3dx,s61_3dy,s61_3dz]" description="Discrete_ordinate" plot="false" summation="false" basename="root.comp1.ht.s61_3d" size="3,1" symmetric="false" axisymmetric="false" edims="">
+        <scalar name="root.comp1.ht.s61_3dx" description="Discrete_ordinate@,_x_component#x"/>
+        <scalar name="root.comp1.ht.s61_3dy" description="Discrete_ordinate@,_x_component#y"/>
+        <scalar name="root.comp1.ht.s61_3dz" description="Discrete_ordinate@,_x_component#z"/>
+      </tensor>
+      <tensor name="root.comp1.ht.[s62_3dx,s62_3dy,s62_3dz]" description="Discrete_ordinate" plot="false" summation="false" basename="root.comp1.ht.s62_3d" size="3,1" symmetric="false" axisymmetric="false" edims="">
+        <scalar name="root.comp1.ht.s62_3dx" description="Discrete_ordinate@,_x_component#x"/>
+        <scalar name="root.comp1.ht.s62_3dy" description="Discrete_ordinate@,_x_component#y"/>
+        <scalar name="root.comp1.ht.s62_3dz" description="Discrete_ordinate@,_x_component#z"/>
+      </tensor>
+      <tensor name="root.comp1.ht.[s63_3dx,s63_3dy,s63_3dz]" description="Discrete_ordinate" plot="false" summation="false" basename="root.comp1.ht.s63_3d" size="3,1" symmetric="false" axisymmetric="false" edims="">
+        <scalar name="root.comp1.ht.s63_3dx" description="Discrete_ordinate@,_x_component#x"/>
+        <scalar name="root.comp1.ht.s63_3dy" description="Discrete_ordinate@,_x_component#y"/>
+        <scalar name="root.comp1.ht.s63_3dz" description="Discrete_ordinate@,_x_component#z"/>
+      </tensor>
+      <tensor name="root.comp1.ht.[s64_3dx,s64_3dy,s64_3dz]" description="Discrete_ordinate" plot="false" summation="false" basename="root.comp1.ht.s64_3d" size="3,1" symmetric="false" axisymmetric="false" edims="">
+        <scalar name="root.comp1.ht.s64_3dx" description="Discrete_ordinate@,_x_component#x"/>
+        <scalar name="root.comp1.ht.s64_3dy" description="Discrete_ordinate@,_x_component#y"/>
+        <scalar name="root.comp1.ht.s64_3dz" description="Discrete_ordinate@,_x_component#z"/>
+      </tensor>
+      <tensor name="root.comp1.ht.[s65_3dx,s65_3dy,s65_3dz]" description="Discrete_ordinate" plot="false" summation="false" basename="root.comp1.ht.s65_3d" size="3,1" symmetric="false" axisymmetric="false" edims="">
+        <scalar name="root.comp1.ht.s65_3dx" description="Discrete_ordinate@,_x_component#x"/>
+        <scalar name="root.comp1.ht.s65_3dy" description="Discrete_ordinate@,_x_component#y"/>
+        <scalar name="root.comp1.ht.s65_3dz" description="Discrete_ordinate@,_x_component#z"/>
+      </tensor>
+      <tensor name="root.comp1.ht.[s66_3dx,s66_3dy,s66_3dz]" description="Discrete_ordinate" plot="false" summation="false" basename="root.comp1.ht.s66_3d" size="3,1" symmetric="false" axisymmetric="false" edims="">
+        <scalar name="root.comp1.ht.s66_3dx" description="Discrete_ordinate@,_x_component#x"/>
+        <scalar name="root.comp1.ht.s66_3dy" description="Discrete_ordinate@,_x_component#y"/>
+        <scalar name="root.comp1.ht.s66_3dz" description="Discrete_ordinate@,_x_component#z"/>
+      </tensor>
+      <tensor name="root.comp1.ht.[s67_3dx,s67_3dy,s67_3dz]" description="Discrete_ordinate" plot="false" summation="false" basename="root.comp1.ht.s67_3d" size="3,1" symmetric="false" axisymmetric="false" edims="">
+        <scalar name="root.comp1.ht.s67_3dx" description="Discrete_ordinate@,_x_component#x"/>
+        <scalar name="root.comp1.ht.s67_3dy" description="Discrete_ordinate@,_x_component#y"/>
+        <scalar name="root.comp1.ht.s67_3dz" description="Discrete_ordinate@,_x_component#z"/>
+      </tensor>
+      <tensor name="root.comp1.ht.[s68_3dx,s68_3dy,s68_3dz]" description="Discrete_ordinate" plot="false" summation="false" basename="root.comp1.ht.s68_3d" size="3,1" symmetric="false" axisymmetric="false" edims="">
+        <scalar name="root.comp1.ht.s68_3dx" description="Discrete_ordinate@,_x_component#x"/>
+        <scalar name="root.comp1.ht.s68_3dy" description="Discrete_ordinate@,_x_component#y"/>
+        <scalar name="root.comp1.ht.s68_3dz" description="Discrete_ordinate@,_x_component#z"/>
+      </tensor>
+      <tensor name="root.comp1.ht.[s69_3dx,s69_3dy,s69_3dz]" description="Discrete_ordinate" plot="false" summation="false" basename="root.comp1.ht.s69_3d" size="3,1" symmetric="false" axisymmetric="false" edims="">
+        <scalar name="root.comp1.ht.s69_3dx" description="Discrete_ordinate@,_x_component#x"/>
+        <scalar name="root.comp1.ht.s69_3dy" description="Discrete_ordinate@,_x_component#y"/>
+        <scalar name="root.comp1.ht.s69_3dz" description="Discrete_ordinate@,_x_component#z"/>
+      </tensor>
+      <tensor name="root.comp1.ht.[s70_3dx,s70_3dy,s70_3dz]" description="Discrete_ordinate" plot="false" summation="false" basename="root.comp1.ht.s70_3d" size="3,1" symmetric="false" axisymmetric="false" edims="">
+        <scalar name="root.comp1.ht.s70_3dx" description="Discrete_ordinate@,_x_component#x"/>
+        <scalar name="root.comp1.ht.s70_3dy" description="Discrete_ordinate@,_x_component#y"/>
+        <scalar name="root.comp1.ht.s70_3dz" description="Discrete_ordinate@,_x_component#z"/>
+      </tensor>
+      <tensor name="root.comp1.ht.[s71_3dx,s71_3dy,s71_3dz]" description="Discrete_ordinate" plot="false" summation="false" basename="root.comp1.ht.s71_3d" size="3,1" symmetric="false" axisymmetric="false" edims="">
+        <scalar name="root.comp1.ht.s71_3dx" description="Discrete_ordinate@,_x_component#x"/>
+        <scalar name="root.comp1.ht.s71_3dy" description="Discrete_ordinate@,_x_component#y"/>
+        <scalar name="root.comp1.ht.s71_3dz" description="Discrete_ordinate@,_x_component#z"/>
+      </tensor>
+      <tensor name="root.comp1.ht.[s72_3dx,s72_3dy,s72_3dz]" description="Discrete_ordinate" plot="false" summation="false" basename="root.comp1.ht.s72_3d" size="3,1" symmetric="false" axisymmetric="false" edims="">
+        <scalar name="root.comp1.ht.s72_3dx" description="Discrete_ordinate@,_x_component#x"/>
+        <scalar name="root.comp1.ht.s72_3dy" description="Discrete_ordinate@,_x_component#y"/>
+        <scalar name="root.comp1.ht.s72_3dz" description="Discrete_ordinate@,_x_component#z"/>
+      </tensor>
+      <tensor name="root.comp1.ht.[s73_3dx,s73_3dy,s73_3dz]" description="Discrete_ordinate" plot="false" summation="false" basename="root.comp1.ht.s73_3d" size="3,1" symmetric="false" axisymmetric="false" edims="">
+        <scalar name="root.comp1.ht.s73_3dx" description="Discrete_ordinate@,_x_component#x"/>
+        <scalar name="root.comp1.ht.s73_3dy" description="Discrete_ordinate@,_x_component#y"/>
+        <scalar name="root.comp1.ht.s73_3dz" description="Discrete_ordinate@,_x_component#z"/>
+      </tensor>
+      <tensor name="root.comp1.ht.[s74_3dx,s74_3dy,s74_3dz]" description="Discrete_ordinate" plot="false" summation="false" basename="root.comp1.ht.s74_3d" size="3,1" symmetric="false" axisymmetric="false" edims="">
+        <scalar name="root.comp1.ht.s74_3dx" description="Discrete_ordinate@,_x_component#x"/>
+        <scalar name="root.comp1.ht.s74_3dy" description="Discrete_ordinate@,_x_component#y"/>
+        <scalar name="root.comp1.ht.s74_3dz" description="Discrete_ordinate@,_x_component#z"/>
+      </tensor>
+      <tensor name="root.comp1.ht.[s75_3dx,s75_3dy,s75_3dz]" description="Discrete_ordinate" plot="false" summation="false" basename="root.comp1.ht.s75_3d" size="3,1" symmetric="false" axisymmetric="false" edims="">
+        <scalar name="root.comp1.ht.s75_3dx" description="Discrete_ordinate@,_x_component#x"/>
+        <scalar name="root.comp1.ht.s75_3dy" description="Discrete_ordinate@,_x_component#y"/>
+        <scalar name="root.comp1.ht.s75_3dz" description="Discrete_ordinate@,_x_component#z"/>
+      </tensor>
+      <tensor name="root.comp1.ht.[s76_3dx,s76_3dy,s76_3dz]" description="Discrete_ordinate" plot="false" summation="false" basename="root.comp1.ht.s76_3d" size="3,1" symmetric="false" axisymmetric="false" edims="">
+        <scalar name="root.comp1.ht.s76_3dx" description="Discrete_ordinate@,_x_component#x"/>
+        <scalar name="root.comp1.ht.s76_3dy" description="Discrete_ordinate@,_x_component#y"/>
+        <scalar name="root.comp1.ht.s76_3dz" description="Discrete_ordinate@,_x_component#z"/>
+      </tensor>
+      <tensor name="root.comp1.ht.[s77_3dx,s77_3dy,s77_3dz]" description="Discrete_ordinate" plot="false" summation="false" basename="root.comp1.ht.s77_3d" size="3,1" symmetric="false" axisymmetric="false" edims="">
+        <scalar name="root.comp1.ht.s77_3dx" description="Discrete_ordinate@,_x_component#x"/>
+        <scalar name="root.comp1.ht.s77_3dy" description="Discrete_ordinate@,_x_component#y"/>
+        <scalar name="root.comp1.ht.s77_3dz" description="Discrete_ordinate@,_x_component#z"/>
+      </tensor>
+      <tensor name="root.comp1.ht.[s78_3dx,s78_3dy,s78_3dz]" description="Discrete_ordinate" plot="false" summation="false" basename="root.comp1.ht.s78_3d" size="3,1" symmetric="false" axisymmetric="false" edims="">
+        <scalar name="root.comp1.ht.s78_3dx" description="Discrete_ordinate@,_x_component#x"/>
+        <scalar name="root.comp1.ht.s78_3dy" description="Discrete_ordinate@,_x_component#y"/>
+        <scalar name="root.comp1.ht.s78_3dz" description="Discrete_ordinate@,_x_component#z"/>
+      </tensor>
+      <tensor name="root.comp1.ht.[s79_3dx,s79_3dy,s79_3dz]" description="Discrete_ordinate" plot="false" summation="false" basename="root.comp1.ht.s79_3d" size="3,1" symmetric="false" axisymmetric="false" edims="">
+        <scalar name="root.comp1.ht.s79_3dx" description="Discrete_ordinate@,_x_component#x"/>
+        <scalar name="root.comp1.ht.s79_3dy" description="Discrete_ordinate@,_x_component#y"/>
+        <scalar name="root.comp1.ht.s79_3dz" description="Discrete_ordinate@,_x_component#z"/>
+      </tensor>
+      <tensor name="root.comp1.ht.[s80_3dx,s80_3dy,s80_3dz]" description="Discrete_ordinate" plot="false" summation="false" basename="root.comp1.ht.s80_3d" size="3,1" symmetric="false" axisymmetric="false" edims="">
+        <scalar name="root.comp1.ht.s80_3dx" description="Discrete_ordinate@,_x_component#x"/>
+        <scalar name="root.comp1.ht.s80_3dy" description="Discrete_ordinate@,_x_component#y"/>
+        <scalar name="root.comp1.ht.s80_3dz" description="Discrete_ordinate@,_x_component#z"/>
+      </tensor>
+      <tensor name="root.comp1.ht.[nx,ny,nz]" description="Normal_vector" plot="true" summation="false" basename="root.comp1.ht.n" size="3,1" symmetric="false" axisymmetric="false" unit="1" edims="1">
+        <scalar name="root.comp1.ht.nx" description="Normal_vector@,_x_component#x"/>
+        <scalar name="root.comp1.ht.ny" description="Normal_vector@,_x_component#y"/>
+        <scalar name="root.comp1.ht.nz" description="Normal_vector@,_x_component#z"/>
+      </tensor>
+      <tensor name="root.comp1.ht.[nxmesh,nymesh,nzmesh]" description="Normal_vector_(mesh)" plot="false" summation="false" basename="root.comp1.ht.nmesh" size="3,1" symmetric="false" axisymmetric="false" unit="1" edims="1">
+        <scalar name="root.comp1.ht.nxmesh" description="Normal_vector_(mesh)@,_x_component#x"/>
+        <scalar name="root.comp1.ht.nymesh" description="Normal_vector_(mesh)@,_x_component#y"/>
+        <scalar name="root.comp1.ht.nzmesh" description="Normal_vector_(mesh)@,_x_component#z"/>
+      </tensor>
+      <tensor name="root.comp1.ht.[dnx,dny,dnz]" description="Normal_vector_down_direction" plot="true" summation="false" basename="root.comp1.ht.dn" size="3,1" symmetric="false" axisymmetric="false" unit="1" edims="1">
+        <scalar name="root.comp1.ht.dnx" description="Normal_vector_down_direction@,_x_component#x"/>
+        <scalar name="root.comp1.ht.dny" description="Normal_vector_down_direction@,_x_component#y"/>
+        <scalar name="root.comp1.ht.dnz" description="Normal_vector_down_direction@,_x_component#z"/>
+      </tensor>
+      <tensor name="root.comp1.ht.[unx,uny,unz]" description="Normal_vector_up_direction" plot="true" summation="false" basename="root.comp1.ht.un" size="3,1" symmetric="false" axisymmetric="false" unit="1" edims="1">
+        <scalar name="root.comp1.ht.unx" description="Normal_vector_up_direction@,_x_component#x"/>
+        <scalar name="root.comp1.ht.uny" description="Normal_vector_up_direction@,_x_component#y"/>
+        <scalar name="root.comp1.ht.unz" description="Normal_vector_up_direction@,_x_component#z"/>
+      </tensor>
+      <tensor name="root.comp1.ht.[x,y,z]" description="Spatial_coordinate" plot="false" summation="false" basename="root.comp1.ht.coord_spatial" size="3,1" symmetric="false" axisymmetric="false" unit="m" edims="">
+        <scalar name="root.x" description="Coordinate_x#x"/>
+        <scalar name="root.y" description="Coordinate_x#y"/>
+        <scalar name="root.z" description="Coordinate_x#z"/>
+      </tensor>
+      <tensor name="root.comp1.[TTx,TTy,0]" description="Tangential_gradient_of_X#T" plot="false" summation="false" basename="root.comp1.gradTT" size="3,1" symmetric="false" axisymmetric="false" unit="K/m" edims="1">
+        <scalar name="root.comp1.TTx" description="Tangential_gradient_of_X_Y_component#T#x"/>
+        <scalar name="root.comp1.TTy" description="Tangential_gradient_of_X_Y_component#T#y"/>
+        <scalar name="0" description="Tangential_gradient_of_X_Y_component#T#z"/>
+      </tensor>
+      <tensor name="root.comp1.[TTxx,TTxy,0]" description="Tangential_gradient_of_X#TTx" plot="false" summation="false" basename="root.comp1.gradTTTx" size="3,1" symmetric="false" axisymmetric="false" unit="K/m^2" edims="1">
+        <scalar name="root.comp1.TTxx" description="Tangential_gradient_of_X_Y_component#TTx#x"/>
+        <scalar name="root.comp1.TTxy" description="Tangential_gradient_of_X_Y_component#TTx#y"/>
+        <scalar name="0" description="Tangential_gradient_of_X_Y_component#TTx#z"/>
+      </tensor>
+      <tensor name="root.comp1.[TTyx,TTyy,0]" description="Tangential_gradient_of_X#TTy" plot="false" summation="false" basename="root.comp1.gradTTTy" size="3,1" symmetric="false" axisymmetric="false" unit="K/m^2" edims="1">
+        <scalar name="root.comp1.TTyx" description="Tangential_gradient_of_X_Y_component#TTy#x"/>
+        <scalar name="root.comp1.TTyy" description="Tangential_gradient_of_X_Y_component#TTy#y"/>
+        <scalar name="0" description="Tangential_gradient_of_X_Y_component#TTy#z"/>
+      </tensor>
+      <tensor name="root.comp1.[TTxt,TTyt,0]" description="Tangential_gradient_of_X#T@,_first_time_derivative" plot="false" summation="false" basename="root.comp1.gradTTt" size="3,1" symmetric="false" axisymmetric="false" unit="K/(m*s)" edims="1">
+        <scalar name="root.comp1.TTxt" description="Tangential_gradient_of_X_Y_component#T#x@,_first_time_derivative"/>
+        <scalar name="root.comp1.TTyt" description="Tangential_gradient_of_X_Y_component#T#y@,_first_time_derivative"/>
+        <scalar name="0" description="Tangential_gradient_of_X_Y_component#T#z@,_first_time_derivative"/>
+      </tensor>
+      <tensor name="root.comp1.[TTxtt,TTytt,0]" description="Tangential_gradient_of_X#T@,_second_time_derivative" plot="false" summation="false" basename="root.comp1.gradTTtt" size="3,1" symmetric="false" axisymmetric="false" unit="K/(m*s^2)" edims="1">
+        <scalar name="root.comp1.TTxtt" description="Tangential_gradient_of_X_Y_component#T#x@,_second_time_derivative"/>
+        <scalar name="root.comp1.TTytt" description="Tangential_gradient_of_X_Y_component#T#y@,_second_time_derivative"/>
+        <scalar name="0" description="Tangential_gradient_of_X_Y_component#T#z@,_second_time_derivative"/>
+      </tensor>
+      <tensor name="root.comp1.[Tx,Ty,0]" description="Gradient_of_X#T" plot="false" summation="false" basename="root.comp1.gradT" size="3,1" symmetric="false" axisymmetric="false" unit="K/m" edims="2">
+        <scalar name="root.comp1.Tx" description="Gradient_of_X_Y_component#T#x"/>
+        <scalar name="root.comp1.Ty" description="Gradient_of_X_Y_component#T#y"/>
+        <scalar name="0" description="Gradient_of_X_Y_component#T#z"/>
+      </tensor>
+      <tensor name="root.comp1.[Txx,Txy,0]" description="Gradient_of_X#Tx" plot="false" summation="false" basename="root.comp1.gradTx" size="3,1" symmetric="false" axisymmetric="false" unit="K/m^2" edims="2">
+        <scalar name="root.comp1.Txx" description="Gradient_of_X_Y_component#Tx#x"/>
+        <scalar name="root.comp1.Txy" description="Gradient_of_X_Y_component#Tx#y"/>
+        <scalar name="0" description="Gradient_of_X_Y_component#Tx#z"/>
+      </tensor>
+      <tensor name="root.comp1.[Tyx,Tyy,0]" description="Gradient_of_X#Ty" plot="false" summation="false" basename="root.comp1.gradTy" size="3,1" symmetric="false" axisymmetric="false" unit="K/m^2" edims="2">
+        <scalar name="root.comp1.Tyx" description="Gradient_of_X_Y_component#Ty#x"/>
+        <scalar name="root.comp1.Tyy" description="Gradient_of_X_Y_component#Ty#y"/>
+        <scalar name="0" description="Gradient_of_X_Y_component#Ty#z"/>
+      </tensor>
+      <tensor name="root.comp1.[Txt,Tyt,0]" description="Gradient_of_X#T@,_first_time_derivative" plot="false" summation="false" basename="root.comp1.gradTt" size="3,1" symmetric="false" axisymmetric="false" unit="K/(m*s)" edims="2">
+        <scalar name="root.comp1.Txt" description="Gradient_of_X_Y_component#T#x@,_first_time_derivative"/>
+        <scalar name="root.comp1.Tyt" description="Gradient_of_X_Y_component#T#y@,_first_time_derivative"/>
+        <scalar name="0" description="Gradient_of_X_Y_component#T#z@,_first_time_derivative"/>
+      </tensor>
+      <tensor name="root.comp1.[Txtt,Tytt,0]" description="Gradient_of_X#T@,_second_time_derivative" plot="false" summation="false" basename="root.comp1.gradTtt" size="3,1" symmetric="false" axisymmetric="false" unit="K/(m*s^2)" edims="2">
+        <scalar name="root.comp1.Txtt" description="Gradient_of_X_Y_component#T#x@,_second_time_derivative"/>
+        <scalar name="root.comp1.Tytt" description="Gradient_of_X_Y_component#T#y@,_second_time_derivative"/>
+        <scalar name="0" description="Gradient_of_X_Y_component#T#z@,_second_time_derivative"/>
+      </tensor>
+      <tensor name="root.comp1.ht.[u_primex,u_primey,u_primez]" description="Subgrid_velocity_component" plot="false" summation="false" basename="root.comp1.ht.u_prime" size="3,1" symmetric="false" axisymmetric="false" unit="m/s" edims="2">
+        <scalar name="root.comp1.ht.u_primex" description="Subgrid_velocity_component@,_x_component#x"/>
+        <scalar name="root.comp1.ht.u_primey" description="Subgrid_velocity_component@,_x_component#y"/>
+        <scalar name="root.comp1.ht.u_primez" description="Subgrid_velocity_component@,_x_component#z"/>
+      </tensor>
+      <tensor name="root.comp1.ht.[ux,uy,uz]" description="Velocity_field" plot="true" summation="false" basename="root.comp1.ht.u" size="3,1" symmetric="false" axisymmetric="false" unit="m/s" edims="2">
+        <scalar name="root.comp1.ht.ux" description="Velocity_field@,_x_component#x"/>
+        <scalar name="root.comp1.ht.uy" description="Velocity_field@,_x_component#y"/>
+        <scalar name="root.comp1.ht.uz" description="Velocity_field@,_x_component#z"/>
+      </tensor>
+      <tensor name="root.comp1.ht.[u_inputx,u_inputy,u_inputz]" description="Velocity_field" plot="false" summation="false" basename="root.comp1.ht.u_input" size="3,1" symmetric="false" axisymmetric="false" unit="m/s" edims="2">
+        <scalar name="root.comp1.ht.u_inputx" description="Velocity_field@,_x_component#x"/>
+        <scalar name="root.comp1.ht.u_inputy" description="Velocity_field@,_x_component#y"/>
+        <scalar name="root.comp1.ht.u_inputz" description="Velocity_field@,_x_component#z"/>
+      </tensor>
+      <tensor name="root.comp1.ht.[rhoGradH0x,rhoGradH0y,rhoGradH0z]" description="Volumetric_total_enthalpy_gradient" plot="false" summation="false" basename="root.comp1.ht.rhoGradH0" size="3,1" symmetric="false" axisymmetric="false" unit="N/m^3" edims="2">
+        <scalar name="root.comp1.ht.rhoGradH0x" description="Volumetric_total_enthalpy_gradient@,_x_component#x"/>
+        <scalar name="root.comp1.ht.rhoGradH0y" description="Volumetric_total_enthalpy_gradient@,_x_component#y"/>
+        <scalar name="root.comp1.ht.rhoGradH0z" description="Volumetric_total_enthalpy_gradient@,_x_component#z"/>
+      </tensor>
+      <tensor name="root.comp1.ht.[gijxx,gijyx,gijzx,gijxy,gijyy,gijzy,gijxz,gijyz,gijzz]" description="Contravariant_metric_tensor" plot="false" summation="false" basename="root.comp1.ht.gij" size="3,3" symmetric="false" axisymmetric="false" unit="m^2" edims="2">
+        <scalar name="root.comp1.ht.gijxx" description="Contravariant_metric_tensor@,_x_component#xx"/>
+        <scalar name="root.comp1.ht.gijyx" description="Contravariant_metric_tensor@,_x_component#yx"/>
+        <scalar name="root.comp1.ht.gijzx" description="Contravariant_metric_tensor@,_x_component#zx"/>
+        <scalar name="root.comp1.ht.gijxy" description="Contravariant_metric_tensor@,_x_component#xy"/>
+        <scalar name="root.comp1.ht.gijyy" description="Contravariant_metric_tensor@,_x_component#yy"/>
+        <scalar name="root.comp1.ht.gijzy" description="Contravariant_metric_tensor@,_x_component#zy"/>
+        <scalar name="root.comp1.ht.gijxz" description="Contravariant_metric_tensor@,_x_component#xz"/>
+        <scalar name="root.comp1.ht.gijyz" description="Contravariant_metric_tensor@,_x_component#yz"/>
+        <scalar name="root.comp1.ht.gijzz" description="Contravariant_metric_tensor@,_x_component#zz"/>
+      </tensor>
+      <group name="Temp" description="Temperature">
+        <scalar name="root.comp1.T" description="Temperature" plot="true" summation="false" unit="K" edims="2"/>
+        <scalar name="root.comp1.ht.gradTmag" description="Temperature_gradient_magnitude" plot="true" summation="false" unit="K/m" edims="2"/>
+        <tensor name="root.comp1.ht.[gradTx,gradTy,gradTz]" description="Temperature_gradient" plot="true" summation="false" basename="root.comp1.ht.gradT" size="3,1" symmetric="false" axisymmetric="false" unit="K/m" edims="2">
+          <scalar name="root.comp1.ht.gradTx" description="Temperature_gradient@,_x_component#x"/>
+          <scalar name="root.comp1.ht.gradTy" description="Temperature_gradient@,_x_component#y"/>
+          <scalar name="root.comp1.ht.gradTz" description="Temperature_gradient@,_x_component#z"/>
+        </tensor>
+      </group>
+      <group name="MatProps" description="Material_properties">
+        <scalar name="root.comp1.ht.dz" description="Thickness" plot="true" summation="false" unit="m" edims="2"/>
+        <scalar name="root.comp1.ht.rho" description="Density" plot="true" summation="false" unit="kg/m^3" edims="2"/>
+        <scalar name="root.comp1.ht.Cp" description="Heat_capacity_at_constant_pressure" plot="true" summation="false" unit="J/(kg*K)" edims="2"/>
+        <scalar name="root.comp1.ht.kmean" description="Mean_effective_thermal_conductivity" plot="true" summation="false" unit="W/(m*K)" edims="2"/>
+        <scalar name="root.comp1.ht.C_eff" description="Effective_volumetric_heat_capacity" plot="true" summation="false" unit="J/(m^3*K)" edims="2"/>
+        <scalar name="root.comp1.ht.alphaTdMean" description="Mean_thermal_diffusivity" plot="true" summation="false" unit="m^2/s" edims="2"/>
+        <scalar name="root.comp1.ht.gamma" description="Ratio_of_specific_heats" plot="true" summation="false" unit="1" edims="2"/>
+        <tensor name="root.comp1.ht.[kxx,kyx,kzx,kxy,kyy,kzy,kxz,kyz,kzz]" description="Thermal_conductivity" plot="true" summation="false" basename="root.comp1.ht.k" size="3,3" symmetric="false" axisymmetric="false" unit="W/(m*K)" edims="2">
+          <scalar name="root.comp1.ht.kxx" description="Thermal_conductivity@,_x_component#xx"/>
+          <scalar name="root.comp1.ht.kyx" description="Thermal_conductivity@,_x_component#yx"/>
+          <scalar name="root.comp1.ht.kzx" description="Thermal_conductivity@,_x_component#zx"/>
+          <scalar name="root.comp1.ht.kxy" description="Thermal_conductivity@,_x_component#xy"/>
+          <scalar name="root.comp1.ht.kyy" description="Thermal_conductivity@,_x_component#yy"/>
+          <scalar name="root.comp1.ht.kzy" description="Thermal_conductivity@,_x_component#zy"/>
+          <scalar name="root.comp1.ht.kxz" description="Thermal_conductivity@,_x_component#xz"/>
+          <scalar name="root.comp1.ht.kyz" description="Thermal_conductivity@,_x_component#yz"/>
+          <scalar name="root.comp1.ht.kzz" description="Thermal_conductivity@,_x_component#zz"/>
+        </tensor>
+        <tensor name="root.comp1.ht.[k_effxx,k_effyx,k_effzx,k_effxy,k_effyy,k_effzy,k_effxz,k_effyz,k_effzz]" description="Effective_thermal_conductivity" plot="true" summation="false" basename="root.comp1.ht.k_eff" size="3,3" symmetric="false" axisymmetric="false" unit="W/(m*K)" edims="2">
+          <scalar name="root.comp1.ht.k_effxx" description="Effective_thermal_conductivity@,_x_component#xx"/>
+          <scalar name="root.comp1.ht.k_effyx" description="Effective_thermal_conductivity@,_x_component#yx"/>
+          <scalar name="root.comp1.ht.k_effzx" description="Effective_thermal_conductivity@,_x_component#zx"/>
+          <scalar name="root.comp1.ht.k_effxy" description="Effective_thermal_conductivity@,_x_component#xy"/>
+          <scalar name="root.comp1.ht.k_effyy" description="Effective_thermal_conductivity@,_x_component#yy"/>
+          <scalar name="root.comp1.ht.k_effzy" description="Effective_thermal_conductivity@,_x_component#zy"/>
+          <scalar name="root.comp1.ht.k_effxz" description="Effective_thermal_conductivity@,_x_component#xz"/>
+          <scalar name="root.comp1.ht.k_effyz" description="Effective_thermal_conductivity@,_x_component#yz"/>
+          <scalar name="root.comp1.ht.k_effzz" description="Effective_thermal_conductivity@,_x_component#zz"/>
+        </tensor>
+        <tensor name="root.comp1.ht.[alphaTdxx,alphaTdyx,alphaTdzx,alphaTdxy,alphaTdyy,alphaTdzy,alphaTdxz,alphaTdyz,alphaTdzz]" description="Thermal_diffusivity" plot="true" summation="false" basename="root.comp1.ht.alphaTd" size="3,3" symmetric="false" axisymmetric="false" unit="m^2/s" edims="2">
+          <scalar name="root.comp1.ht.alphaTdxx" description="Thermal_diffusivity@,_x_component#xx"/>
+          <scalar name="root.comp1.ht.alphaTdyx" description="Thermal_diffusivity@,_x_component#yx"/>
+          <scalar name="root.comp1.ht.alphaTdzx" description="Thermal_diffusivity@,_x_component#zx"/>
+          <scalar name="root.comp1.ht.alphaTdxy" description="Thermal_diffusivity@,_x_component#xy"/>
+          <scalar name="root.comp1.ht.alphaTdyy" description="Thermal_diffusivity@,_x_component#yy"/>
+          <scalar name="root.comp1.ht.alphaTdzy" description="Thermal_diffusivity@,_x_component#zy"/>
+          <scalar name="root.comp1.ht.alphaTdxz" description="Thermal_diffusivity@,_x_component#xz"/>
+          <scalar name="root.comp1.ht.alphaTdyz" description="Thermal_diffusivity@,_x_component#yz"/>
+          <scalar name="root.comp1.ht.alphaTdzz" description="Thermal_diffusivity@,_x_component#zz"/>
+        </tensor>
+      </group>
+      <group name="Ordinates" description="Ordinates">
+        <tensor name="root.comp1.ht.[s1x,s1y,s1z]" description="Discrete_ordinate" plot="true" summation="false" basename="root.comp1.ht.s1" size="3,1" symmetric="false" axisymmetric="false" edims="">
+          <scalar name="root.comp1.ht.s1x" description="Discrete_ordinate@,_x_component#x"/>
+          <scalar name="root.comp1.ht.s1y" description="Discrete_ordinate@,_x_component#y"/>
+          <scalar name="root.comp1.ht.s1z" description="Discrete_ordinate@,_x_component#z"/>
+        </tensor>
+        <tensor name="root.comp1.ht.[s2x,s2y,s2z]" description="Discrete_ordinate" plot="true" summation="false" basename="root.comp1.ht.s2" size="3,1" symmetric="false" axisymmetric="false" edims="">
+          <scalar name="root.comp1.ht.s2x" description="Discrete_ordinate@,_x_component#x"/>
+          <scalar name="root.comp1.ht.s2y" description="Discrete_ordinate@,_x_component#y"/>
+          <scalar name="root.comp1.ht.s2z" description="Discrete_ordinate@,_x_component#z"/>
+        </tensor>
+        <tensor name="root.comp1.ht.[s3x,s3y,s3z]" description="Discrete_ordinate" plot="true" summation="false" basename="root.comp1.ht.s3" size="3,1" symmetric="false" axisymmetric="false" edims="">
+          <scalar name="root.comp1.ht.s3x" description="Discrete_ordinate@,_x_component#x"/>
+          <scalar name="root.comp1.ht.s3y" description="Discrete_ordinate@,_x_component#y"/>
+          <scalar name="root.comp1.ht.s3z" description="Discrete_ordinate@,_x_component#z"/>
+        </tensor>
+        <tensor name="root.comp1.ht.[s4x,s4y,s4z]" description="Discrete_ordinate" plot="true" summation="false" basename="root.comp1.ht.s4" size="3,1" symmetric="false" axisymmetric="false" edims="">
+          <scalar name="root.comp1.ht.s4x" description="Discrete_ordinate@,_x_component#x"/>
+          <scalar name="root.comp1.ht.s4y" description="Discrete_ordinate@,_x_component#y"/>
+          <scalar name="root.comp1.ht.s4z" description="Discrete_ordinate@,_x_component#z"/>
+        </tensor>
+        <tensor name="root.comp1.ht.[s5x,s5y,s5z]" description="Discrete_ordinate" plot="true" summation="false" basename="root.comp1.ht.s5" size="3,1" symmetric="false" axisymmetric="false" edims="">
+          <scalar name="root.comp1.ht.s5x" description="Discrete_ordinate@,_x_component#x"/>
+          <scalar name="root.comp1.ht.s5y" description="Discrete_ordinate@,_x_component#y"/>
+          <scalar name="root.comp1.ht.s5z" description="Discrete_ordinate@,_x_component#z"/>
+        </tensor>
+        <tensor name="root.comp1.ht.[s6x,s6y,s6z]" description="Discrete_ordinate" plot="true" summation="false" basename="root.comp1.ht.s6" size="3,1" symmetric="false" axisymmetric="false" edims="">
+          <scalar name="root.comp1.ht.s6x" description="Discrete_ordinate@,_x_component#x"/>
+          <scalar name="root.comp1.ht.s6y" description="Discrete_ordinate@,_x_component#y"/>
+          <scalar name="root.comp1.ht.s6z" description="Discrete_ordinate@,_x_component#z"/>
+        </tensor>
+        <tensor name="root.comp1.ht.[s7x,s7y,s7z]" description="Discrete_ordinate" plot="true" summation="false" basename="root.comp1.ht.s7" size="3,1" symmetric="false" axisymmetric="false" edims="">
+          <scalar name="root.comp1.ht.s7x" description="Discrete_ordinate@,_x_component#x"/>
+          <scalar name="root.comp1.ht.s7y" description="Discrete_ordinate@,_x_component#y"/>
+          <scalar name="root.comp1.ht.s7z" description="Discrete_ordinate@,_x_component#z"/>
+        </tensor>
+        <tensor name="root.comp1.ht.[s8x,s8y,s8z]" description="Discrete_ordinate" plot="true" summation="false" basename="root.comp1.ht.s8" size="3,1" symmetric="false" axisymmetric="false" edims="">
+          <scalar name="root.comp1.ht.s8x" description="Discrete_ordinate@,_x_component#x"/>
+          <scalar name="root.comp1.ht.s8y" description="Discrete_ordinate@,_x_component#y"/>
+          <scalar name="root.comp1.ht.s8z" description="Discrete_ordinate@,_x_component#z"/>
+        </tensor>
+        <tensor name="root.comp1.ht.[s9x,s9y,s9z]" description="Discrete_ordinate" plot="true" summation="false" basename="root.comp1.ht.s9" size="3,1" symmetric="false" axisymmetric="false" edims="">
+          <scalar name="root.comp1.ht.s9x" description="Discrete_ordinate@,_x_component#x"/>
+          <scalar name="root.comp1.ht.s9y" description="Discrete_ordinate@,_x_component#y"/>
+          <scalar name="root.comp1.ht.s9z" description="Discrete_ordinate@,_x_component#z"/>
+        </tensor>
+        <tensor name="root.comp1.ht.[s10x,s10y,s10z]" description="Discrete_ordinate" plot="true" summation="false" basename="root.comp1.ht.s10" size="3,1" symmetric="false" axisymmetric="false" edims="">
+          <scalar name="root.comp1.ht.s10x" description="Discrete_ordinate@,_x_component#x"/>
+          <scalar name="root.comp1.ht.s10y" description="Discrete_ordinate@,_x_component#y"/>
+          <scalar name="root.comp1.ht.s10z" description="Discrete_ordinate@,_x_component#z"/>
+        </tensor>
+        <tensor name="root.comp1.ht.[s11x,s11y,s11z]" description="Discrete_ordinate" plot="true" summation="false" basename="root.comp1.ht.s11" size="3,1" symmetric="false" axisymmetric="false" edims="">
+          <scalar name="root.comp1.ht.s11x" description="Discrete_ordinate@,_x_component#x"/>
+          <scalar name="root.comp1.ht.s11y" description="Discrete_ordinate@,_x_component#y"/>
+          <scalar name="root.comp1.ht.s11z" description="Discrete_ordinate@,_x_component#z"/>
+        </tensor>
+        <tensor name="root.comp1.ht.[s12x,s12y,s12z]" description="Discrete_ordinate" plot="true" summation="false" basename="root.comp1.ht.s12" size="3,1" symmetric="false" axisymmetric="false" edims="">
+          <scalar name="root.comp1.ht.s12x" description="Discrete_ordinate@,_x_component#x"/>
+          <scalar name="root.comp1.ht.s12y" description="Discrete_ordinate@,_x_component#y"/>
+          <scalar name="root.comp1.ht.s12z" description="Discrete_ordinate@,_x_component#z"/>
+        </tensor>
+        <tensor name="root.comp1.ht.[s13x,s13y,s13z]" description="Discrete_ordinate" plot="true" summation="false" basename="root.comp1.ht.s13" size="3,1" symmetric="false" axisymmetric="false" edims="">
+          <scalar name="root.comp1.ht.s13x" description="Discrete_ordinate@,_x_component#x"/>
+          <scalar name="root.comp1.ht.s13y" description="Discrete_ordinate@,_x_component#y"/>
+          <scalar name="root.comp1.ht.s13z" description="Discrete_ordinate@,_x_component#z"/>
+        </tensor>
+        <tensor name="root.comp1.ht.[s14x,s14y,s14z]" description="Discrete_ordinate" plot="true" summation="false" basename="root.comp1.ht.s14" size="3,1" symmetric="false" axisymmetric="false" edims="">
+          <scalar name="root.comp1.ht.s14x" description="Discrete_ordinate@,_x_component#x"/>
+          <scalar name="root.comp1.ht.s14y" description="Discrete_ordinate@,_x_component#y"/>
+          <scalar name="root.comp1.ht.s14z" description="Discrete_ordinate@,_x_component#z"/>
+        </tensor>
+        <tensor name="root.comp1.ht.[s15x,s15y,s15z]" description="Discrete_ordinate" plot="true" summation="false" basename="root.comp1.ht.s15" size="3,1" symmetric="false" axisymmetric="false" edims="">
+          <scalar name="root.comp1.ht.s15x" description="Discrete_ordinate@,_x_component#x"/>
+          <scalar name="root.comp1.ht.s15y" description="Discrete_ordinate@,_x_component#y"/>
+          <scalar name="root.comp1.ht.s15z" description="Discrete_ordinate@,_x_component#z"/>
+        </tensor>
+        <tensor name="root.comp1.ht.[s16x,s16y,s16z]" description="Discrete_ordinate" plot="true" summation="false" basename="root.comp1.ht.s16" size="3,1" symmetric="false" axisymmetric="false" edims="">
+          <scalar name="root.comp1.ht.s16x" description="Discrete_ordinate@,_x_component#x"/>
+          <scalar name="root.comp1.ht.s16y" description="Discrete_ordinate@,_x_component#y"/>
+          <scalar name="root.comp1.ht.s16z" description="Discrete_ordinate@,_x_component#z"/>
+        </tensor>
+        <tensor name="root.comp1.ht.[s17x,s17y,s17z]" description="Discrete_ordinate" plot="true" summation="false" basename="root.comp1.ht.s17" size="3,1" symmetric="false" axisymmetric="false" edims="">
+          <scalar name="root.comp1.ht.s17x" description="Discrete_ordinate@,_x_component#x"/>
+          <scalar name="root.comp1.ht.s17y" description="Discrete_ordinate@,_x_component#y"/>
+          <scalar name="root.comp1.ht.s17z" description="Discrete_ordinate@,_x_component#z"/>
+        </tensor>
+        <tensor name="root.comp1.ht.[s18x,s18y,s18z]" description="Discrete_ordinate" plot="true" summation="false" basename="root.comp1.ht.s18" size="3,1" symmetric="false" axisymmetric="false" edims="">
+          <scalar name="root.comp1.ht.s18x" description="Discrete_ordinate@,_x_component#x"/>
+          <scalar name="root.comp1.ht.s18y" description="Discrete_ordinate@,_x_component#y"/>
+          <scalar name="root.comp1.ht.s18z" description="Discrete_ordinate@,_x_component#z"/>
+        </tensor>
+        <tensor name="root.comp1.ht.[s19x,s19y,s19z]" description="Discrete_ordinate" plot="true" summation="false" basename="root.comp1.ht.s19" size="3,1" symmetric="false" axisymmetric="false" edims="">
+          <scalar name="root.comp1.ht.s19x" description="Discrete_ordinate@,_x_component#x"/>
+          <scalar name="root.comp1.ht.s19y" description="Discrete_ordinate@,_x_component#y"/>
+          <scalar name="root.comp1.ht.s19z" description="Discrete_ordinate@,_x_component#z"/>
+        </tensor>
+        <tensor name="root.comp1.ht.[s20x,s20y,s20z]" description="Discrete_ordinate" plot="true" summation="false" basename="root.comp1.ht.s20" size="3,1" symmetric="false" axisymmetric="false" edims="">
+          <scalar name="root.comp1.ht.s20x" description="Discrete_ordinate@,_x_component#x"/>
+          <scalar name="root.comp1.ht.s20y" description="Discrete_ordinate@,_x_component#y"/>
+          <scalar name="root.comp1.ht.s20z" description="Discrete_ordinate@,_x_component#z"/>
+        </tensor>
+        <tensor name="root.comp1.ht.[s21x,s21y,s21z]" description="Discrete_ordinate" plot="true" summation="false" basename="root.comp1.ht.s21" size="3,1" symmetric="false" axisymmetric="false" edims="">
+          <scalar name="root.comp1.ht.s21x" description="Discrete_ordinate@,_x_component#x"/>
+          <scalar name="root.comp1.ht.s21y" description="Discrete_ordinate@,_x_component#y"/>
+          <scalar name="root.comp1.ht.s21z" description="Discrete_ordinate@,_x_component#z"/>
+        </tensor>
+        <tensor name="root.comp1.ht.[s22x,s22y,s22z]" description="Discrete_ordinate" plot="true" summation="false" basename="root.comp1.ht.s22" size="3,1" symmetric="false" axisymmetric="false" edims="">
+          <scalar name="root.comp1.ht.s22x" description="Discrete_ordinate@,_x_component#x"/>
+          <scalar name="root.comp1.ht.s22y" description="Discrete_ordinate@,_x_component#y"/>
+          <scalar name="root.comp1.ht.s22z" description="Discrete_ordinate@,_x_component#z"/>
+        </tensor>
+        <tensor name="root.comp1.ht.[s23x,s23y,s23z]" description="Discrete_ordinate" plot="true" summation="false" basename="root.comp1.ht.s23" size="3,1" symmetric="false" axisymmetric="false" edims="">
+          <scalar name="root.comp1.ht.s23x" description="Discrete_ordinate@,_x_component#x"/>
+          <scalar name="root.comp1.ht.s23y" description="Discrete_ordinate@,_x_component#y"/>
+          <scalar name="root.comp1.ht.s23z" description="Discrete_ordinate@,_x_component#z"/>
+        </tensor>
+        <tensor name="root.comp1.ht.[s24x,s24y,s24z]" description="Discrete_ordinate" plot="true" summation="false" basename="root.comp1.ht.s24" size="3,1" symmetric="false" axisymmetric="false" edims="">
+          <scalar name="root.comp1.ht.s24x" description="Discrete_ordinate@,_x_component#x"/>
+          <scalar name="root.comp1.ht.s24y" description="Discrete_ordinate@,_x_component#y"/>
+          <scalar name="root.comp1.ht.s24z" description="Discrete_ordinate@,_x_component#z"/>
+        </tensor>
+        <tensor name="root.comp1.ht.[s25x,s25y,s25z]" description="Discrete_ordinate" plot="true" summation="false" basename="root.comp1.ht.s25" size="3,1" symmetric="false" axisymmetric="false" edims="">
+          <scalar name="root.comp1.ht.s25x" description="Discrete_ordinate@,_x_component#x"/>
+          <scalar name="root.comp1.ht.s25y" description="Discrete_ordinate@,_x_component#y"/>
+          <scalar name="root.comp1.ht.s25z" description="Discrete_ordinate@,_x_component#z"/>
+        </tensor>
+        <tensor name="root.comp1.ht.[s26x,s26y,s26z]" description="Discrete_ordinate" plot="true" summation="false" basename="root.comp1.ht.s26" size="3,1" symmetric="false" axisymmetric="false" edims="">
+          <scalar name="root.comp1.ht.s26x" description="Discrete_ordinate@,_x_component#x"/>
+          <scalar name="root.comp1.ht.s26y" description="Discrete_ordinate@,_x_component#y"/>
+          <scalar name="root.comp1.ht.s26z" description="Discrete_ordinate@,_x_component#z"/>
+        </tensor>
+        <tensor name="root.comp1.ht.[s27x,s27y,s27z]" description="Discrete_ordinate" plot="true" summation="false" basename="root.comp1.ht.s27" size="3,1" symmetric="false" axisymmetric="false" edims="">
+          <scalar name="root.comp1.ht.s27x" description="Discrete_ordinate@,_x_component#x"/>
+          <scalar name="root.comp1.ht.s27y" description="Discrete_ordinate@,_x_component#y"/>
+          <scalar name="root.comp1.ht.s27z" description="Discrete_ordinate@,_x_component#z"/>
+        </tensor>
+        <tensor name="root.comp1.ht.[s28x,s28y,s28z]" description="Discrete_ordinate" plot="true" summation="false" basename="root.comp1.ht.s28" size="3,1" symmetric="false" axisymmetric="false" edims="">
+          <scalar name="root.comp1.ht.s28x" description="Discrete_ordinate@,_x_component#x"/>
+          <scalar name="root.comp1.ht.s28y" description="Discrete_ordinate@,_x_component#y"/>
+          <scalar name="root.comp1.ht.s28z" description="Discrete_ordinate@,_x_component#z"/>
+        </tensor>
+        <tensor name="root.comp1.ht.[s29x,s29y,s29z]" description="Discrete_ordinate" plot="true" summation="false" basename="root.comp1.ht.s29" size="3,1" symmetric="false" axisymmetric="false" edims="">
+          <scalar name="root.comp1.ht.s29x" description="Discrete_ordinate@,_x_component#x"/>
+          <scalar name="root.comp1.ht.s29y" description="Discrete_ordinate@,_x_component#y"/>
+          <scalar name="root.comp1.ht.s29z" description="Discrete_ordinate@,_x_component#z"/>
+        </tensor>
+        <tensor name="root.comp1.ht.[s30x,s30y,s30z]" description="Discrete_ordinate" plot="true" summation="false" basename="root.comp1.ht.s30" size="3,1" symmetric="false" axisymmetric="false" edims="">
+          <scalar name="root.comp1.ht.s30x" description="Discrete_ordinate@,_x_component#x"/>
+          <scalar name="root.comp1.ht.s30y" description="Discrete_ordinate@,_x_component#y"/>
+          <scalar name="root.comp1.ht.s30z" description="Discrete_ordinate@,_x_component#z"/>
+        </tensor>
+        <tensor name="root.comp1.ht.[s31x,s31y,s31z]" description="Discrete_ordinate" plot="true" summation="false" basename="root.comp1.ht.s31" size="3,1" symmetric="false" axisymmetric="false" edims="">
+          <scalar name="root.comp1.ht.s31x" description="Discrete_ordinate@,_x_component#x"/>
+          <scalar name="root.comp1.ht.s31y" description="Discrete_ordinate@,_x_component#y"/>
+          <scalar name="root.comp1.ht.s31z" description="Discrete_ordinate@,_x_component#z"/>
+        </tensor>
+        <tensor name="root.comp1.ht.[s32x,s32y,s32z]" description="Discrete_ordinate" plot="true" summation="false" basename="root.comp1.ht.s32" size="3,1" symmetric="false" axisymmetric="false" edims="">
+          <scalar name="root.comp1.ht.s32x" description="Discrete_ordinate@,_x_component#x"/>
+          <scalar name="root.comp1.ht.s32y" description="Discrete_ordinate@,_x_component#y"/>
+          <scalar name="root.comp1.ht.s32z" description="Discrete_ordinate@,_x_component#z"/>
+        </tensor>
+        <tensor name="root.comp1.ht.[s33x,s33y,s33z]" description="Discrete_ordinate" plot="true" summation="false" basename="root.comp1.ht.s33" size="3,1" symmetric="false" axisymmetric="false" edims="">
+          <scalar name="root.comp1.ht.s33x" description="Discrete_ordinate@,_x_component#x"/>
+          <scalar name="root.comp1.ht.s33y" description="Discrete_ordinate@,_x_component#y"/>
+          <scalar name="root.comp1.ht.s33z" description="Discrete_ordinate@,_x_component#z"/>
+        </tensor>
+        <tensor name="root.comp1.ht.[s34x,s34y,s34z]" description="Discrete_ordinate" plot="true" summation="false" basename="root.comp1.ht.s34" size="3,1" symmetric="false" axisymmetric="false" edims="">
+          <scalar name="root.comp1.ht.s34x" description="Discrete_ordinate@,_x_component#x"/>
+          <scalar name="root.comp1.ht.s34y" description="Discrete_ordinate@,_x_component#y"/>
+          <scalar name="root.comp1.ht.s34z" description="Discrete_ordinate@,_x_component#z"/>
+        </tensor>
+        <tensor name="root.comp1.ht.[s35x,s35y,s35z]" description="Discrete_ordinate" plot="true" summation="false" basename="root.comp1.ht.s35" size="3,1" symmetric="false" axisymmetric="false" edims="">
+          <scalar name="root.comp1.ht.s35x" description="Discrete_ordinate@,_x_component#x"/>
+          <scalar name="root.comp1.ht.s35y" description="Discrete_ordinate@,_x_component#y"/>
+          <scalar name="root.comp1.ht.s35z" description="Discrete_ordinate@,_x_component#z"/>
+        </tensor>
+        <tensor name="root.comp1.ht.[s36x,s36y,s36z]" description="Discrete_ordinate" plot="true" summation="false" basename="root.comp1.ht.s36" size="3,1" symmetric="false" axisymmetric="false" edims="">
+          <scalar name="root.comp1.ht.s36x" description="Discrete_ordinate@,_x_component#x"/>
+          <scalar name="root.comp1.ht.s36y" description="Discrete_ordinate@,_x_component#y"/>
+          <scalar name="root.comp1.ht.s36z" description="Discrete_ordinate@,_x_component#z"/>
+        </tensor>
+        <tensor name="root.comp1.ht.[s37x,s37y,s37z]" description="Discrete_ordinate" plot="true" summation="false" basename="root.comp1.ht.s37" size="3,1" symmetric="false" axisymmetric="false" edims="">
+          <scalar name="root.comp1.ht.s37x" description="Discrete_ordinate@,_x_component#x"/>
+          <scalar name="root.comp1.ht.s37y" description="Discrete_ordinate@,_x_component#y"/>
+          <scalar name="root.comp1.ht.s37z" description="Discrete_ordinate@,_x_component#z"/>
+        </tensor>
+        <tensor name="root.comp1.ht.[s38x,s38y,s38z]" description="Discrete_ordinate" plot="true" summation="false" basename="root.comp1.ht.s38" size="3,1" symmetric="false" axisymmetric="false" edims="">
+          <scalar name="root.comp1.ht.s38x" description="Discrete_ordinate@,_x_component#x"/>
+          <scalar name="root.comp1.ht.s38y" description="Discrete_ordinate@,_x_component#y"/>
+          <scalar name="root.comp1.ht.s38z" description="Discrete_ordinate@,_x_component#z"/>
+        </tensor>
+        <tensor name="root.comp1.ht.[s39x,s39y,s39z]" description="Discrete_ordinate" plot="true" summation="false" basename="root.comp1.ht.s39" size="3,1" symmetric="false" axisymmetric="false" edims="">
+          <scalar name="root.comp1.ht.s39x" description="Discrete_ordinate@,_x_component#x"/>
+          <scalar name="root.comp1.ht.s39y" description="Discrete_ordinate@,_x_component#y"/>
+          <scalar name="root.comp1.ht.s39z" description="Discrete_ordinate@,_x_component#z"/>
+        </tensor>
+        <tensor name="root.comp1.ht.[s40x,s40y,s40z]" description="Discrete_ordinate" plot="true" summation="false" basename="root.comp1.ht.s40" size="3,1" symmetric="false" axisymmetric="false" edims="">
+          <scalar name="root.comp1.ht.s40x" description="Discrete_ordinate@,_x_component#x"/>
+          <scalar name="root.comp1.ht.s40y" description="Discrete_ordinate@,_x_component#y"/>
+          <scalar name="root.comp1.ht.s40z" description="Discrete_ordinate@,_x_component#z"/>
+        </tensor>
+        <tensor name="root.comp1.ht.[s41x,s41y,s41z]" description="Discrete_ordinate" plot="true" summation="false" basename="root.comp1.ht.s41" size="3,1" symmetric="false" axisymmetric="false" edims="">
+          <scalar name="root.comp1.ht.s41x" description="Discrete_ordinate@,_x_component#x"/>
+          <scalar name="root.comp1.ht.s41y" description="Discrete_ordinate@,_x_component#y"/>
+          <scalar name="root.comp1.ht.s41z" description="Discrete_ordinate@,_x_component#z"/>
+        </tensor>
+        <tensor name="root.comp1.ht.[s42x,s42y,s42z]" description="Discrete_ordinate" plot="true" summation="false" basename="root.comp1.ht.s42" size="3,1" symmetric="false" axisymmetric="false" edims="">
+          <scalar name="root.comp1.ht.s42x" description="Discrete_ordinate@,_x_component#x"/>
+          <scalar name="root.comp1.ht.s42y" description="Discrete_ordinate@,_x_component#y"/>
+          <scalar name="root.comp1.ht.s42z" description="Discrete_ordinate@,_x_component#z"/>
+        </tensor>
+        <tensor name="root.comp1.ht.[s43x,s43y,s43z]" description="Discrete_ordinate" plot="true" summation="false" basename="root.comp1.ht.s43" size="3,1" symmetric="false" axisymmetric="false" edims="">
+          <scalar name="root.comp1.ht.s43x" description="Discrete_ordinate@,_x_component#x"/>
+          <scalar name="root.comp1.ht.s43y" description="Discrete_ordinate@,_x_component#y"/>
+          <scalar name="root.comp1.ht.s43z" description="Discrete_ordinate@,_x_component#z"/>
+        </tensor>
+        <tensor name="root.comp1.ht.[s44x,s44y,s44z]" description="Discrete_ordinate" plot="true" summation="false" basename="root.comp1.ht.s44" size="3,1" symmetric="false" axisymmetric="false" edims="">
+          <scalar name="root.comp1.ht.s44x" description="Discrete_ordinate@,_x_component#x"/>
+          <scalar name="root.comp1.ht.s44y" description="Discrete_ordinate@,_x_component#y"/>
+          <scalar name="root.comp1.ht.s44z" description="Discrete_ordinate@,_x_component#z"/>
+        </tensor>
+        <tensor name="root.comp1.ht.[s45x,s45y,s45z]" description="Discrete_ordinate" plot="true" summation="false" basename="root.comp1.ht.s45" size="3,1" symmetric="false" axisymmetric="false" edims="">
+          <scalar name="root.comp1.ht.s45x" description="Discrete_ordinate@,_x_component#x"/>
+          <scalar name="root.comp1.ht.s45y" description="Discrete_ordinate@,_x_component#y"/>
+          <scalar name="root.comp1.ht.s45z" description="Discrete_ordinate@,_x_component#z"/>
+        </tensor>
+        <tensor name="root.comp1.ht.[s46x,s46y,s46z]" description="Discrete_ordinate" plot="true" summation="false" basename="root.comp1.ht.s46" size="3,1" symmetric="false" axisymmetric="false" edims="">
+          <scalar name="root.comp1.ht.s46x" description="Discrete_ordinate@,_x_component#x"/>
+          <scalar name="root.comp1.ht.s46y" description="Discrete_ordinate@,_x_component#y"/>
+          <scalar name="root.comp1.ht.s46z" description="Discrete_ordinate@,_x_component#z"/>
+        </tensor>
+        <tensor name="root.comp1.ht.[s47x,s47y,s47z]" description="Discrete_ordinate" plot="true" summation="false" basename="root.comp1.ht.s47" size="3,1" symmetric="false" axisymmetric="false" edims="">
+          <scalar name="root.comp1.ht.s47x" description="Discrete_ordinate@,_x_component#x"/>
+          <scalar name="root.comp1.ht.s47y" description="Discrete_ordinate@,_x_component#y"/>
+          <scalar name="root.comp1.ht.s47z" description="Discrete_ordinate@,_x_component#z"/>
+        </tensor>
+        <tensor name="root.comp1.ht.[s48x,s48y,s48z]" description="Discrete_ordinate" plot="true" summation="false" basename="root.comp1.ht.s48" size="3,1" symmetric="false" axisymmetric="false" edims="">
+          <scalar name="root.comp1.ht.s48x" description="Discrete_ordinate@,_x_component#x"/>
+          <scalar name="root.comp1.ht.s48y" description="Discrete_ordinate@,_x_component#y"/>
+          <scalar name="root.comp1.ht.s48z" description="Discrete_ordinate@,_x_component#z"/>
+        </tensor>
+        <tensor name="root.comp1.ht.[s49x,s49y,s49z]" description="Discrete_ordinate" plot="true" summation="false" basename="root.comp1.ht.s49" size="3,1" symmetric="false" axisymmetric="false" edims="">
+          <scalar name="root.comp1.ht.s49x" description="Discrete_ordinate@,_x_component#x"/>
+          <scalar name="root.comp1.ht.s49y" description="Discrete_ordinate@,_x_component#y"/>
+          <scalar name="root.comp1.ht.s49z" description="Discrete_ordinate@,_x_component#z"/>
+        </tensor>
+        <tensor name="root.comp1.ht.[s50x,s50y,s50z]" description="Discrete_ordinate" plot="true" summation="false" basename="root.comp1.ht.s50" size="3,1" symmetric="false" axisymmetric="false" edims="">
+          <scalar name="root.comp1.ht.s50x" description="Discrete_ordinate@,_x_component#x"/>
+          <scalar name="root.comp1.ht.s50y" description="Discrete_ordinate@,_x_component#y"/>
+          <scalar name="root.comp1.ht.s50z" description="Discrete_ordinate@,_x_component#z"/>
+        </tensor>
+        <tensor name="root.comp1.ht.[s51x,s51y,s51z]" description="Discrete_ordinate" plot="true" summation="false" basename="root.comp1.ht.s51" size="3,1" symmetric="false" axisymmetric="false" edims="">
+          <scalar name="root.comp1.ht.s51x" description="Discrete_ordinate@,_x_component#x"/>
+          <scalar name="root.comp1.ht.s51y" description="Discrete_ordinate@,_x_component#y"/>
+          <scalar name="root.comp1.ht.s51z" description="Discrete_ordinate@,_x_component#z"/>
+        </tensor>
+        <tensor name="root.comp1.ht.[s52x,s52y,s52z]" description="Discrete_ordinate" plot="true" summation="false" basename="root.comp1.ht.s52" size="3,1" symmetric="false" axisymmetric="false" edims="">
+          <scalar name="root.comp1.ht.s52x" description="Discrete_ordinate@,_x_component#x"/>
+          <scalar name="root.comp1.ht.s52y" description="Discrete_ordinate@,_x_component#y"/>
+          <scalar name="root.comp1.ht.s52z" description="Discrete_ordinate@,_x_component#z"/>
+        </tensor>
+        <tensor name="root.comp1.ht.[s53x,s53y,s53z]" description="Discrete_ordinate" plot="true" summation="false" basename="root.comp1.ht.s53" size="3,1" symmetric="false" axisymmetric="false" edims="">
+          <scalar name="root.comp1.ht.s53x" description="Discrete_ordinate@,_x_component#x"/>
+          <scalar name="root.comp1.ht.s53y" description="Discrete_ordinate@,_x_component#y"/>
+          <scalar name="root.comp1.ht.s53z" description="Discrete_ordinate@,_x_component#z"/>
+        </tensor>
+        <tensor name="root.comp1.ht.[s54x,s54y,s54z]" description="Discrete_ordinate" plot="true" summation="false" basename="root.comp1.ht.s54" size="3,1" symmetric="false" axisymmetric="false" edims="">
+          <scalar name="root.comp1.ht.s54x" description="Discrete_ordinate@,_x_component#x"/>
+          <scalar name="root.comp1.ht.s54y" description="Discrete_ordinate@,_x_component#y"/>
+          <scalar name="root.comp1.ht.s54z" description="Discrete_ordinate@,_x_component#z"/>
+        </tensor>
+        <tensor name="root.comp1.ht.[s55x,s55y,s55z]" description="Discrete_ordinate" plot="true" summation="false" basename="root.comp1.ht.s55" size="3,1" symmetric="false" axisymmetric="false" edims="">
+          <scalar name="root.comp1.ht.s55x" description="Discrete_ordinate@,_x_component#x"/>
+          <scalar name="root.comp1.ht.s55y" description="Discrete_ordinate@,_x_component#y"/>
+          <scalar name="root.comp1.ht.s55z" description="Discrete_ordinate@,_x_component#z"/>
+        </tensor>
+        <tensor name="root.comp1.ht.[s56x,s56y,s56z]" description="Discrete_ordinate" plot="true" summation="false" basename="root.comp1.ht.s56" size="3,1" symmetric="false" axisymmetric="false" edims="">
+          <scalar name="root.comp1.ht.s56x" description="Discrete_ordinate@,_x_component#x"/>
+          <scalar name="root.comp1.ht.s56y" description="Discrete_ordinate@,_x_component#y"/>
+          <scalar name="root.comp1.ht.s56z" description="Discrete_ordinate@,_x_component#z"/>
+        </tensor>
+        <tensor name="root.comp1.ht.[s57x,s57y,s57z]" description="Discrete_ordinate" plot="true" summation="false" basename="root.comp1.ht.s57" size="3,1" symmetric="false" axisymmetric="false" edims="">
+          <scalar name="root.comp1.ht.s57x" description="Discrete_ordinate@,_x_component#x"/>
+          <scalar name="root.comp1.ht.s57y" description="Discrete_ordinate@,_x_component#y"/>
+          <scalar name="root.comp1.ht.s57z" description="Discrete_ordinate@,_x_component#z"/>
+        </tensor>
+        <tensor name="root.comp1.ht.[s58x,s58y,s58z]" description="Discrete_ordinate" plot="true" summation="false" basename="root.comp1.ht.s58" size="3,1" symmetric="false" axisymmetric="false" edims="">
+          <scalar name="root.comp1.ht.s58x" description="Discrete_ordinate@,_x_component#x"/>
+          <scalar name="root.comp1.ht.s58y" description="Discrete_ordinate@,_x_component#y"/>
+          <scalar name="root.comp1.ht.s58z" description="Discrete_ordinate@,_x_component#z"/>
+        </tensor>
+        <tensor name="root.comp1.ht.[s59x,s59y,s59z]" description="Discrete_ordinate" plot="true" summation="false" basename="root.comp1.ht.s59" size="3,1" symmetric="false" axisymmetric="false" edims="">
+          <scalar name="root.comp1.ht.s59x" description="Discrete_ordinate@,_x_component#x"/>
+          <scalar name="root.comp1.ht.s59y" description="Discrete_ordinate@,_x_component#y"/>
+          <scalar name="root.comp1.ht.s59z" description="Discrete_ordinate@,_x_component#z"/>
+        </tensor>
+        <tensor name="root.comp1.ht.[s60x,s60y,s60z]" description="Discrete_ordinate" plot="true" summation="false" basename="root.comp1.ht.s60" size="3,1" symmetric="false" axisymmetric="false" edims="">
+          <scalar name="root.comp1.ht.s60x" description="Discrete_ordinate@,_x_component#x"/>
+          <scalar name="root.comp1.ht.s60y" description="Discrete_ordinate@,_x_component#y"/>
+          <scalar name="root.comp1.ht.s60z" description="Discrete_ordinate@,_x_component#z"/>
+        </tensor>
+        <tensor name="root.comp1.ht.[s61x,s61y,s61z]" description="Discrete_ordinate" plot="true" summation="false" basename="root.comp1.ht.s61" size="3,1" symmetric="false" axisymmetric="false" edims="">
+          <scalar name="root.comp1.ht.s61x" description="Discrete_ordinate@,_x_component#x"/>
+          <scalar name="root.comp1.ht.s61y" description="Discrete_ordinate@,_x_component#y"/>
+          <scalar name="root.comp1.ht.s61z" description="Discrete_ordinate@,_x_component#z"/>
+        </tensor>
+        <tensor name="root.comp1.ht.[s62x,s62y,s62z]" description="Discrete_ordinate" plot="true" summation="false" basename="root.comp1.ht.s62" size="3,1" symmetric="false" axisymmetric="false" edims="">
+          <scalar name="root.comp1.ht.s62x" description="Discrete_ordinate@,_x_component#x"/>
+          <scalar name="root.comp1.ht.s62y" description="Discrete_ordinate@,_x_component#y"/>
+          <scalar name="root.comp1.ht.s62z" description="Discrete_ordinate@,_x_component#z"/>
+        </tensor>
+        <tensor name="root.comp1.ht.[s63x,s63y,s63z]" description="Discrete_ordinate" plot="true" summation="false" basename="root.comp1.ht.s63" size="3,1" symmetric="false" axisymmetric="false" edims="">
+          <scalar name="root.comp1.ht.s63x" description="Discrete_ordinate@,_x_component#x"/>
+          <scalar name="root.comp1.ht.s63y" description="Discrete_ordinate@,_x_component#y"/>
+          <scalar name="root.comp1.ht.s63z" description="Discrete_ordinate@,_x_component#z"/>
+        </tensor>
+        <tensor name="root.comp1.ht.[s64x,s64y,s64z]" description="Discrete_ordinate" plot="true" summation="false" basename="root.comp1.ht.s64" size="3,1" symmetric="false" axisymmetric="false" edims="">
+          <scalar name="root.comp1.ht.s64x" description="Discrete_ordinate@,_x_component#x"/>
+          <scalar name="root.comp1.ht.s64y" description="Discrete_ordinate@,_x_component#y"/>
+          <scalar name="root.comp1.ht.s64z" description="Discrete_ordinate@,_x_component#z"/>
+        </tensor>
+        <tensor name="root.comp1.ht.[s65x,s65y,s65z]" description="Discrete_ordinate" plot="true" summation="false" basename="root.comp1.ht.s65" size="3,1" symmetric="false" axisymmetric="false" edims="">
+          <scalar name="root.comp1.ht.s65x" description="Discrete_ordinate@,_x_component#x"/>
+          <scalar name="root.comp1.ht.s65y" description="Discrete_ordinate@,_x_component#y"/>
+          <scalar name="root.comp1.ht.s65z" description="Discrete_ordinate@,_x_component#z"/>
+        </tensor>
+        <tensor name="root.comp1.ht.[s66x,s66y,s66z]" description="Discrete_ordinate" plot="true" summation="false" basename="root.comp1.ht.s66" size="3,1" symmetric="false" axisymmetric="false" edims="">
+          <scalar name="root.comp1.ht.s66x" description="Discrete_ordinate@,_x_component#x"/>
+          <scalar name="root.comp1.ht.s66y" description="Discrete_ordinate@,_x_component#y"/>
+          <scalar name="root.comp1.ht.s66z" description="Discrete_ordinate@,_x_component#z"/>
+        </tensor>
+        <tensor name="root.comp1.ht.[s67x,s67y,s67z]" description="Discrete_ordinate" plot="true" summation="false" basename="root.comp1.ht.s67" size="3,1" symmetric="false" axisymmetric="false" edims="">
+          <scalar name="root.comp1.ht.s67x" description="Discrete_ordinate@,_x_component#x"/>
+          <scalar name="root.comp1.ht.s67y" description="Discrete_ordinate@,_x_component#y"/>
+          <scalar name="root.comp1.ht.s67z" description="Discrete_ordinate@,_x_component#z"/>
+        </tensor>
+        <tensor name="root.comp1.ht.[s68x,s68y,s68z]" description="Discrete_ordinate" plot="true" summation="false" basename="root.comp1.ht.s68" size="3,1" symmetric="false" axisymmetric="false" edims="">
+          <scalar name="root.comp1.ht.s68x" description="Discrete_ordinate@,_x_component#x"/>
+          <scalar name="root.comp1.ht.s68y" description="Discrete_ordinate@,_x_component#y"/>
+          <scalar name="root.comp1.ht.s68z" description="Discrete_ordinate@,_x_component#z"/>
+        </tensor>
+        <tensor name="root.comp1.ht.[s69x,s69y,s69z]" description="Discrete_ordinate" plot="true" summation="false" basename="root.comp1.ht.s69" size="3,1" symmetric="false" axisymmetric="false" edims="">
+          <scalar name="root.comp1.ht.s69x" description="Discrete_ordinate@,_x_component#x"/>
+          <scalar name="root.comp1.ht.s69y" description="Discrete_ordinate@,_x_component#y"/>
+          <scalar name="root.comp1.ht.s69z" description="Discrete_ordinate@,_x_component#z"/>
+        </tensor>
+        <tensor name="root.comp1.ht.[s70x,s70y,s70z]" description="Discrete_ordinate" plot="true" summation="false" basename="root.comp1.ht.s70" size="3,1" symmetric="false" axisymmetric="false" edims="">
+          <scalar name="root.comp1.ht.s70x" description="Discrete_ordinate@,_x_component#x"/>
+          <scalar name="root.comp1.ht.s70y" description="Discrete_ordinate@,_x_component#y"/>
+          <scalar name="root.comp1.ht.s70z" description="Discrete_ordinate@,_x_component#z"/>
+        </tensor>
+        <tensor name="root.comp1.ht.[s71x,s71y,s71z]" description="Discrete_ordinate" plot="true" summation="false" basename="root.comp1.ht.s71" size="3,1" symmetric="false" axisymmetric="false" edims="">
+          <scalar name="root.comp1.ht.s71x" description="Discrete_ordinate@,_x_component#x"/>
+          <scalar name="root.comp1.ht.s71y" description="Discrete_ordinate@,_x_component#y"/>
+          <scalar name="root.comp1.ht.s71z" description="Discrete_ordinate@,_x_component#z"/>
+        </tensor>
+        <tensor name="root.comp1.ht.[s72x,s72y,s72z]" description="Discrete_ordinate" plot="true" summation="false" basename="root.comp1.ht.s72" size="3,1" symmetric="false" axisymmetric="false" edims="">
+          <scalar name="root.comp1.ht.s72x" description="Discrete_ordinate@,_x_component#x"/>
+          <scalar name="root.comp1.ht.s72y" description="Discrete_ordinate@,_x_component#y"/>
+          <scalar name="root.comp1.ht.s72z" description="Discrete_ordinate@,_x_component#z"/>
+        </tensor>
+        <tensor name="root.comp1.ht.[s73x,s73y,s73z]" description="Discrete_ordinate" plot="true" summation="false" basename="root.comp1.ht.s73" size="3,1" symmetric="false" axisymmetric="false" edims="">
+          <scalar name="root.comp1.ht.s73x" description="Discrete_ordinate@,_x_component#x"/>
+          <scalar name="root.comp1.ht.s73y" description="Discrete_ordinate@,_x_component#y"/>
+          <scalar name="root.comp1.ht.s73z" description="Discrete_ordinate@,_x_component#z"/>
+        </tensor>
+        <tensor name="root.comp1.ht.[s74x,s74y,s74z]" description="Discrete_ordinate" plot="true" summation="false" basename="root.comp1.ht.s74" size="3,1" symmetric="false" axisymmetric="false" edims="">
+          <scalar name="root.comp1.ht.s74x" description="Discrete_ordinate@,_x_component#x"/>
+          <scalar name="root.comp1.ht.s74y" description="Discrete_ordinate@,_x_component#y"/>
+          <scalar name="root.comp1.ht.s74z" description="Discrete_ordinate@,_x_component#z"/>
+        </tensor>
+        <tensor name="root.comp1.ht.[s75x,s75y,s75z]" description="Discrete_ordinate" plot="true" summation="false" basename="root.comp1.ht.s75" size="3,1" symmetric="false" axisymmetric="false" edims="">
+          <scalar name="root.comp1.ht.s75x" description="Discrete_ordinate@,_x_component#x"/>
+          <scalar name="root.comp1.ht.s75y" description="Discrete_ordinate@,_x_component#y"/>
+          <scalar name="root.comp1.ht.s75z" description="Discrete_ordinate@,_x_component#z"/>
+        </tensor>
+        <tensor name="root.comp1.ht.[s76x,s76y,s76z]" description="Discrete_ordinate" plot="true" summation="false" basename="root.comp1.ht.s76" size="3,1" symmetric="false" axisymmetric="false" edims="">
+          <scalar name="root.comp1.ht.s76x" description="Discrete_ordinate@,_x_component#x"/>
+          <scalar name="root.comp1.ht.s76y" description="Discrete_ordinate@,_x_component#y"/>
+          <scalar name="root.comp1.ht.s76z" description="Discrete_ordinate@,_x_component#z"/>
+        </tensor>
+        <tensor name="root.comp1.ht.[s77x,s77y,s77z]" description="Discrete_ordinate" plot="true" summation="false" basename="root.comp1.ht.s77" size="3,1" symmetric="false" axisymmetric="false" edims="">
+          <scalar name="root.comp1.ht.s77x" description="Discrete_ordinate@,_x_component#x"/>
+          <scalar name="root.comp1.ht.s77y" description="Discrete_ordinate@,_x_component#y"/>
+          <scalar name="root.comp1.ht.s77z" description="Discrete_ordinate@,_x_component#z"/>
+        </tensor>
+        <tensor name="root.comp1.ht.[s78x,s78y,s78z]" description="Discrete_ordinate" plot="true" summation="false" basename="root.comp1.ht.s78" size="3,1" symmetric="false" axisymmetric="false" edims="">
+          <scalar name="root.comp1.ht.s78x" description="Discrete_ordinate@,_x_component#x"/>
+          <scalar name="root.comp1.ht.s78y" description="Discrete_ordinate@,_x_component#y"/>
+          <scalar name="root.comp1.ht.s78z" description="Discrete_ordinate@,_x_component#z"/>
+        </tensor>
+        <tensor name="root.comp1.ht.[s79x,s79y,s79z]" description="Discrete_ordinate" plot="true" summation="false" basename="root.comp1.ht.s79" size="3,1" symmetric="false" axisymmetric="false" edims="">
+          <scalar name="root.comp1.ht.s79x" description="Discrete_ordinate@,_x_component#x"/>
+          <scalar name="root.comp1.ht.s79y" description="Discrete_ordinate@,_x_component#y"/>
+          <scalar name="root.comp1.ht.s79z" description="Discrete_ordinate@,_x_component#z"/>
+        </tensor>
+        <tensor name="root.comp1.ht.[s80x,s80y,s80z]" description="Discrete_ordinate" plot="true" summation="false" basename="root.comp1.ht.s80" size="3,1" symmetric="false" axisymmetric="false" edims="">
+          <scalar name="root.comp1.ht.s80x" description="Discrete_ordinate@,_x_component#x"/>
+          <scalar name="root.comp1.ht.s80y" description="Discrete_ordinate@,_x_component#y"/>
+          <scalar name="root.comp1.ht.s80z" description="Discrete_ordinate@,_x_component#z"/>
+        </tensor>
+      </group>
+      <group name="Weights" description="Weights">
+        <scalar name="root.comp1.ht.w1" description="Discrete_weight" plot="true" summation="false" unit="sr" edims=""/>
+        <scalar name="root.comp1.ht.w2" description="Discrete_weight" plot="true" summation="false" unit="sr" edims=""/>
+        <scalar name="root.comp1.ht.w3" description="Discrete_weight" plot="true" summation="false" unit="sr" edims=""/>
+        <scalar name="root.comp1.ht.w4" description="Discrete_weight" plot="true" summation="false" unit="sr" edims=""/>
+        <scalar name="root.comp1.ht.w5" description="Discrete_weight" plot="true" summation="false" unit="sr" edims=""/>
+        <scalar name="root.comp1.ht.w6" description="Discrete_weight" plot="true" summation="false" unit="sr" edims=""/>
+        <scalar name="root.comp1.ht.w7" description="Discrete_weight" plot="true" summation="false" unit="sr" edims=""/>
+        <scalar name="root.comp1.ht.w8" description="Discrete_weight" plot="true" summation="false" unit="sr" edims=""/>
+        <scalar name="root.comp1.ht.w9" description="Discrete_weight" plot="true" summation="false" unit="sr" edims=""/>
+        <scalar name="root.comp1.ht.w10" description="Discrete_weight" plot="true" summation="false" unit="sr" edims=""/>
+        <scalar name="root.comp1.ht.w11" description="Discrete_weight" plot="true" summation="false" unit="sr" edims=""/>
+        <scalar name="root.comp1.ht.w12" description="Discrete_weight" plot="true" summation="false" unit="sr" edims=""/>
+        <scalar name="root.comp1.ht.w13" description="Discrete_weight" plot="true" summation="false" unit="sr" edims=""/>
+        <scalar name="root.comp1.ht.w14" description="Discrete_weight" plot="true" summation="false" unit="sr" edims=""/>
+        <scalar name="root.comp1.ht.w15" description="Discrete_weight" plot="true" summation="false" unit="sr" edims=""/>
+        <scalar name="root.comp1.ht.w16" description="Discrete_weight" plot="true" summation="false" unit="sr" edims=""/>
+        <scalar name="root.comp1.ht.w17" description="Discrete_weight" plot="true" summation="false" unit="sr" edims=""/>
+        <scalar name="root.comp1.ht.w18" description="Discrete_weight" plot="true" summation="false" unit="sr" edims=""/>
+        <scalar name="root.comp1.ht.w19" description="Discrete_weight" plot="true" summation="false" unit="sr" edims=""/>
+        <scalar name="root.comp1.ht.w20" description="Discrete_weight" plot="true" summation="false" unit="sr" edims=""/>
+        <scalar name="root.comp1.ht.w21" description="Discrete_weight" plot="true" summation="false" unit="sr" edims=""/>
+        <scalar name="root.comp1.ht.w22" description="Discrete_weight" plot="true" summation="false" unit="sr" edims=""/>
+        <scalar name="root.comp1.ht.w23" description="Discrete_weight" plot="true" summation="false" unit="sr" edims=""/>
+        <scalar name="root.comp1.ht.w24" description="Discrete_weight" plot="true" summation="false" unit="sr" edims=""/>
+        <scalar name="root.comp1.ht.w25" description="Discrete_weight" plot="true" summation="false" unit="sr" edims=""/>
+        <scalar name="root.comp1.ht.w26" description="Discrete_weight" plot="true" summation="false" unit="sr" edims=""/>
+        <scalar name="root.comp1.ht.w27" description="Discrete_weight" plot="true" summation="false" unit="sr" edims=""/>
+        <scalar name="root.comp1.ht.w28" description="Discrete_weight" plot="true" summation="false" unit="sr" edims=""/>
+        <scalar name="root.comp1.ht.w29" description="Discrete_weight" plot="true" summation="false" unit="sr" edims=""/>
+        <scalar name="root.comp1.ht.w30" description="Discrete_weight" plot="true" summation="false" unit="sr" edims=""/>
+        <scalar name="root.comp1.ht.w31" description="Discrete_weight" plot="true" summation="false" unit="sr" edims=""/>
+        <scalar name="root.comp1.ht.w32" description="Discrete_weight" plot="true" summation="false" unit="sr" edims=""/>
+        <scalar name="root.comp1.ht.w33" description="Discrete_weight" plot="true" summation="false" unit="sr" edims=""/>
+        <scalar name="root.comp1.ht.w34" description="Discrete_weight" plot="true" summation="false" unit="sr" edims=""/>
+        <scalar name="root.comp1.ht.w35" description="Discrete_weight" plot="true" summation="false" unit="sr" edims=""/>
+        <scalar name="root.comp1.ht.w36" description="Discrete_weight" plot="true" summation="false" unit="sr" edims=""/>
+        <scalar name="root.comp1.ht.w37" description="Discrete_weight" plot="true" summation="false" unit="sr" edims=""/>
+        <scalar name="root.comp1.ht.w38" description="Discrete_weight" plot="true" summation="false" unit="sr" edims=""/>
+        <scalar name="root.comp1.ht.w39" description="Discrete_weight" plot="true" summation="false" unit="sr" edims=""/>
+        <scalar name="root.comp1.ht.w40" description="Discrete_weight" plot="true" summation="false" unit="sr" edims=""/>
+        <scalar name="root.comp1.ht.w41" description="Discrete_weight" plot="true" summation="false" unit="sr" edims=""/>
+        <scalar name="root.comp1.ht.w42" description="Discrete_weight" plot="true" summation="false" unit="sr" edims=""/>
+        <scalar name="root.comp1.ht.w43" description="Discrete_weight" plot="true" summation="false" unit="sr" edims=""/>
+        <scalar name="root.comp1.ht.w44" description="Discrete_weight" plot="true" summation="false" unit="sr" edims=""/>
+        <scalar name="root.comp1.ht.w45" description="Discrete_weight" plot="true" summation="false" unit="sr" edims=""/>
+        <scalar name="root.comp1.ht.w46" description="Discrete_weight" plot="true" summation="false" unit="sr" edims=""/>
+        <scalar name="root.comp1.ht.w47" description="Discrete_weight" plot="true" summation="false" unit="sr" edims=""/>
+        <scalar name="root.comp1.ht.w48" description="Discrete_weight" plot="true" summation="false" unit="sr" edims=""/>
+        <scalar name="root.comp1.ht.w49" description="Discrete_weight" plot="true" summation="false" unit="sr" edims=""/>
+        <scalar name="root.comp1.ht.w50" description="Discrete_weight" plot="true" summation="false" unit="sr" edims=""/>
+        <scalar name="root.comp1.ht.w51" description="Discrete_weight" plot="true" summation="false" unit="sr" edims=""/>
+        <scalar name="root.comp1.ht.w52" description="Discrete_weight" plot="true" summation="false" unit="sr" edims=""/>
+        <scalar name="root.comp1.ht.w53" description="Discrete_weight" plot="true" summation="false" unit="sr" edims=""/>
+        <scalar name="root.comp1.ht.w54" description="Discrete_weight" plot="true" summation="false" unit="sr" edims=""/>
+        <scalar name="root.comp1.ht.w55" description="Discrete_weight" plot="true" summation="false" unit="sr" edims=""/>
+        <scalar name="root.comp1.ht.w56" description="Discrete_weight" plot="true" summation="false" unit="sr" edims=""/>
+        <scalar name="root.comp1.ht.w57" description="Discrete_weight" plot="true" summation="false" unit="sr" edims=""/>
+        <scalar name="root.comp1.ht.w58" description="Discrete_weight" plot="true" summation="false" unit="sr" edims=""/>
+        <scalar name="root.comp1.ht.w59" description="Discrete_weight" plot="true" summation="false" unit="sr" edims=""/>
+        <scalar name="root.comp1.ht.w60" description="Discrete_weight" plot="true" summation="false" unit="sr" edims=""/>
+        <scalar name="root.comp1.ht.w61" description="Discrete_weight" plot="true" summation="false" unit="sr" edims=""/>
+        <scalar name="root.comp1.ht.w62" description="Discrete_weight" plot="true" summation="false" unit="sr" edims=""/>
+        <scalar name="root.comp1.ht.w63" description="Discrete_weight" plot="true" summation="false" unit="sr" edims=""/>
+        <scalar name="root.comp1.ht.w64" description="Discrete_weight" plot="true" summation="false" unit="sr" edims=""/>
+        <scalar name="root.comp1.ht.w65" description="Discrete_weight" plot="true" summation="false" unit="sr" edims=""/>
+        <scalar name="root.comp1.ht.w66" description="Discrete_weight" plot="true" summation="false" unit="sr" edims=""/>
+        <scalar name="root.comp1.ht.w67" description="Discrete_weight" plot="true" summation="false" unit="sr" edims=""/>
+        <scalar name="root.comp1.ht.w68" description="Discrete_weight" plot="true" summation="false" unit="sr" edims=""/>
+        <scalar name="root.comp1.ht.w69" description="Discrete_weight" plot="true" summation="false" unit="sr" edims=""/>
+        <scalar name="root.comp1.ht.w70" description="Discrete_weight" plot="true" summation="false" unit="sr" edims=""/>
+        <scalar name="root.comp1.ht.w71" description="Discrete_weight" plot="true" summation="false" unit="sr" edims=""/>
+        <scalar name="root.comp1.ht.w72" description="Discrete_weight" plot="true" summation="false" unit="sr" edims=""/>
+        <scalar name="root.comp1.ht.w73" description="Discrete_weight" plot="true" summation="false" unit="sr" edims=""/>
+        <scalar name="root.comp1.ht.w74" description="Discrete_weight" plot="true" summation="false" unit="sr" edims=""/>
+        <scalar name="root.comp1.ht.w75" description="Discrete_weight" plot="true" summation="false" unit="sr" edims=""/>
+        <scalar name="root.comp1.ht.w76" description="Discrete_weight" plot="true" summation="false" unit="sr" edims=""/>
+        <scalar name="root.comp1.ht.w77" description="Discrete_weight" plot="true" summation="false" unit="sr" edims=""/>
+        <scalar name="root.comp1.ht.w78" description="Discrete_weight" plot="true" summation="false" unit="sr" edims=""/>
+        <scalar name="root.comp1.ht.w79" description="Discrete_weight" plot="true" summation="false" unit="sr" edims=""/>
+        <scalar name="root.comp1.ht.w80" description="Discrete_weight" plot="true" summation="false" unit="sr" edims=""/>
+      </group>
+      <group name="GlobalGroup" description="Global">
+        <group name="AccPowers" description="Accumulated_powers">
+          <scalar name="root.comp1.ht.dEiInt" description="Total_accumulated_heat_rate" plot="true" summation="false" unit="W" edims="-1"/>
+          <scalar name="root.comp1.ht.dEi0Int" description="Total_accumulated_energy_rate" plot="true" summation="false" unit="W" edims="-1"/>
+          <scalar name="root.comp1.ht.solid1.dEiInt" description="Total_accumulated_heat_rate" plot="true" summation="false" unit="W" edims="-1"/>
+          <scalar name="root.comp1.ht.solid1.dEi0Int" description="Total_accumulated_energy_rate" plot="true" summation="false" unit="W" edims="-1"/>
+        </group>
+        <group name="NetPowers" description="Net_powers">
+          <scalar name="root.comp1.ht.ntfluxInt" description="Total_net_heat_rate" plot="true" summation="false" unit="W" edims="-1"/>
+          <scalar name="root.comp1.ht.ntefluxInt" description="Total_net_energy_rate" plot="true" summation="false" unit="W" edims="-1"/>
+          <scalar name="root.comp1.ht.solid1.ntfluxInt" description="Total_net_heat_rate" plot="true" summation="false" unit="W" edims="-1"/>
+          <scalar name="root.comp1.ht.solid1.ntefluxInt" description="Total_net_energy_rate" plot="true" summation="false" unit="W" edims="-1"/>
+        </group>
+        <group name="HeatSrcPowers" description="Heat_source_powers">
+          <scalar name="root.comp1.ht.QInt" description="Total_heat_source" plot="true" summation="false" unit="W" edims="-1"/>
+          <scalar name="root.comp1.ht.solid1.QInt" description="Total_heat_source" plot="true" summation="false" unit="W" edims="-1"/>
+        </group>
+        <group name="WorkSrcPowers" description="Work_source_powers">
+          <scalar name="root.comp1.ht.WnsInt" description="Total_work_source" plot="true" summation="false" unit="W" edims="-1"/>
+          <scalar name="root.comp1.ht.WInt" description="Total_work_source" plot="true" summation="false" unit="W" edims="-1"/>
+          <scalar name="root.comp1.ht.solid1.WnsInt" description="Total_work_source" plot="true" summation="false" unit="W" edims="-1"/>
+          <scalar name="root.comp1.ht.solid1.WInt" description="Total_work_source" plot="true" summation="false" unit="W" edims="-1"/>
+        </group>
+        <group name="NetPowersBnd" description="Net_powers,_boundary_features">
+          <scalar name="root.comp1.ht.ins1.ntfluxInt" description="Total_net_heat_rate" plot="true" summation="false" unit="W" edims="-1"/>
+          <scalar name="root.comp1.ht.ins1.ntefluxInt" description="Total_net_energy_rate" plot="true" summation="false" unit="W" edims="-1"/>
+          <scalar name="root.comp1.ht.temp1.ntfluxInt" description="Total_net_heat_rate" plot="true" summation="false" unit="W" edims="-1"/>
+          <scalar name="root.comp1.ht.temp1.ntefluxInt" description="Total_net_energy_rate" plot="true" summation="false" unit="W" edims="-1"/>
+        </group>
+        <group name="NetPowersBndUp" description="Net_powers,_boundary_features,_upside">
+          <scalar name="root.comp1.ht.ins1.ntfluxInt_u" description="Total_net_heat_rate,_upside" plot="true" summation="false" unit="W" edims="-1"/>
+          <scalar name="root.comp1.ht.ins1.ntefluxInt_u" description="Total_net_energy_rate,_upside" plot="true" summation="false" unit="W" edims="-1"/>
+          <scalar name="root.comp1.ht.temp1.ntfluxInt_u" description="Total_net_heat_rate,_upside" plot="true" summation="false" unit="W" edims="-1"/>
+          <scalar name="root.comp1.ht.temp1.ntefluxInt_u" description="Total_net_energy_rate,_upside" plot="true" summation="false" unit="W" edims="-1"/>
+        </group>
+        <group name="NetPowersBndDown" description="Net_powers,_boundary_features,_downside">
+          <scalar name="root.comp1.ht.ins1.ntfluxInt_d" description="Total_net_heat_rate,_downside" plot="true" summation="false" unit="W" edims="-1"/>
+          <scalar name="root.comp1.ht.ins1.ntefluxInt_d" description="Total_net_energy_rate,_downside" plot="true" summation="false" unit="W" edims="-1"/>
+          <scalar name="root.comp1.ht.temp1.ntfluxInt_d" description="Total_net_heat_rate,_downside" plot="true" summation="false" unit="W" edims="-1"/>
+          <scalar name="root.comp1.ht.temp1.ntefluxInt_d" description="Total_net_energy_rate,_downside" plot="true" summation="false" unit="W" edims="-1"/>
+        </group>
+        <group name="TaveGroup" description="Weighted_average_temperature">
+          <scalar name="root.comp1.ht.ins1.Tave" description="Weighted_average_temperature" plot="true" summation="false" unit="K" edims="-1"/>
+          <scalar name="root.comp1.ht.temp1.Tave" description="Weighted_average_temperature" plot="true" summation="false" unit="K" edims="-1"/>
+        </group>
+      </group>
+      <group name="VelocityAndPressure" description="Velocity_and_pressure">
+        <scalar name="root.comp1.ht.pA" description="Absolute_pressure" plot="true" summation="false" unit="Pa" edims="2"/>
+      </group>
+      <group name="HeatSource" description="Heat_sources">
+        <scalar name="root.comp1.ht.Qtot" description="Total_heat_source" plot="true" summation="false" unit="W/m^3" edims="2"/>
+        <scalar name="root.comp1.ht.Qbtot" description="Total_boundary_heat_source" plot="true" summation="false" unit="W/m^2" edims="1"/>
+      </group>
+      <group name="EnergyMeasure" description="Energy">
+        <scalar name="root.comp1.ht.HRef" description="Reference_enthalpy" plot="true" summation="false" unit="J/kg" edims="2"/>
+        <scalar name="root.comp1.ht.DeltaH" description="Sensible_enthalpy" plot="true" summation="false" unit="J/kg" edims="2"/>
+        <scalar name="root.comp1.ht.H" description="Enthalpy" plot="true" summation="false" unit="J/kg" edims="2"/>
+        <scalar name="root.comp1.ht.H0" description="Total_enthalpy" plot="true" summation="false" unit="J/kg" edims="2"/>
+        <scalar name="root.comp1.ht.Ei" description="Internal_energy" plot="true" summation="false" unit="J/kg" edims="2"/>
+        <scalar name="root.comp1.ht.Ei0" description="Total_internal_energy" plot="true" summation="false" unit="J/kg" edims="2"/>
+      </group>
+      <group name="DomainFlux" description="Domain_fluxes">
+        <scalar name="root.comp1.ht.dfluxMag" description="Conductive_heat_flux_magnitude" plot="true" summation="false" unit="W/m^2" edims="2"/>
+        <scalar name="root.comp1.ht.trlfluxMag" description="Translational_heat_flux_magnitude" plot="true" summation="false" unit="W/m^2" edims="2"/>
+        <scalar name="root.comp1.ht.cfluxMag" description="Convective_heat_flux_magnitude" plot="true" summation="false" unit="W/m^2" edims="2"/>
+        <scalar name="root.comp1.ht.tfluxMag" description="Total_heat_flux_magnitude" plot="true" summation="false" unit="W/m^2" edims="2"/>
+        <scalar name="root.comp1.ht.tefluxMag" description="Total_energy_flux_magnitude" plot="true" summation="false" unit="W/m^2" edims="2"/>
+        <tensor name="root.comp1.ht.[dfluxx,dfluxy,dfluxz]" description="Conductive_heat_flux" plot="true" summation="false" basename="root.comp1.ht.dflux" size="3,1" symmetric="false" axisymmetric="false" unit="W/m^2" edims="2">
+          <scalar name="root.comp1.ht.dfluxx" description="Conductive_heat_flux@,_x_component#x"/>
+          <scalar name="root.comp1.ht.dfluxy" description="Conductive_heat_flux@,_x_component#y"/>
+          <scalar name="root.comp1.ht.dfluxz" description="Conductive_heat_flux@,_x_component#z"/>
+        </tensor>
+        <tensor name="root.comp1.ht.[trlfluxx,trlfluxy,trlfluxz]" description="Translational_heat_flux" plot="true" summation="false" basename="root.comp1.ht.trlflux" size="3,1" symmetric="false" axisymmetric="false" unit="W/m^2" edims="2">
+          <scalar name="root.comp1.ht.trlfluxx" description="Translational_heat_flux@,_x_component#x"/>
+          <scalar name="root.comp1.ht.trlfluxy" description="Translational_heat_flux@,_x_component#y"/>
+          <scalar name="root.comp1.ht.trlfluxz" description="Translational_heat_flux@,_x_component#z"/>
+        </tensor>
+        <tensor name="root.comp1.ht.[cfluxx,cfluxy,cfluxz]" description="Convective_heat_flux" plot="true" summation="false" basename="root.comp1.ht.cflux" size="3,1" symmetric="false" axisymmetric="false" unit="W/m^2" edims="2">
+          <scalar name="root.comp1.ht.cfluxx" description="Convective_heat_flux@,_x_component#x"/>
+          <scalar name="root.comp1.ht.cfluxy" description="Convective_heat_flux@,_x_component#y"/>
+          <scalar name="root.comp1.ht.cfluxz" description="Convective_heat_flux@,_x_component#z"/>
+        </tensor>
+        <tensor name="root.comp1.ht.[tfluxx,tfluxy,tfluxz]" description="Total_heat_flux" plot="true" summation="false" basename="root.comp1.ht.tflux" size="3,1" symmetric="false" axisymmetric="false" unit="W/m^2" edims="2">
+          <scalar name="root.comp1.ht.tfluxx" description="Total_heat_flux@,_x_component#x"/>
+          <scalar name="root.comp1.ht.tfluxy" description="Total_heat_flux@,_x_component#y"/>
+          <scalar name="root.comp1.ht.tfluxz" description="Total_heat_flux@,_x_component#z"/>
+        </tensor>
+        <tensor name="root.comp1.ht.[tefluxx,tefluxy,tefluxz]" description="Total_energy_flux" plot="true" summation="false" basename="root.comp1.ht.teflux" size="3,1" symmetric="false" axisymmetric="false" unit="W/m^2" edims="2">
+          <scalar name="root.comp1.ht.tefluxx" description="Total_energy_flux@,_x_component#x"/>
+          <scalar name="root.comp1.ht.tefluxy" description="Total_energy_flux@,_x_component#y"/>
+          <scalar name="root.comp1.ht.tefluxz" description="Total_energy_flux@,_x_component#z"/>
+        </tensor>
+      </group>
+      <group name="BoundaryFlux" description="Boundary_fluxes">
+        <scalar name="root.comp1.ht.rflux" description="Radiative_heat_flux" plot="true" summation="false" unit="W/m^2" edims="1"/>
+        <scalar name="root.comp1.ht.chflux" description="Boundary_convective_heat_flux" plot="true" summation="false" unit="W/m^2" edims="1"/>
+        <scalar name="root.comp1.ht.ntrlflux" description="Normal_translational_heat_flux" plot="true" summation="false" unit="W/m^2" edims="1"/>
+        <scalar name="root.comp1.ht.ncflux" description="Normal_convective_heat_flux" plot="true" summation="false" unit="W/m^2" edims="1"/>
+        <scalar name="root.comp1.ht.ndflux" description="Normal_conductive_heat_flux" plot="true" summation="false" unit="W/m^2" edims="1"/>
+        <scalar name="root.comp1.ht.ntflux" description="Normal_total_heat_flux" plot="true" summation="false" unit="W/m^2" edims="1"/>
+        <scalar name="root.comp1.ht.nteflux" description="Normal_total_energy_flux" plot="true" summation="false" unit="W/m^2" edims="1"/>
+      </group>
+      <group name="UpsideFlux" description="Internal_boundary_fluxes,_upside">
+        <scalar name="root.comp1.ht.ntrlflux_u" description="Internal_normal_translational_heat_flux,_upside" plot="true" summation="false" unit="W/m^2" edims="1"/>
+        <scalar name="root.comp1.ht.ncflux_u" description="Internal_normal_convective_heat_flux,_upside" plot="true" summation="false" unit="W/m^2" edims="1"/>
+        <scalar name="root.comp1.ht.ndflux_u" description="Internal_normal_conductive_heat_flux,_upside" plot="true" summation="false" unit="W/m^2" edims="1"/>
+        <scalar name="root.comp1.ht.ntflux_u" description="Internal_normal_total_heat_flux,_upside" plot="true" summation="false" unit="W/m^2" edims="1"/>
+        <scalar name="root.comp1.ht.nteflux_u" description="Internal_normal_total_energy_flux,_upside" plot="true" summation="false" unit="W/m^2" edims="1"/>
+      </group>
+      <group name="DownsideFlux" description="Internal_boundary_fluxes,_downside">
+        <scalar name="root.comp1.ht.ntrlflux_d" description="Internal_normal_translational_heat_flux,_downside" plot="true" summation="false" unit="W/m^2" edims="1"/>
+        <scalar name="root.comp1.ht.ncflux_d" description="Internal_normal_convective_heat_flux,_downside" plot="true" summation="false" unit="W/m^2" edims="1"/>
+        <scalar name="root.comp1.ht.ndflux_d" description="Internal_normal_conductive_heat_flux,_downside" plot="true" summation="false" unit="W/m^2" edims="1"/>
+        <scalar name="root.comp1.ht.ntflux_d" description="Internal_normal_total_heat_flux,_downside" plot="true" summation="false" unit="W/m^2" edims="1"/>
+        <scalar name="root.comp1.ht.nteflux_d" description="Internal_normal_total_energy_flux,_downside" plot="true" summation="false" unit="W/m^2" edims="1"/>
+      </group>
+      <group name="OOPFlux" description="Out-of-plane_fluxes">
+        <scalar name="root.comp1.ht.q0_u" description="Out-of-plane_inward_heat_flux,_upside" plot="true" summation="false" unit="W/m^2" edims="2"/>
+        <scalar name="root.comp1.ht.q0_d" description="Out-of-plane_inward_heat_flux,_downside" plot="true" summation="false" unit="W/m^2" edims="2"/>
+        <scalar name="root.comp1.ht.rflux_u" description="Radiative_out-of-plane_heat_flux,_upside" plot="true" summation="false" unit="W/m^2" edims="2"/>
+        <scalar name="root.comp1.ht.rflux_d" description="Radiative_out-of-plane_heat_flux,_downside" plot="true" summation="false" unit="W/m^2" edims="2"/>
+        <scalar name="root.comp1.ht.chflux_u" description="Convective_out-of-plane_heat_flux,_upside" plot="true" summation="false" unit="W/m^2" edims="2"/>
+        <scalar name="root.comp1.ht.chflux_d" description="Convective_out-of-plane_heat_flux,_downside" plot="true" summation="false" unit="W/m^2" edims="2"/>
+        <scalar name="root.comp1.ht.tflux_u" description="Total_out-of-plane_heat_flux,_upside" plot="true" summation="false" unit="W/m^2" edims="2"/>
+        <scalar name="root.comp1.ht.tflux_d" description="Total_out-of-plane_heat_flux,_downside" plot="true" summation="false" unit="W/m^2" edims="2"/>
+      </group>
+    </group>
+    <group name="Definitions" description="Definitions">
+      <group name="sys1" description="#Boundary System 1">
+        <scalar name="root.comp1.sys1.detT" description="Determinant_of_coordinate_transform_to_system" plot="true" summation="false" edims="1"/>
+        <scalar name="root.comp1.sys1.detInvT" description="Determinant_of_coordinate_transform_from_system" plot="true" summation="false" edims="1"/>
+        <tensor name="root.comp1.sys1.[Tdef11,Tdef21,Tdef31,Tdef12,Tdef22,Tdef32,Tdef13,Tdef23,Tdef33]" description="Coordinate_transform_to_system_x#(sys1)" plot="false" summation="false" basename="root.comp1.sys1.Tdef" size="3,3" symmetric="false" axisymmetric="false" unit="1" edims="1">
+          <scalar name="root.comp1.sys1.Tdef11" description="Coordinate_transform_to_system_x#(sys1)@,_x_component#11"/>
+          <scalar name="root.comp1.sys1.Tdef21" description="Coordinate_transform_to_system_x#(sys1)@,_x_component#21"/>
+          <scalar name="root.comp1.sys1.Tdef31" description="Coordinate_transform_to_system_x#(sys1)@,_x_component#31"/>
+          <scalar name="root.comp1.sys1.Tdef12" description="Coordinate_transform_to_system_x#(sys1)@,_x_component#12"/>
+          <scalar name="root.comp1.sys1.Tdef22" description="Coordinate_transform_to_system_x#(sys1)@,_x_component#22"/>
+          <scalar name="root.comp1.sys1.Tdef32" description="Coordinate_transform_to_system_x#(sys1)@,_x_component#32"/>
+          <scalar name="root.comp1.sys1.Tdef13" description="Coordinate_transform_to_system_x#(sys1)@,_x_component#13"/>
+          <scalar name="root.comp1.sys1.Tdef23" description="Coordinate_transform_to_system_x#(sys1)@,_x_component#23"/>
+          <scalar name="root.comp1.sys1.Tdef33" description="Coordinate_transform_to_system_x#(sys1)@,_x_component#33"/>
+        </tensor>
+        <tensor name="root.comp1.sys1.[invTdef11,invTdef21,invTdef31,invTdef12,invTdef22,invTdef32,invTdef13,invTdef23,invTdef33]" description="Coordinate_transform_from_system_x#(sys1)" plot="false" summation="false" basename="root.comp1.sys1.invTdef" size="3,3" symmetric="false" axisymmetric="false" unit="1" edims="1">
+          <scalar name="root.comp1.sys1.invTdef11" description="Coordinate_transform_from_system_x#(sys1)@,_x_component#11"/>
+          <scalar name="root.comp1.sys1.invTdef21" description="Coordinate_transform_from_system_x#(sys1)@,_x_component#21"/>
+          <scalar name="root.comp1.sys1.invTdef31" description="Coordinate_transform_from_system_x#(sys1)@,_x_component#31"/>
+          <scalar name="root.comp1.sys1.invTdef12" description="Coordinate_transform_from_system_x#(sys1)@,_x_component#12"/>
+          <scalar name="root.comp1.sys1.invTdef22" description="Coordinate_transform_from_system_x#(sys1)@,_x_component#22"/>
+          <scalar name="root.comp1.sys1.invTdef32" description="Coordinate_transform_from_system_x#(sys1)@,_x_component#32"/>
+          <scalar name="root.comp1.sys1.invTdef13" description="Coordinate_transform_from_system_x#(sys1)@,_x_component#13"/>
+          <scalar name="root.comp1.sys1.invTdef23" description="Coordinate_transform_from_system_x#(sys1)@,_x_component#23"/>
+          <scalar name="root.comp1.sys1.invTdef33" description="Coordinate_transform_from_system_x#(sys1)@,_x_component#33"/>
+        </tensor>
+        <tensor name="root.comp1.sys1.[Tref11,Tref21,Tref31,Tref12,Tref22,Tref32,Tref13,Tref23,Tref33]" description="Coordinate_transform_to_system_x#(sys1)" plot="false" summation="false" basename="root.comp1.sys1.Tref" size="3,3" symmetric="false" axisymmetric="false" unit="1" edims="1">
+          <scalar name="root.comp1.sys1.Tref11" description="Coordinate_transform_to_system_x#(sys1)@,_x_component#11"/>
+          <scalar name="root.comp1.sys1.Tref21" description="Coordinate_transform_to_system_x#(sys1)@,_x_component#21"/>
+          <scalar name="root.comp1.sys1.Tref31" description="Coordinate_transform_to_system_x#(sys1)@,_x_component#31"/>
+          <scalar name="root.comp1.sys1.Tref12" description="Coordinate_transform_to_system_x#(sys1)@,_x_component#12"/>
+          <scalar name="root.comp1.sys1.Tref22" description="Coordinate_transform_to_system_x#(sys1)@,_x_component#22"/>
+          <scalar name="root.comp1.sys1.Tref32" description="Coordinate_transform_to_system_x#(sys1)@,_x_component#32"/>
+          <scalar name="root.comp1.sys1.Tref13" description="Coordinate_transform_to_system_x#(sys1)@,_x_component#13"/>
+          <scalar name="root.comp1.sys1.Tref23" description="Coordinate_transform_to_system_x#(sys1)@,_x_component#23"/>
+          <scalar name="root.comp1.sys1.Tref33" description="Coordinate_transform_to_system_x#(sys1)@,_x_component#33"/>
+        </tensor>
+        <tensor name="root.comp1.sys1.[invTref11,invTref21,invTref31,invTref12,invTref22,invTref32,invTref13,invTref23,invTref33]" description="Coordinate_transform_to_system_x#(sys1)" plot="false" summation="false" basename="root.comp1.sys1.invTref" size="3,3" symmetric="false" axisymmetric="false" unit="1" edims="1">
+          <scalar name="root.comp1.sys1.invTref11" description="Coordinate_transform_to_system_x#(sys1)@,_x_component#11"/>
+          <scalar name="root.comp1.sys1.invTref21" description="Coordinate_transform_to_system_x#(sys1)@,_x_component#21"/>
+          <scalar name="root.comp1.sys1.invTref31" description="Coordinate_transform_to_system_x#(sys1)@,_x_component#31"/>
+          <scalar name="root.comp1.sys1.invTref12" description="Coordinate_transform_to_system_x#(sys1)@,_x_component#12"/>
+          <scalar name="root.comp1.sys1.invTref22" description="Coordinate_transform_to_system_x#(sys1)@,_x_component#22"/>
+          <scalar name="root.comp1.sys1.invTref32" description="Coordinate_transform_to_system_x#(sys1)@,_x_component#32"/>
+          <scalar name="root.comp1.sys1.invTref13" description="Coordinate_transform_to_system_x#(sys1)@,_x_component#13"/>
+          <scalar name="root.comp1.sys1.invTref23" description="Coordinate_transform_to_system_x#(sys1)@,_x_component#23"/>
+          <scalar name="root.comp1.sys1.invTref33" description="Coordinate_transform_to_system_x#(sys1)@,_x_component#33"/>
+        </tensor>
+        <tensor name="root.comp1.sys1.[Tgeom11,Tgeom21,Tgeom31,Tgeom12,Tgeom22,Tgeom32,Tgeom13,Tgeom23,Tgeom33]" description="Coordinate_transform_to_system_x#(sys1)" plot="false" summation="false" basename="root.comp1.sys1.Tgeom" size="3,3" symmetric="false" axisymmetric="false" unit="1" edims="1">
+          <scalar name="root.comp1.sys1.Tgeom11" description="Coordinate_transform_to_system_x#(sys1)@,_x_component#11"/>
+          <scalar name="root.comp1.sys1.Tgeom21" description="Coordinate_transform_to_system_x#(sys1)@,_x_component#21"/>
+          <scalar name="root.comp1.sys1.Tgeom31" description="Coordinate_transform_to_system_x#(sys1)@,_x_component#31"/>
+          <scalar name="root.comp1.sys1.Tgeom12" description="Coordinate_transform_to_system_x#(sys1)@,_x_component#12"/>
+          <scalar name="root.comp1.sys1.Tgeom22" description="Coordinate_transform_to_system_x#(sys1)@,_x_component#22"/>
+          <scalar name="root.comp1.sys1.Tgeom32" description="Coordinate_transform_to_system_x#(sys1)@,_x_component#32"/>
+          <scalar name="root.comp1.sys1.Tgeom13" description="Coordinate_transform_to_system_x#(sys1)@,_x_component#13"/>
+          <scalar name="root.comp1.sys1.Tgeom23" description="Coordinate_transform_to_system_x#(sys1)@,_x_component#23"/>
+          <scalar name="root.comp1.sys1.Tgeom33" description="Coordinate_transform_to_system_x#(sys1)@,_x_component#33"/>
+        </tensor>
+        <tensor name="root.comp1.sys1.[invTgeom11,invTgeom21,invTgeom31,invTgeom12,invTgeom22,invTgeom32,invTgeom13,invTgeom23,invTgeom33]" description="Coordinate_transform_to_system_x#(sys1)" plot="false" summation="false" basename="root.comp1.sys1.invTgeom" size="3,3" symmetric="false" axisymmetric="false" unit="1" edims="1">
+          <scalar name="root.comp1.sys1.invTgeom11" description="Coordinate_transform_to_system_x#(sys1)@,_x_component#11"/>
+          <scalar name="root.comp1.sys1.invTgeom21" description="Coordinate_transform_to_system_x#(sys1)@,_x_component#21"/>
+          <scalar name="root.comp1.sys1.invTgeom31" description="Coordinate_transform_to_system_x#(sys1)@,_x_component#31"/>
+          <scalar name="root.comp1.sys1.invTgeom12" description="Coordinate_transform_to_system_x#(sys1)@,_x_component#12"/>
+          <scalar name="root.comp1.sys1.invTgeom22" description="Coordinate_transform_to_system_x#(sys1)@,_x_component#22"/>
+          <scalar name="root.comp1.sys1.invTgeom32" description="Coordinate_transform_to_system_x#(sys1)@,_x_component#32"/>
+          <scalar name="root.comp1.sys1.invTgeom13" description="Coordinate_transform_to_system_x#(sys1)@,_x_component#13"/>
+          <scalar name="root.comp1.sys1.invTgeom23" description="Coordinate_transform_to_system_x#(sys1)@,_x_component#23"/>
+          <scalar name="root.comp1.sys1.invTgeom33" description="Coordinate_transform_to_system_x#(sys1)@,_x_component#33"/>
+        </tensor>
+        <tensor name="root.comp1.sys1.[T11,T21,T31,T12,T22,T32,T13,T23,T33]" description="Coordinate_transform_to_system_x#(sys1)" plot="true" summation="false" basename="root.comp1.sys1.T" size="3,3" symmetric="false" axisymmetric="false" unit="1" edims="1">
+          <scalar name="root.comp1.sys1.T11" description="Coordinate_transform_to_system_x#(sys1)@,_x_component#11"/>
+          <scalar name="root.comp1.sys1.T21" description="Coordinate_transform_to_system_x#(sys1)@,_x_component#21"/>
+          <scalar name="root.comp1.sys1.T31" description="Coordinate_transform_to_system_x#(sys1)@,_x_component#31"/>
+          <scalar name="root.comp1.sys1.T12" description="Coordinate_transform_to_system_x#(sys1)@,_x_component#12"/>
+          <scalar name="root.comp1.sys1.T22" description="Coordinate_transform_to_system_x#(sys1)@,_x_component#22"/>
+          <scalar name="root.comp1.sys1.T32" description="Coordinate_transform_to_system_x#(sys1)@,_x_component#32"/>
+          <scalar name="root.comp1.sys1.T13" description="Coordinate_transform_to_system_x#(sys1)@,_x_component#13"/>
+          <scalar name="root.comp1.sys1.T23" description="Coordinate_transform_to_system_x#(sys1)@,_x_component#23"/>
+          <scalar name="root.comp1.sys1.T33" description="Coordinate_transform_to_system_x#(sys1)@,_x_component#33"/>
+        </tensor>
+        <tensor name="root.comp1.sys1.[invT11,invT21,invT31,invT12,invT22,invT32,invT13,invT23,invT33]" description="Coordinate_transform_from_system_x#(sys1)" plot="true" summation="false" basename="root.comp1.sys1.invT" size="3,3" symmetric="false" axisymmetric="false" unit="1" edims="1">
+          <scalar name="root.comp1.sys1.invT11" description="Coordinate_transform_from_system_x#(sys1)@,_x_component#11"/>
+          <scalar name="root.comp1.sys1.invT21" description="Coordinate_transform_from_system_x#(sys1)@,_x_component#21"/>
+          <scalar name="root.comp1.sys1.invT31" description="Coordinate_transform_from_system_x#(sys1)@,_x_component#31"/>
+          <scalar name="root.comp1.sys1.invT12" description="Coordinate_transform_from_system_x#(sys1)@,_x_component#12"/>
+          <scalar name="root.comp1.sys1.invT22" description="Coordinate_transform_from_system_x#(sys1)@,_x_component#22"/>
+          <scalar name="root.comp1.sys1.invT32" description="Coordinate_transform_from_system_x#(sys1)@,_x_component#32"/>
+          <scalar name="root.comp1.sys1.invT13" description="Coordinate_transform_from_system_x#(sys1)@,_x_component#13"/>
+          <scalar name="root.comp1.sys1.invT23" description="Coordinate_transform_from_system_x#(sys1)@,_x_component#23"/>
+          <scalar name="root.comp1.sys1.invT33" description="Coordinate_transform_from_system_x#(sys1)@,_x_component#33"/>
+        </tensor>
+        <tensor name="root.comp1.sys1.[e_t11,e_t12,e_t13]" description="Base_vector_x#(sys1) t1" plot="true" summation="false" basename="root.comp1.sys1.e_t1" size="3,1" symmetric="false" axisymmetric="false" unit="1" edims="1">
+          <scalar name="root.comp1.sys1.e_t11" description="Base_vector_x#(sys1) t1@,_x_component#x"/>
+          <scalar name="root.comp1.sys1.e_t12" description="Base_vector_x#(sys1) t1@,_x_component#y"/>
+          <scalar name="root.comp1.sys1.e_t13" description="Base_vector_x#(sys1) t1@,_x_component#z"/>
+        </tensor>
+        <tensor name="root.comp1.sys1.[e_n1,e_n2,e_n3]" description="Base_vector_x#(sys1) n" plot="true" summation="false" basename="root.comp1.sys1.e_n" size="3,1" symmetric="false" axisymmetric="false" unit="1" edims="1">
+          <scalar name="root.comp1.sys1.e_n1" description="Base_vector_x#(sys1) n@,_x_component#x"/>
+          <scalar name="root.comp1.sys1.e_n2" description="Base_vector_x#(sys1) n@,_x_component#y"/>
+          <scalar name="root.comp1.sys1.e_n3" description="Base_vector_x#(sys1) n@,_x_component#z"/>
+        </tensor>
+        <tensor name="root.comp1.sys1.[e_to1,e_to2,e_to3]" description="Base_vector_x#(sys1) to" plot="true" summation="false" basename="root.comp1.sys1.e_to" size="3,1" symmetric="false" axisymmetric="false" unit="1" edims="1">
+          <scalar name="root.comp1.sys1.e_to1" description="Base_vector_x#(sys1) to@,_x_component#x"/>
+          <scalar name="root.comp1.sys1.e_to2" description="Base_vector_x#(sys1) to@,_x_component#y"/>
+          <scalar name="root.comp1.sys1.e_to3" description="Base_vector_x#(sys1) to@,_x_component#z"/>
+        </tensor>
+        <tensor name="root.comp1.sys1.[gSub11,gSub21,gSub31,gSub12,gSub22,gSub32,gSub13,gSub23,gSub33]" description="Covariant_metric_tensor" plot="false" summation="false" basename="root.comp1.sys1.gSub" size="3,3" symmetric="false" axisymmetric="false" edims="1">
+          <scalar name="root.comp1.sys1.gSub11" description="Covariant_metric_tensor@,_x_component#11"/>
+          <scalar name="root.comp1.sys1.gSub21" description="Covariant_metric_tensor@,_x_component#21"/>
+          <scalar name="root.comp1.sys1.gSub31" description="Covariant_metric_tensor@,_x_component#31"/>
+          <scalar name="root.comp1.sys1.gSub12" description="Covariant_metric_tensor@,_x_component#12"/>
+          <scalar name="root.comp1.sys1.gSub22" description="Covariant_metric_tensor@,_x_component#22"/>
+          <scalar name="root.comp1.sys1.gSub32" description="Covariant_metric_tensor@,_x_component#32"/>
+          <scalar name="root.comp1.sys1.gSub13" description="Covariant_metric_tensor@,_x_component#13"/>
+          <scalar name="root.comp1.sys1.gSub23" description="Covariant_metric_tensor@,_x_component#23"/>
+          <scalar name="root.comp1.sys1.gSub33" description="Covariant_metric_tensor@,_x_component#33"/>
+        </tensor>
+        <tensor name="root.comp1.sys1.[gSup11,gSup21,gSup31,gSup12,gSup22,gSup32,gSup13,gSup23,gSup33]" description="Contravariant_metric_tensor" plot="false" summation="false" basename="root.comp1.sys1.gSup" size="3,3" symmetric="false" axisymmetric="false" edims="1">
+          <scalar name="root.comp1.sys1.gSup11" description="Contravariant_metric_tensor@,_x_component#11"/>
+          <scalar name="root.comp1.sys1.gSup21" description="Contravariant_metric_tensor@,_x_component#21"/>
+          <scalar name="root.comp1.sys1.gSup31" description="Contravariant_metric_tensor@,_x_component#31"/>
+          <scalar name="root.comp1.sys1.gSup12" description="Contravariant_metric_tensor@,_x_component#12"/>
+          <scalar name="root.comp1.sys1.gSup22" description="Contravariant_metric_tensor@,_x_component#22"/>
+          <scalar name="root.comp1.sys1.gSup32" description="Contravariant_metric_tensor@,_x_component#32"/>
+          <scalar name="root.comp1.sys1.gSup13" description="Contravariant_metric_tensor@,_x_component#13"/>
+          <scalar name="root.comp1.sys1.gSup23" description="Contravariant_metric_tensor@,_x_component#23"/>
+          <scalar name="root.comp1.sys1.gSup33" description="Contravariant_metric_tensor@,_x_component#33"/>
+        </tensor>
+      </group>
+    </group>
+    <field name="root.comp1.T"/>
+    <function name="root.comp1.atonly" type="built_in_scoped" scope="root.comp1." allowednargs="1"/>
+    <function name="root.comp1.noxd" type="built_in_scoped" scope="root.comp1." allowednargs="1"/>
+    <function name="root.comp1.at0" type="built_in_scoped" scope="root.comp1." allowednargs="3" argtypes="4,'string','string','string','string'" stringargs="4,'Evaluate_at_the_vertex_at_the_given_coordinates_in_X#Geometry 1','x','y','expr'"/>
+    <function name="root.comp1.at1" type="built_in_scoped" scope="root.comp1." allowednargs="3" argtypes="4,'string','string','string','string'" stringargs="4,'Evaluate_on_the_boundary_at_the_given_coordinates_in_X#Geometry 1','x','y','expr'"/>
+    <function name="root.comp1.at2" type="built_in_scoped" scope="root.comp1." allowednargs="3" argtypes="4,'string','string','string','string'" stringargs="4,'Evaluate_in_the_domain_at_the_given_coordinates_in_X#Geometry 1','x','y','expr'"/>
+    <function name="root.comp1.atxd0" type="built_in_scoped" scope="root.comp1." allowednargs="3"/>
+    <function name="root.comp1.atxd1" type="built_in_scoped" scope="root.comp1." allowednargs="3"/>
+    <function name="root.comp1.atxd2" type="built_in_scoped" scope="root.comp1." allowednargs="3"/>
+    <function name="root.test"/>
+    <function name="root.var"/>
+    <function name="root.mean"/>
+    <function name="root.side"/>
+    <function name="root.up"/>
+    <function name="root.down"/>
+    <function name="root.comp1.ht.feb" type="func" allowednargs="1" argtypes="5,'string','string','string','string','string'" stringargs="5,'K','W/m^2','#Derived Analytic 1','Functions','dep.T'"/>
+    <function name="root.comp1.ht.fIb" type="func" allowednargs="1" argtypes="5,'string','string','string','string','string'" stringargs="5,'K','W/m^2/sr','#Derived Analytic 2','Functions','dep.T'"/>
+    <function name="root.comp1.ht.intExtBnd" type="int" scope="root.comp1." allowednargs="1" argtypes="2,'int','string'" stringargs="1,'#root.comp1.ht.intExtBnd'" intargs="1"/>
+    <function name="root.comp1.ht.intIntBnd" type="int" scope="root.comp1." allowednargs="1" argtypes="2,'int','string'" stringargs="1,'#root.comp1.ht.intIntBnd'" intargs="1"/>
+    <function name="root.comp1.ht.intDom" type="int" scope="root.comp1." allowednargs="1" argtypes="2,'int','string'" stringargs="1,'#root.comp1.ht.intDom'" intargs="2"/>
+    <function name="root.comp1.ht.solid1.intExtBnd" scope="root.comp1."/>
+    <function name="root.comp1.ht.solid1.intExtBndUp" scope="root.comp1."/>
+    <function name="root.comp1.ht.solid1.intExtBndDown" scope="root.comp1."/>
+    <function name="root.comp1.ht.solid1.intIntBnd" scope="root.comp1."/>
+    <function name="root.comp1.ht.solid1.intDom" scope="root.comp1."/>
+    <function name="root.comp1.ht.ins1.intExtBnd" scope="root.comp1."/>
+    <function name="root.comp1.ht.ins1.intIntBnd" scope="root.comp1."/>
+    <function name="root.comp1.ht.ins1.intBnd" scope="root.comp1."/>
+    <function name="root.comp1.ht.temp1.intExtBnd" scope="root.comp1."/>
+    <function name="root.comp1.ht.temp1.intIntBnd" scope="root.comp1."/>
+    <function name="root.comp1.ht.temp1.intBnd" scope="root.comp1."/>
+    <function name="root.comp1.mat3.def.eta" type="func" allowednargs="1" argtypes="5,'string','string','string','string','string'" stringargs="5,'','','#Piecewise','MaterialFunctions','T'"/>
+    <function name="root.comp1.mat3.def.Cp" type="func" allowednargs="1" argtypes="5,'string','string','string','string','string'" stringargs="5,'','','#Piecewise 2','MaterialFunctions','T'"/>
+    <function name="root.comp1.mat3.def.rho" type="func" allowednargs="2" argtypes="6,'string','string','string','string','string','string'" stringargs="6,'','','#Analytic','MaterialFunctions','pA','T'"/>
+    <function name="root.comp1.mat3.def.k" type="func" allowednargs="1" argtypes="5,'string','string','string','string','string'" stringargs="5,'','','#Piecewise 3','MaterialFunctions','T'"/>
+  </vardata>
+</savepoint>
+

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modelInfo comsolVersion="5.2.0.220" entityComments="Untitled&#xa;&#xa;" modelType="MODEL" isRunnable="false" pdfResources="" passwordProtection="off" startMode="edit" title="Untitled" description="" runtimeProtection="off" windowTitle="Untitled" expectedComputationTime="" lastComputationTime="1.049 s" mainPartSDim="None">
+  <historyInfo createdIn="COMSOL 5.2 (Build: 220)" author="" createdDate="1475717444020" lastModifiedBy="" lastModifiedDate="1475721432333"/>
+  <licenseInfo products=""/>
+  <physicsInfo physics="Heat_transfer_in_solids"/>
+  <geometryInfo>
+    <geom tag="geom1" dimension="2"/>
+  </geometryInfo>
+</modelInfo>
+
