@@ -14,10 +14,10 @@ for j = 1:length(nodes)
 
 T_s = 600;              % clad surface temperature [K]
 g = 145;       % generation in fuel [W/cc]
-r_fuel = 0.5-.00762;           % fuel radius [cm]
+r_fuel = 0.5;           % fuel radius [cm]
 r_void = 0;         % void caused by sintering [cm]
 thick_gap = 0.0089;     % thickness gap [cm]
-thick_clad = 0.066-.006;     % thickness clad [cm]
+thick_clad = 0.066;     % thickness clad [cm]
 r_gap = r_fuel + thick_gap;
 r_clad = r_gap + thick_clad;
 
